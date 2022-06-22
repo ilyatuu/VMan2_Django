@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from decouple import config
 from pathlib import Path
+from datetime import datetime
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,14 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+if not DEBUG:
+    ALLOWED_HOSTS = ['www.vman.aaph.or.tz', 'vman.aaph.or.tz']
+    SECURE_SSL_REDIRECT=True
+    SECURE_PROXY_SSL_HEADER=('HTTP_X_FORWARDED_PROTO', 'https')
+    SESSION_COOKIE_SECURE=True
+    SESSION_EXPIRE_AT_BROWSER_CLOSE=True
+else:
+    ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -59,7 +67,7 @@ ROOT_URLCONF = 'vman_v2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,6 +82,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'vman_v2.wsgi.application'
 
+myDate = datetime.now()
+PROJECT_TITLE = 'VMAN_V2'
+
+CURRENT_YEAR = myDate
+SETTINGS_EXPORT = [
+    'PROJECT_TITLE',
+    'CURRENT_YEAR',
+]
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
@@ -121,8 +137,31 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_URL = '/media/'
+
+if not DEBUG:
+    #static and media directory when in production
+    STATICFILES_DIRS = [BASE_DIR, "static"]
+    STATIC_ROOT = ''
+    MEDIA_ROOT = ''
+
+else:
+    #static and media when in local(developemnt)
+    STATIC_URL = 'static/'
+    STATICFILES_DIRS = [BASE_DIR, "static"]
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = [BASE_DIR, 'media']
+    # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_BACKEND = config('EMAIL_BACKEND')
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
