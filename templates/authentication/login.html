@@ -3,12 +3,13 @@
 {% block content %}
 
 <div class="login_page">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <div class="content">
+  <!-- <div class="container"> -->
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <div class="content left">
+          <h1>Logo</h1>
           <form class="" action="" method="post">
-            <h1>Login</h1>
+            <h3>Login to your account</h3>
             <hr>
             {% csrf_token %}
             <label for="">Email:</label>
@@ -20,8 +21,14 @@
           </form>
         </div>
       </div>
+
+      <div class="col-md-8">
+        <div class="content right">
+          <h1>Other contents</h1>
+        </div>
+      </div>
     </div>
-  </div>
+  <!-- </div> -->
 </div>
 
 {% endblock %}
