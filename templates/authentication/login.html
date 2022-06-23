@@ -1,1 +1,27 @@
-<h1>Login page</h1>
+{% extends './authbase.html' %}
+{% block title %}Authentication{% endblock %}
+{% block content %}
+
+<div class="login_page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="content">
+          <form class="" action="" method="post">
+            <h1>Login</h1>
+            <hr>
+            {% csrf_token %}
+            <label for="">Email:</label>
+            {{ form.username }}
+            <label for="">Password:</label>
+            {{ form.password }}
+            <input type="hidden" name="next" value="{{ request.GET.next }}"/>
+            <button type="submit" class="btn btn-sm" name="button">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

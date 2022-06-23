@@ -153,6 +153,13 @@ else:
     MEDIA_ROOT = [BASE_DIR, 'media']
     # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+
+LOGIN_URL = 'authentication:loginPage'
+LOGOUT_REDIRECT_URL = 'authentication:loginPage'
+LOGIN_REDIRECT_URL = 'dashboard:dashboardPage'
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
