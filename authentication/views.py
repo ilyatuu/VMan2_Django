@@ -40,9 +40,9 @@ def loginPage(request):
                 messages.success(request, f"Hi{username}, wellcome back")
                 return redirect(request.GET.get('next'))
             else:
-                messages.warning(request, "Invalid email or password.")
+                messages.error(request, "Invalid email or password.")
         else:
-            messages.warning(request, "Invalid username or password.")
+            messages.error(request, "Invalid username or password.")
     form = AuthenticationForm()
     context = {
         'form': form,

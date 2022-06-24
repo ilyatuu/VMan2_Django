@@ -10,6 +10,23 @@
   </head>
   <body class="dashboard_base">
     {% block content %}{% endblock %}
-    <script type="text/javascript" src="{% static 'js/bjs.js'%}"></script>
+
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bjs.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/messages.js' %}"></script>
+    {% if messages %}
+      {% for message in messages %}
+        <script type="text/javascript">
+          Swal.fire({
+              position: 'top-end',
+              title: '{{ message.tags }}!',
+              text: '{{ message }}',
+              icon: '{{ message.tags }}',
+              showConfirmButton: true,
+              // timer: 1500
+            })
+        </script>
+      {% endfor %}
+    {% endif %}
   </body>
 </html>
