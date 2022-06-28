@@ -84,6 +84,7 @@ body{
 }
 .dashboard_base .left_side_bar ul li a{
   text-decoration: none;
+  font-size: 13px;
 }
 
 .login_page{
