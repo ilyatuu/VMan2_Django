@@ -37,7 +37,7 @@ def loginPage(request):
                 return redirect('dashboard:dashboardPage')
             if user is not None and valuenext != '':
                 login(request, user)
-                messages.success(request, f"Hi{username}, wellcome back")
+                messages.success(request, f"Hi {username}, wellcome back")
                 return redirect(request.GET.get('next'))
             else:
                 messages.error(request, "Invalid email or password.")
