@@ -48,7 +48,8 @@
 :root{
   --fontFamily: 'Montserrat', sans-serif;
   --mainColor: #000;
-  --whiteColor: #3399ff;
+  --whiteColor: #ffffff;
+  --blueCor: #3399ff;
   --fontSizeH1: 50px;
   --fontSizeH2: 30px;
   --fontSizeH3: 18px;
@@ -62,6 +63,24 @@
 
 body{
   font-family: var(--fontFamily);
+}
+.dashboard_base .left_side_bar{
+  background: var(--whiteColor);
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  padding: 20px;
+}
+.dashboard_base .left_side_bar p{
+  font-family: monospace;
+  font-weight: var(--fontBold);
+  font-size: var(--fontSizeH3);
+}
+.dashboard_base .left_side_bar ul{
+  list-style: none;
+}
+.dashboard_base .left_side_bar ul li{
+  font-size: var(--fontSizeNormal);
+  font-weight: var(--fontBold);
+  line-height: 30px;
 }
 
 .login_page{
