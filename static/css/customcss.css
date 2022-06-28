@@ -82,6 +82,9 @@ body{
   font-weight: var(--fontBold);
   line-height: 30px;
 }
+.dashboard_base .left_side_bar ul li a{
+  text-decoration: none;
+}
 
 .login_page{
   overflow-x: hidden;
