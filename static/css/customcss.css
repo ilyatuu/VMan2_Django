@@ -1,3 +1,69 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw0aXpsog.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw9aXpsog.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw2aXpsog.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw3aXpsog.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw5aXo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+:root{
+  --fontFamily: 'Montserrat', sans-serif;
+  --mainColor: #000;
+  --whiteColor: #3399ff;
+  --fontSizeH1: 50px;
+  --fontSizeH2: 30px;
+  --fontSizeH3: 18px;
+  --fontSizeNormal: 14px;
+  --fontBold: bold;
+  --justifyCenter: center;
+  --grayColor: #eeeeee;
+  --buttonLoginColor: #E48561;
+  --borderButtonLoginColor:#E48561
+}
+
+body{
+  font-family: var(--fontFamily);
+}
+
 .login_page{
   overflow-x: hidden;
 }
@@ -13,12 +79,54 @@
 }
 .login_page .content.left h1{
   margin: auto;
-  text-align: center;
+  text-align: var(--justifyCenter);
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+
 }
 .login_page .content.left form{
   padding: 100px;
 }
+.login_page .content.left form .username_field{
+  display: flex;
+  /* justify-content:var(--justifyCenter); */
+  align-items: center;
+  border: 1px solid var(--grayColor);
+  width: 100%;
+}
+.login_page .content.left form .username_field .username_field_left{
+  width: 90%;
+}
+.login_page .content.left form .username_field .username_field_left input{
+  width:100%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  /* margin-top: 10px; */
+}
+.login_page .content.left form .username_field .username_field_right{
+  width: 8%;
+  text-align: var(--justifyCenter);
+}
 
+.login_page .content.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login_page .content.right img{
+  margin-bottom: 20px;
+}
+.login_page .content.right .text_section h2{
+  font-size: var(--fontSizeH2);
+}
+.login_page .content.right .text_section ul{
+  list-style-type: square;
+  font-weight: var(--fontBold);
+}
 
 
 /* .login_page .content{
@@ -32,20 +140,16 @@ label{
   display: block;
   font-weight: bold;
   color: #000;
-}
-input{
-  width:100%;
-  height: 50px;
-  border: 1px solid #eee;
-  padding: 10px;
-  outline: none;
-  border-radius: 5px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 .login_page .content form button{
-  background: #3399ff;
+  background: var(--buttonLoginColor);
   color: #fff;
   margin: 10px 0px;
-  width: 100%;
+  /* width: 100%; */
   height: 50px;
+  border-radius:0px;
+  font-weight: var(--fontBold);
 }

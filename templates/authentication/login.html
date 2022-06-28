@@ -1,5 +1,6 @@
 {% extends './authbase.html' %}
 {% block title %}Authentication{% endblock %}
+{% load static %}
 {% block content %}
 
 <div class="login_page">
@@ -7,24 +8,45 @@
     <div class="row no-gutters">
       <div class="col-md-4">
         <div class="content left">
-          <h1>Logo</h1>
           <form class="" action="" method="post">
             <h3>Login to your account</h3>
             <hr>
             {% csrf_token %}
             <label for="">Email:</label>
-            {{ form.username }}
+            <div class="username_field">
+              <div class="username_field_left">
+                {{ form.username }}
+              </div>
+              <div class="username_field_right">
+                <i class="bi bi-person-fill"></i>
+              </div>
+            </div>
             <label for="">Password:</label>
-            {{ form.password }}
+            <div class="username_field">
+              <div class="username_field_left">
+                {{ form.password }}
+              </div>
+              <div class="username_field_right">
+                <i class="bi bi-lock-fill"></i>
+              </div>
+            </div>
             <input type="hidden" name="next" value="{{ request.GET.next }}"/>
-            <button type="submit" class="btn btn-sm" name="button">Sign in</button>
+            <button type="submit" class="btn" name="button"><i class="bi bi-box-arrow-in-right"></i> Sign in</button>
           </form>
         </div>
       </div>
 
       <div class="col-md-8">
         <div class="content right">
-          <h1>Other contents</h1>
+          <img src="{% static 'images/logo.svg' %}" alt="logo">
+          <div class="text_section">
+            <h2>Monitor quality and progress of verbal autopsy data collection processes</h2>
+            <ul>
+              <li>See real time data as submitted by verbal autopsy interviewers</li>
+              <li>Summary distribution of verbal autopsy records by type (infant, child or adult) and interviewer</li>
+              <li>Conduct online physician coding of the verbal autopsies</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
