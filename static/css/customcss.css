@@ -64,27 +64,38 @@
 body{
   font-family: var(--fontFamily);
 }
-.dashboard_base .left_side_bar{
-  background: var(--whiteColor);
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+.w3-sidebar{
   padding: 20px;
 }
-.dashboard_base .left_side_bar p{
+
+.dashboard_base .w3-sidebar p{
   font-family: monospace;
   font-weight: var(--fontBold);
   font-size: var(--fontSizeH3);
 }
-.dashboard_base .left_side_bar ul{
+.dashboard_base .w3-sidebar ul{
   list-style: none;
 }
-.dashboard_base .left_side_bar ul li{
+.dashboard_base .w3-sidebar ul li{
   font-size: var(--fontSizeNormal);
-  font-weight: var(--fontBold);
   line-height: 30px;
 }
-.dashboard_base .left_side_bar ul li a{
+.dashboard_base .w3-sidebar ul li a{
   text-decoration: none;
   font-size: 13px;
+}
+.dashboard_base .w3-sidebar .version_section{
+  position: absolute;
+  bottom: 0px;
+}
+.dashboard_base .w3-sidebar .version_section p{
+  font-size: var(--fontSizeNormal);
+}
+.navbar button{
+  border: none;
+}
+#closeNav{
+  display: none;
 }
 
 .login_page{
