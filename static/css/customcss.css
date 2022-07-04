@@ -49,7 +49,7 @@
   --fontFamily: 'Montserrat', sans-serif;
   --mainColor: #000;
   --whiteColor: #ffffff;
-  --blueCor: #3399ff;
+  --blueColor: #3399ff;
   --fontSizeH1: 50px;
   --fontSizeH2: 30px;
   --fontSizeH3: 18px;
@@ -185,5 +185,176 @@ label{
   /* width: 100%; */
   height: 50px;
   border-radius:0px;
+  font-weight: var(--fontBold);
+}
+
+
+
+/* user_role */
+.user_role{
+  padding: 50px 0px;
+}
+.user_role .title_section h1{
+  margin: auto;
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.user_role .form_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.user_role .form_content form label{
+  display: block;
+}
+.user_role .form_content form input{
+  display: block;
+  width: 100%;
+}
+.user_role .form_content form button{
+  display: block;
+  background: var(--blueColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+.user_role .list_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.user_role .list_content h1{
+  margin: auto;
+  font-size: var(--fontSizeH3);
+  font-weight: var(--fontBold);
+}
+
+
+/* icd_10_category_page */
+.icd_10_category_page{
+  padding: 50px 0px;
+}
+.icd_10_category_page .title_section h1{
+  margin: auto;
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.icd_10_category_page .form_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.icd_10_category_page .form_content form label{
+  display: block;
+}
+.icd_10_category_page .form_content form input{
+  display: block;
+  width: 100%;
+}
+.icd_10_category_page .form_content form button{
+  display: block;
+  background: var(--blueColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+.icd_10_category_page .list_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.icd_10_category_page .list_content h1{
+  margin: auto;
+  font-size: var(--fontSizeH3);
+  font-weight: var(--fontBold);
+}
+
+/* organization_page */
+.organization_page{
+  padding: 50px 0px;
+}
+.organization_page .title_section h1{
+  margin: auto;
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.organization_page .form_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.organization_page .form_content form label{
+  display: block;
+}
+.organization_page .form_content form input{
+  display: block;
+  width: 100%;
+}
+.organization_page .form_content form button{
+  display: block;
+  background: var(--blueColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+.organization_page .list_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.organization_page .list_content h1{
+  margin: auto;
+  font-size: var(--fontSizeH3);
+  font-weight: var(--fontBold);
+}
+
+/* icd10_page */
+.icd10_page{
+  padding: 50px 0px;
+}
+.icd10_page .title_section h1{
+  margin: auto;
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.icd10_page .form_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.icd10_page .form_content form label{
+  display: block;
+}
+.icd10_page .form_content form input{
+  display: block;
+  width: 100%;
+}
+.icd10_page .form_content form select{
+  display: block;
+  width: 100%;
+}
+.icd10_page .form_content form button{
+  display: block;
+  background: var(--blueColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+.icd10_page .list_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.icd10_page .list_content h1{
+  margin: auto;
+  font-size: var(--fontSizeH3);
   font-weight: var(--fontBold);
 }

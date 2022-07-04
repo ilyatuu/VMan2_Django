@@ -1,12 +1,12 @@
 {% extends '../base.html' %}
-{% block title %}ICD10-Category{% endblock %}
+{% block title %}ICD-10{% endblock %}
 {% block content %}
-  <div class="icd_10_category_page">
+  <div class="icd10_page">
     <div class="container">
       <div class="row mb-4">
         <div class="col-md-12">
           <div class="title_section">
-            <h1>Manage ICD10 Category</h1>
+            <h1>Manage ICD10</h1>
           </div>
         </div>
       </div>
@@ -16,17 +16,17 @@
             <form class="" action="" method="post">
               {% csrf_token %}
               {{ form }}
-              <button type="submit" class="btn" name="save_icd_10_category">Save ICD10 Category</button>
+              <button type="submit" class="btn" name="save_organization">Save ICD10</button>
             </form>
           </div>
         </div>
         <div class="col-md-8">
           <div class="list_content">
-            <h1>ICD10 Category List</h1>
+            <h1>ICD10 List</h1>
             <table class="table table-small table-striped">
               <thead>
                 <th>#</th>
-                <th>ICD10 Category Name</th>
+                <th>ICD10</th>
                 <th>Action</th>
               </thead>
               <tbody>

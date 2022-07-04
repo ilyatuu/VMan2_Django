@@ -1,0 +1,45 @@
+{% extends '../base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+  <div class="user_role">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="title_section">
+            <h1>Manage role</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form_content">
+            <form class="" action="" method="post">
+              {% csrf_token %}
+              {{ form }}
+              <button type="submit" class="btn" name="save_role">Save Role</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="list_content">
+            <h1>Role List</h1>
+            <table class="table table-small table-striped">
+              <thead>
+                <th>#</th>
+                <th>Role Name</th>
+                <th>Action</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
