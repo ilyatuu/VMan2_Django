@@ -66,6 +66,7 @@ body{
 }
 .w3-sidebar{
   padding: 20px;
+  border-right: 2px solid var(--mainColor);
 }
 
 .dashboard_base .w3-sidebar p{
@@ -90,6 +91,19 @@ body{
 }
 .dashboard_base .w3-sidebar .version_section p{
   font-size: var(--fontSizeNormal);
+}
+.navbar{
+  background: var(--mainColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.navbar a.navbar-brand{
+  color: var(--whiteColor);
+  font-weight: bold;
+  font-size: var(--fontSizeH2);
+}
+.navbar div ul li a{
+  color: var(--whiteColor) !important;
+  font-weight: bold;
 }
 .navbar button{
   border: none;

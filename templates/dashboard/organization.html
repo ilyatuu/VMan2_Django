@@ -2,7 +2,7 @@
 {% block title %}Organization{% endblock %}
 {% block content %}
   <div class="organization_page">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row mb-4">
         <div class="col-md-12">
           <div class="title_section">
@@ -30,11 +30,22 @@
                 <th>Action</th>
               </thead>
               <tbody>
+                {% if get_organization %}
+                  {% for organization in get_organization %}
+                    <tr>
+                      <td>{{ forloop.counter }}</td>
+                      <td>{{ organization.organization_name }}</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-info">Update</a>
+                        <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                {% else %}
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td colspan="3" style="text-align: center">No organization added yet.</td>
                 </tr>
+                {% endif %}
               </tbody>
             </table>
           </div>

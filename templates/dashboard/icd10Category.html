@@ -2,7 +2,7 @@
 {% block title %}ICD10-Category{% endblock %}
 {% block content %}
   <div class="icd_10_category_page">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row mb-4">
         <div class="col-md-12">
           <div class="title_section">
@@ -22,7 +22,7 @@
         </div>
         <div class="col-md-8">
           <div class="list_content">
-            <h1>ICD10 Category List</h1>
+            <h1">ICD10 Category List</h1>
             <table class="table table-small table-striped">
               <thead>
                 <th>#</th>
@@ -30,11 +30,22 @@
                 <th>Action</th>
               </thead>
               <tbody>
+                {% if get_icd_10_category %}
+                  {% for icd_10_cat in get_icd_10_category %}
+                    <tr>
+                      <td>{{ forloop.counter }}</td>
+                      <td>{{ icd_10_cat.icd10_category_name }}</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-info">Update</a>
+                        <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                {% else %}
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td colspan="3" style="text-align: center">No category added yet.</td>
                 </tr>
+                {% endif %}
               </tbody>
             </table>
           </div>

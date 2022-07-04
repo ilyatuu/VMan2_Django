@@ -40,10 +40,12 @@ def manageICD10Category(request):
             form.save()
             messages.success(request, f"ICD-10 category saved successfully")
             return redirect('dashboard:manageICD10Category')
+    get_icd_10_category = ICD10Category.objects.all().order_by('icd10_category_name')
     form = ICD10CategoryForm(request.POST or None)
     template_name = 'dashboard/icd10Category.html'
     context = {
-        'form': form
+        'form': form,
+        'get_icd_10_category': get_icd_10_category
     }
     return render(request, template_name, context)
 
@@ -55,11 +57,13 @@ def manageOrganization(request):
         if form.is_valid:
             form.save()
             messages.success(request, f"Organization saved successfully")
-            return redirect('dashboard:manageICD10Category')
+            return redirect('dashboard:manageOrganization')
+    get_organization = Organization.objects.all().order_by('organization_name')
     form = OrganizationForm(request.POST or None)
     template_name = 'dashboard/organization.html'
     context = {
-        'form': form
+        'form': form,
+        'get_organization': get_organization
     }
     return render(request, template_name, context)
 
