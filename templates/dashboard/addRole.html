@@ -30,11 +30,22 @@
                 <th>Action</th>
               </thead>
               <tbody>
+                {% if get_role %}
+                  {% for role in get_role %}
+                    <tr>
+                      <td>{{ forloop.counter }}</td>
+                      <td>{{ role.role_name }}</td>
+                      <td>
+                        <a href="#">Update</a>
+                        <a href="#">Delete</a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                {% else %}
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td colspan="3" style="text-align: center">No role added yet.</td>
                 </tr>
+                {% endif %}
               </tbody>
             </table>
           </div>

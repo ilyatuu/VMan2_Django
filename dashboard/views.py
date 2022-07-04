@@ -22,10 +22,12 @@ def manageRole(request):
             form.save()
             messages.success(request, f"Role saved successfully")
             return redirect('dashboard:manageRole')
+    get_role = UserRole.objects.all().order_by('role_name')
     form = UserRoleForm(request.POST or None)
     template_name = 'dashboard/addRole.html'
     context = {
-        'form': form
+        'form': form,
+        'get_role': get_role
     }
     return render(request, template_name, context)
 
