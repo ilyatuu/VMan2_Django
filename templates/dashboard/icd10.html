@@ -26,15 +26,32 @@
             <table class="table table-small table-striped">
               <thead>
                 <th>#</th>
-                <th>ICD10</th>
+                <th>ICD10 Code</th>
+                <th>ICD10 Name</th>
+                <th>ICD10 Category</th>
+                <th>ICD10 Dispaly Name</th>
                 <th>Action</th>
               </thead>
               <tbody>
+                {% if get_icd10_list %}
+                  {% for icd10 in get_icd10_list %}
+                    <tr>
+                      <td>{{ forloop.counter }}</td>
+                      <td>{{ icd10.icd10_code }}</td>
+                      <td>{{ icd10.icd10_name }}</td>
+                      <td>{{ icd10.icd10_category }}</td>
+                      <td>{{ icd10.icd10_display_name }}</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-info">Update</a>
+                        <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                {% else %}
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td colspan="6" style="text-align: center">No ICD-10 added yet.</td>
                 </tr>
+                {% endif %}
               </tbody>
             </table>
           </div>

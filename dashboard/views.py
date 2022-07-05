@@ -76,9 +76,11 @@ def manageICD10(request):
             form.save()
             messages.success(request, f"ICD-10 saved successfully")
             return redirect('dashboard:manageICD10')
+    get_icd10_list = ICD10List.objects.all().order_by('icd10_code')
     form = ICD10ListForm(request.POST or None)
     template_name = 'dashboard/icd10.html'
     context = {
-        'form': form
+        'form': form,
+        'get_icd10_list': get_icd10_list
     }
     return render(request, template_name, context)
