@@ -8,4 +8,5 @@ urlpatterns = [
     path('user-management/', views.addNewUser, name = 'addNewUser'),
     path('login/', views.loginPage, name = 'loginPage'),
     path('logout/', auth_views.LogoutView.as_view(template_name='authentication/logout.html'), name='logout'),
+    path('activate/<uidb64>/<token>/<ext>/', views.activate, name='activate'),
 ]

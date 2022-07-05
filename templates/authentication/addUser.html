@@ -77,6 +77,7 @@
               <th>Username</th>
               <th>Password</th>
               <th>Organization</th>
+              <th>Is Active</th>
               <th>Last Login</th>
               <th>Action</th>
             </thead>
@@ -91,7 +92,8 @@
                     <td>{{ get_user.username }}</td>
                     <td>********</td>
                     <td>{{ get_user.profile.organization }}</td>
-                    <td></td>
+                    <td>{{ get_user.is_active }}</td>
+                    <td>{{ get_user.last_login }}</td>
                     <td>
                       <a href="#" class="btn btn-sm btn-info">Update</a>
                       <a href="#" class="btn btn-sm btn-danger">Delete</a>

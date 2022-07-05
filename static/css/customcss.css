@@ -446,3 +446,16 @@ select{
   border-radius: 0px;
   margin-top: 10px;
 }
+.add_user_page .list_content{
+  margin-top: 20px;
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.add_user_page .list_content h1{
+  margin: auto;
+  font-size: var(--fontSizeH3);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+  margin-bottom: 10px;
+}
