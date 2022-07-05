@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.cache import cache_control
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
 from django.contrib.auth.models import User
 from django.core.mail import EmailMessage, send_mail, EmailMultiAlternatives
@@ -56,7 +57,8 @@ def loginPage(request):
     return render(request = request, template_name = "authentication/login.html", context = context)
 
 
-
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
 def addNewUser(request):
     if request.method == 'POST':
         form = SignupForm(request.POST or None)
@@ -115,12 +117,13 @@ def addNewUser(request):
         form = SignupForm()
         form_profile = ProfileForm()
         user_token_1 = shortuuid.ShortUUID(shortuuid.get_alphabet())
-
+        get_users = User.objects.all().order_by('first_name', 'last_name')
         user_generated_token = user_token_1.random(length=100)
         required_user_code = user_generated_token
         print(required_user_code)
     context = {
         'form': form,
         'form_profile': form_profile,
+        'get_users': get_users
     }
     return render(request, 'authentication/addUser.html', context = context)

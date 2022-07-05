@@ -68,7 +68,7 @@
       <div class="col-md-12">
         <div class="list_content">
           <h1>ICD10 List</h1>
-          <table class="table table-small table-striped">
+          <table class="table table-sm table-striped table-bordered">
             <thead>
               <th>#</th>
               <th>Full Name</th>
@@ -81,16 +81,16 @@
               <th>Action</th>
             </thead>
             <tbody>
-              {% if get_icd10_list %}
-                {% for icd10 in get_icd10_list %}
+              {% if get_users %}
+                {% for get_user in get_users %}
                   <tr>
                     <td>{{ forloop.counter }}</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>{{ get_user.first_name}} {{ get_user.last_name }}</td>
+                    <td>{{ get_user.profile.mobile_number }}</td>
+                    <td>{{ get_user.profile.user_role }}</td>
+                    <td>{{ get_user.username }}</td>
+                    <td>********</td>
+                    <td>{{ get_user.profile.organization }}</td>
                     <td></td>
                     <td>
                       <a href="#" class="btn btn-sm btn-info">Update</a>
@@ -100,7 +100,7 @@
                 {% endfor %}
               {% else %}
               <tr>
-                <td colspan="9" style="text-align: center">No ICD-10 added yet.</td>
+                <td colspan="9" style="text-align: center">No user added yet.</td>
               </tr>
               {% endif %}
             </tbody>
