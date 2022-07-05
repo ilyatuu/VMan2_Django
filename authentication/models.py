@@ -9,6 +9,7 @@ class Profile(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.OneToOneField(User, on_delete = models.CASCADE)
     user_token = models.CharField(max_length=3000)
+    organization = models.ForeignKey(Organization, on_delete = models.CASCADE)
     user_role = models.ForeignKey(UserRole, on_delete = models.CASCADE)
     nationality = CountryField()
     mobile_number = PhoneNumberField()

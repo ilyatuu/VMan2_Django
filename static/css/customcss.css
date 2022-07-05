@@ -190,6 +190,21 @@ label{
   color: #000;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: var(--fontFamily);
+}
+input{
+  outline: none;
+  height: 40px;
+  background: var(--whiteColor);
+  border: 1px solid var(--grayColor);
+  padding-left: 10px;
+}
+select{
+  outline: none;
+  height: 40px;
+  background: var(--whiteColor);
+  border: 1px solid var(--grayColor);
+  padding-left: 10px;
 }
 
 .login_page .content form button{
@@ -371,4 +386,63 @@ label{
   margin: auto;
   font-size: var(--fontSizeH3);
   font-weight: var(--fontBold);
+}
+
+/* add_user_page */
+.add_user_page{
+  padding: 50px 0px;
+}
+.add_user_page .title_section h1{
+  margin: auto;
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.add_user_page .form_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.add_user_page .form_content h1{
+  margin: auto;
+  font-size: var(--fontSizeH3);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.add_user_page .form_content form label{
+  display: block;
+}
+.add_user_page .form_content form input{
+  display: block;
+  width: 100%;
+}
+.add_user_page .form_content form select{
+  display: block;
+  width: 100%;
+}
+.add_user_page .form_content .phone_number_selection{
+  display: flex;
+  background: var(--buttonLoginColor);
+  border: 1px solid var(--grayColor);
+}
+.add_user_page .form_content .phone_number_selection select{
+  border: none;
+  background: var(--whiteColor);
+  flex: 2;
+  font-size: 13px;
+}
+.add_user_page .form_content .phone_number_selection input{
+  border: none;
+  background: var(--whiteColor);
+  flex: 2;
+  border-left: 2px solid var(--grayColor);
+  padding-left: 10px;
+}
+.add_user_page .form_content form button{
+  display: block;
+  background: var(--blueColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 0px;
+  margin-top: 10px;
 }

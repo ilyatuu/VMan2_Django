@@ -71,8 +71,6 @@ def addNewUser(request):
         user_generated_token = user_token_1.random(length=100)
         required_user_token = user_generated_token
 
-
-
         print(form.is_valid())
         print(form_profile.errors)
         if form.is_valid() and form_profile.is_valid():

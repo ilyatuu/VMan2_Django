@@ -1,5 +1,113 @@
 {% extends '../base.html' %}
 {% block title %}User Management{% endblock %}
 {% block content %}
-  <h1>Add user</h1>
+<div class="add_user_page">
+  <div class="container-fluid">
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <div class="title_section">
+          <h1>Manage user</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form_content">
+          <h1><code>User details</code></h1>
+          <form class="" action="" method="post">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-2">
+                <label for="">{{ form.first_name.label }}</label>
+                {{ form.first_name}}
+              </div>
+              <div class="col-md-2">
+                <label for="">{{ form.last_name.label }}</label>
+                {{ form.last_name}}
+              </div>
+              <div class="col-md-2">
+                <label for="">{{ form_profile.nationality.label }}</label>
+                {{ form_profile.nationality}}
+              </div>
+              <div class="col-md-3">
+                <label for="">{{ form_profile.mobile_number.label }}</label>
+                <div class="phone_number_selection">
+                  {{ form_profile.mobile_number}}
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="">{{ form_profile.organization.label }}</label>
+                {{ form_profile.organization}}
+              </div>
+            </div>
+            <h1><code>Login details</code></h1>
+            <div class="row">
+              <div class="col-md-3">
+                <label for="">{{ form_profile.user_role.label }}</label>
+                {{ form_profile.user_role}}
+              </div>
+              <div class="col-md-3">
+                <label for="">{{ form.email.label }}</label>
+                {{ form.email }}
+              </div>
+              <div class="col-md-3">
+                <label for="">{{ form.password1.label }}</label>
+                {{ form.password1 }}
+              </div>
+              <div class="col-md-3">
+                <label for="">{{ form.password2.label }}</label>
+                {{ form.password2 }}
+              </div>
+            </div>
+            <button type="submit" class="btn" name="save_icd_10">Save User</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="list_content">
+          <h1>ICD10 List</h1>
+          <table class="table table-small table-striped">
+            <thead>
+              <th>#</th>
+              <th>Full Name</th>
+              <th>Phone</th>
+              <th>Role</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Organization</th>
+              <th>Last Login</th>
+              <th>Action</th>
+            </thead>
+            <tbody>
+              {% if get_icd10_list %}
+                {% for icd10 in get_icd10_list %}
+                  <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <a href="#" class="btn btn-sm btn-info">Update</a>
+                      <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              {% else %}
+              <tr>
+                <td colspan="9" style="text-align: center">No ICD-10 added yet.</td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
