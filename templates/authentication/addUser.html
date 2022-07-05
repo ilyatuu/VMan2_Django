@@ -86,7 +86,7 @@
                 {% for get_user in get_users %}
                   <tr>
                     <td>{{ forloop.counter }}</td>
-                    <td>{{ get_user.first_name}} {{ get_user.last_name }}</td>
+                    <td>{{ get_user.first_name|title }} {{ get_user.last_name|title }}</td>
                     <td>{{ get_user.profile.mobile_number }}</td>
                     <td>{{ get_user.profile.user_role }}</td>
                     <td>{{ get_user.username }}</td>
