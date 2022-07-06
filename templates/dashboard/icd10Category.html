@@ -24,7 +24,7 @@
           <div class="list_content">
             <h1">ICD10 Category List</h1>
             <table class="table table-sm table-striped table-bordered">
-              <thead>
+              <thead class="table-dark">
                 <th>#</th>
                 <th>ICD10 Category Name</th>
                 <th>Action</th>
@@ -36,8 +36,8 @@
                       <td>{{ forloop.counter }}</td>
                       <td>{{ icd_10_cat.icd10_category_name }}</td>
                       <td>
-                        <a href="#" class="btn btn-sm btn-info">Update</a>
-                        <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                        <a href="#" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
+                        <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Delete</a>
                       </td>
                     </tr>
                   {% endfor %}

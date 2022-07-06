@@ -12,19 +12,18 @@
   </head>
   <body class="dashboard_base">
     {% include './components/header.html' %}
-
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card" id="mySidebar">
       <img src="{% static 'images/logo.svg' %}" alt="logo" class="mb-4" width="200px">
       <p><i class="bi bi-speedometer"></i> Dashboard</p>
       <ul>
-        <li><a href="#">Dashboard</a></li>
+        <li><a href="{% url 'dashboard:dashboardPage' %}"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
         <li><a href="#">Coded VA Data</a></li>
       </ul>
       <p><i class="bi bi-graph-down-arrow"></i> Visualization</p>
       <ul>
-        <li><a href="#">Create Graph</a></li>
-        <li><a href="#">Create Table</a></li>
-        <li><a href="#">Create Map</a></li>
+        <li><a href="#"><i class="bi bi-graph-up"></i> Create Graph</a></li>
+        <li><a href="#"><i class="bi bi-table"></i> Create Table</a></li>
+        <li><a href="#"><i class="bi bi-geo-fill"></i> Create Map</a></li>
       </ul>
       <p><i class="bi bi-file-earmark-code"></i> Coding</p>
       <ul>
@@ -34,56 +33,60 @@
       </ul>
       <p><i class="bi bi-sliders"></i> Settings</p>
       <ul>
-        <li><a href="#">Update Profile</a></li>
-        <li><a href="{% url 'authentication:addNewUser' %}">System Users</a></li>
-        <li><a href="{% url 'dashboard:manageRole' %}">System Role</a></li>
-        <li><a href="{% url 'dashboard:manageICD10Category' %}">ICD10 Category</a></li>
-        <li><a href="#">Interviewer Data</a></li>
-        <li><a href="{% url 'dashboard:manageOrganization' %}">Organization</a></li>
-        <li><a href="#">Upload CSMF</a></li>
-        <li><a href="{% url 'dashboard:manageICD10' %}">ICD10 List</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Download Data</a></li>
+        <li><a href="#"><i class="bi bi-person"></i> Update Profile</a></li>
+        <li><a href="{% url 'authentication:addNewUser' %}"><i class="bi bi-people"></i> System Users</a></li>
+        <li><a href="{% url 'dashboard:manageRole' %}"><i class="bi bi-shield"></i> System Role</a></li>
+        <li><a href="{% url 'dashboard:manageICD10Category' %}"><i class="bi bi-bookmarks"></i> ICD10 Category</a></li>
+        <li><a href="#"><i class="bi bi-activity"></i> Interviewer Data</a></li>
+        <li><a href="{% url 'dashboard:manageOrganization' %}"><i class="bi bi-building"></i> Organization</a></li>
+        <li><a href="#"><i class="bi bi-cloud-upload"></i> Upload CSMF</a></li>
+        <li><a href="{% url 'dashboard:manageICD10' %}"><i class="bi bi-list-task"></i> ICD10 List</a></li>
+        <li><a href="#"><i class="bi bi-gear"></i> Settings</a></li>
+        <li><a href="#"><i class="bi bi-cloud-download"></i> Download Data</a></li>
       </ul>
     </div>
 
-    <div id="main">
+    <div class="w3-main" style="margin-left:300px">
       <div class="w3-container">
         {% block content %}{% endblock %}
       </div>
     </div>
 
-    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/bjs.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/messages.js' %}"></script>
-    {% if messages %}
-      {% for message in messages %}
-        <script type="text/javascript">
-          Swal.fire({
-              position: 'top-end',
-              title: '{{ message.tags }}!',
-              text: '{{ message }}',
-              icon: '{{ message.tags }}',
-              showConfirmButton: true,
-              // timer: 1500
-            })
-        </script>
-      {% endfor %}
-    {% endif %}
-    <script>
-    function w3_open() {
-      document.getElementById("main").style.marginLeft = "15%";
-      document.getElementById("mySidebar").style.width = "15%";
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("openNav").style.display = 'none';
-      document.getElementById("closeNav").style.display = "inline-block";
-    }
-    function w3_close() {
-      document.getElementById("main").style.marginLeft = "0%";
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("openNav").style.display = "inline-block";
-      document.getElementById("closeNav").style.display = "none";
-    }
-    </script>
+
+  <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bjs.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/messages.js' %}"></script>
+  {% if messages %}
+    {% for message in messages %}
+      <script type="text/javascript">
+        Swal.fire({
+            position: 'top-end',
+            title: '{{ message.tags }}!',
+            text: '{{ message }}',
+            icon: '{{ message.tags }}',
+            showConfirmButton: true,
+            // timer: 1500
+          })
+      </script>
+    {% endfor %}
+  {% endif %}
+
+  <script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("closeNav").style.display = "block";
+    document.getElementById("openNav").style.display = "none";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("closeNav").style.display = "none";
+    document.getElementById("openNav").style.display = "block";
+  }
+  </script>
+
+
+
+
   </body>
 </html>

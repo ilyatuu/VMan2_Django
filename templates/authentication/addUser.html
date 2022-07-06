@@ -6,7 +6,7 @@
     <div class="row mb-4">
       <div class="col-md-12">
         <div class="title_section">
-          <h1>Manage user</h1>
+          <h1>Manage User</h1>
         </div>
       </div>
     </div>
@@ -67,9 +67,9 @@
     <div class="row">
       <div class="col-md-12">
         <div class="list_content">
-          <h1>ICD10 List</h1>
+          <h1>User List</h1>
           <table class="table table-sm table-striped table-bordered">
-            <thead>
+            <thead class="table-dark">
               <th>#</th>
               <th>Full Name</th>
               <th>Phone</th>
@@ -95,8 +95,8 @@
                     <td>{{ get_user.is_active }}</td>
                     <td>{{ get_user.last_login }}</td>
                     <td>
-                      <a href="#" class="btn btn-sm btn-info">Update</a>
-                      <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                      <a href="#" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
+                      <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Delete</a>
                     </td>
                   </tr>
                 {% endfor %}
