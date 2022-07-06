@@ -3,12 +3,21 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.cache import cache_control
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
 from django.contrib.auth.models import User
 from django.core.mail import EmailMessage, send_mail, EmailMultiAlternatives
 from django.contrib import messages
 from django.conf import settings
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+from .tokens import account_activation_token
+from django.utils.encoding import force_bytes, force_str
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 import threading
+import shortuuid
+
+from .forms import *
 
 # Create your views here.
 # This class used to process email faster
@@ -48,3 +57,92 @@ def loginPage(request):
         'form': form,
     }
     return render(request = request, template_name = "authentication/login.html", context = context)
+
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def addNewUser(request):
+    if request.method == 'POST':
+        form = SignupForm(request.POST or None)
+        form_profile = ProfileForm(request.POST or None)
+        get_email = request.POST.get('email')
+        get_fname = request.POST.get('first_name')
+        get_lname = request.POST.get('last_name')
+        full_name = get_fname+ ' ' + get_lname
+        new_full_name = full_name.capitalize()
+
+        user_token_1 = shortuuid.ShortUUID(shortuuid.get_alphabet())
+        user_generated_token = user_token_1.random(length=100)
+        required_user_token = user_generated_token
+
+        print(form.is_valid())
+        print(form_profile.errors)
+        if form.is_valid() and form_profile.is_valid():
+            user = form.save(commit=False)
+            user.username = get_email
+            user.is_active = False
+
+            if User.objects.filter(email = get_email).exists():
+                messages.error(request, f"This user already taken, please try again")
+                return redirect('authentication:addNewUser')
+            else:
+                user.save()
+                profile = form_profile.save(commit = False)
+                profile.user = user
+                profile.user_token = required_user_token
+                profile.save()
+
+                current_site = get_current_site(request)
+                mail_subject = 'Activate your vman account'
+                html_content = render_to_string('emailFolder/account_activation_email.html', {
+                    'user': new_full_name,
+                    'domain': current_site.domain,
+                    'uid':urlsafe_base64_encode(force_bytes(user.pk)),
+                    'extra_token': required_user_token,
+                    'token':account_activation_token.make_token(user),
+                })
+                text_content = strip_tags(html_content)
+                email_from = settings.EMAIL_HOST_USER
+                to_email = [get_email]
+                email = EmailMultiAlternatives(
+                    mail_subject, text_content, settings.EMAIL_HOST_USER, to_email
+                )
+                email.attach_alternative(html_content, "text/html")
+                EmailThread(email).start()
+                messages.success(request, f"New account has been created")
+                return redirect('authentication:addNewUser')
+                # return HttpResponse('<center>Please confirm your email address to complete the registration</center>')
+        else:
+            messages.warning(request, f"Sorry, failed to create account")
+            return redirect('authentication:addNewUser')
+    else:
+        form = SignupForm()
+        form_profile = ProfileForm()
+        user_token_1 = shortuuid.ShortUUID(shortuuid.get_alphabet())
+        get_users = User.objects.all().order_by('first_name', 'last_name')
+        user_generated_token = user_token_1.random(length=100)
+        required_user_code = user_generated_token
+        print(required_user_code)
+    context = {
+        'form': form,
+        'form_profile': form_profile,
+        'get_users': get_users
+    }
+    return render(request, 'authentication/addUser.html', context = context)
+
+
+
+def activate(request, uidb64, token, ext):
+    try:
+        uid = force_str(urlsafe_base64_decode(uidb64))
+        user = User.objects.get(pk=uid)
+    except(TypeError, ValueError, OverflowError, User.DoesNotExist):
+        user = None
+    if user is not None and account_activation_token.check_token(user, token):
+        user.is_active = True
+        user.save()
+        login(request, user)
+        messages.success(request, f"Your account has been activated.")
+        return redirect('authentication:loginPage')
+    else:
+        return HttpResponse('Activation link is invalid!')

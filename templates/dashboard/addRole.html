@@ -1,0 +1,56 @@
+{% extends '../base.html' %}
+{% block title %}Manage Role{% endblock %}
+{% block content %}
+  <div class="user_role">
+    <div class="container-fluid">
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="title_section">
+            <h1>Manage Role</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form_content">
+            <form class="" action="" method="post">
+              {% csrf_token %}
+              {{ form }}
+              <button type="submit" class="btn" name="save_role">Save Role</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="list_content">
+            <h1>Role List</h1>
+            <table class="table table-sm table-striped table-bordered">
+              <thead class="table-dark">
+                <th>#</th>
+                <th>Role Name</th>
+                <th>Action</th>
+              </thead>
+              <tbody>
+                {% if get_role %}
+                  {% for role in get_role %}
+                    <tr>
+                      <td>{{ forloop.counter }}</td>
+                      <td>{{ role.role_name }}</td>
+                      <td>
+                        <a href="#" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
+                        <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Delete</a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                {% else %}
+                <tr>
+                  <td colspan="3" style="text-align: center">No role added yet.</td>
+                </tr>
+                {% endif %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

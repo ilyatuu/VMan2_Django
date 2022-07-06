@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     ## installed app
+    'phonenumber_field',
     'authentication',
     'dashboard'
 ]

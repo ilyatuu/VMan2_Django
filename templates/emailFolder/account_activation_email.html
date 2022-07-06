@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <br>
+        <div class="title_header">
+          <h1 style="font-size:20px; font-weight:bold;">Welcome to VMAN</h1>
+        </div>
+        <h3>Hi {{ user }}</h3>
+        <p>Your account has been created successfully.</p>
+        <p>To activate your account simply click the button below to verify your account.</p>
+
+        <div class="verify_account_button"
+          style="
+            background:#f2f2f2;
+            text-align:center;
+            padding: 30px 0px;
+          "
+        >
+        <a href="http://{{ domain }}{% url 'authentication:activate' uidb64=uid token=token ext=extra_token %}">Click here to activate account</a>
+        </div>
+
+
+        <p>Best</p>
+        <p>Vman Support team</p>
+
+    </body>
+</html>

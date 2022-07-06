@@ -1,0 +1,13 @@
+asgiref==3.5.2
+Babel==2.10.3
+backports.zoneinfo==0.2.1
+Django==4.0.5
+django-countries==7.3.2
+django-phonenumber-field==6.3.0
+django-utils-six==2.0
+phonenumbers==8.12.50
+python-decouple==3.6
+pytz==2022.1
+shortuuid==1.0.9
+sqlparse==0.4.2
+typing-extensions==4.2.0
