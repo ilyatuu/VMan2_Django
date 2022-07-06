@@ -12,11 +12,20 @@
   </head>
   <body class="dashboard_base">
     {% include './components/header.html' %}
+
+    {% url 'dashboard:dashboardPage' as manage_dashboard %}
+    {% url 'dashboard:manageRole' as manage_role %}
+    {% url 'dashboard:manageICD10Category' as manage_ic10_cat %}
+    {% url 'dashboard:manageICD10' as manage_ic10 %}
+    {% url 'dashboard:manageOrganization' as manage_org %}
+    {% url 'authentication:addNewUser' as manage_user %}
+
+
     <div class="w3-sidebar w3-bar-block w3-collapse w3-card" id="mySidebar">
       <img src="{% static 'images/logo.svg' %}" alt="logo" class="mb-4" width="200px">
       <p><i class="bi bi-speedometer"></i> Dashboard</p>
       <ul>
-        <li><a href="{% url 'dashboard:dashboardPage' %}"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+        <li><a href="{% url 'dashboard:dashboardPage' %}" class="{% if request.path == manage_dashboard %}active{% endif %}"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
         <li><a href="#">Coded VA Data</a></li>
       </ul>
       <p><i class="bi bi-graph-down-arrow"></i> Visualization</p>
@@ -34,13 +43,13 @@
       <p><i class="bi bi-sliders"></i> Settings</p>
       <ul>
         <li><a href="#"><i class="bi bi-person"></i> Update Profile</a></li>
-        <li><a href="{% url 'authentication:addNewUser' %}"><i class="bi bi-people"></i> System Users</a></li>
-        <li><a href="{% url 'dashboard:manageRole' %}"><i class="bi bi-shield"></i> System Role</a></li>
-        <li><a href="{% url 'dashboard:manageICD10Category' %}"><i class="bi bi-bookmarks"></i> ICD10 Category</a></li>
+        <li><a href="{% url 'authentication:addNewUser' %}" class="{% if request.path == manage_user %}active{% endif %}"><i class="bi bi-people"></i> System Users</a></li>
+        <li><a href="{% url 'dashboard:manageRole' %}" class="{% if request.path == manage_role %}active{% endif %}"><i class="bi bi-shield"></i> System Role</a></li>
+        <li><a href="{% url 'dashboard:manageICD10Category' %}" class="{% if request.path == manage_ic10_cat %}active{% endif %}"><i class="bi bi-bookmarks"></i> ICD10 Category</a></li>
         <li><a href="#"><i class="bi bi-activity"></i> Interviewer Data</a></li>
-        <li><a href="{% url 'dashboard:manageOrganization' %}"><i class="bi bi-building"></i> Organization</a></li>
+        <li><a href="{% url 'dashboard:manageOrganization' %}" class="{% if request.path == manage_org %}active{% endif %}"><i class="bi bi-building"></i> Organization</a></li>
         <li><a href="#"><i class="bi bi-cloud-upload"></i> Upload CSMF</a></li>
-        <li><a href="{% url 'dashboard:manageICD10' %}"><i class="bi bi-list-task"></i> ICD10 List</a></li>
+        <li><a href="{% url 'dashboard:manageICD10' %}" class="{% if request.path == manage_ic10 %}active{% endif %}"><i class="bi bi-list-task"></i> ICD10 List</a></li>
         <li><a href="#"><i class="bi bi-gear"></i> Settings</a></li>
         <li><a href="#"><i class="bi bi-cloud-download"></i> Download Data</a></li>
       </ul>

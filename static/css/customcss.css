@@ -82,10 +82,38 @@ body{
 .dashboard_base .w3-sidebar ul li{
   font-size: var(--fontSizeNormal);
   line-height: 30px;
+  width: 100%;
+
 }
 .dashboard_base .w3-sidebar ul li a{
   text-decoration: none;
   font-size: 13px;
+  /* background: var(--grayColor); */
+  /* border-left: 2px solid var(--buttonLoginColor); */
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 100% !important;
+  display: block;
+}
+.dashboard_base .w3-sidebar ul li a:hover{
+  text-decoration: none;
+  font-size: 13px;
+  background: var(--grayColor);
+  /* border-left: 2px solid var(--buttonLoginColor); */
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 100% !important;
+  display: block;
+}
+.dashboard_base .w3-sidebar ul li a.active{
+  text-decoration: none;
+  font-size: 13px;
+  background: var(--grayColor);
+  border-left: 2px solid var(--buttonLoginColor);
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 100% !important;
+  display: block;
 }
 .dashboard_base .w3-sidebar .version_section{
   position: absolute;
