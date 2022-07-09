@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     ## installed app
     'phonenumber_field',
     'authentication',
-    'dashboard'
+    'dashboard',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -82,6 +83,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'vman_v2.wsgi.application'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 myDate = datetime.now()
 PROJECT_TITLE = 'VMAN_V2'

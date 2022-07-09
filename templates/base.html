@@ -19,6 +19,7 @@
     {% url 'dashboard:manageICD10' as manage_ic10 %}
     {% url 'dashboard:manageOrganization' as manage_org %}
     {% url 'authentication:addNewUser' as manage_user %}
+    {% url 'dashboard:manageAuthorization' as manage_authorization %}
 
 
     <div class="w3-sidebar w3-bar-block w3-collapse w3-card" id="mySidebar">
@@ -42,7 +43,8 @@
       </ul>
       <p><i class="bi bi-sliders"></i> Settings</p>
       <ul>
-        <li><a href="#"><i class="bi bi-person"></i> Update Profile</a></li>
+        <li><a href="#"><i class="bi bi-person"></i> User Profile</a></li>
+        <li><a href="{% url 'dashboard:manageAuthorization' %}" class="{% if request.path == manage_authorization %}active{% endif %}"><i class="bi bi-shield-shaded"></i> User Authorization</a></li>
         <li><a href="{% url 'authentication:addNewUser' %}" class="{% if request.path == manage_user %}active{% endif %}"><i class="bi bi-people"></i> System Users</a></li>
         <li><a href="{% url 'dashboard:manageRole' %}" class="{% if request.path == manage_role %}active{% endif %}"><i class="bi bi-shield"></i> System Role</a></li>
         <li><a href="{% url 'dashboard:manageICD10Category' %}" class="{% if request.path == manage_ic10_cat %}active{% endif %}"><i class="bi bi-bookmarks"></i> ICD10 Category</a></li>
