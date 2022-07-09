@@ -16,7 +16,12 @@
             <form class="" action="" method="post">
               {% csrf_token %}
               {{ form }}
-              <button type="submit" class="btn" name="save_role">Save Role</button>
+
+              {% if get_role_to_update %}
+                <button type="submit" class="btn" name="update_role">Update Role</button>
+              {% else %}
+                <button type="submit" class="btn" name="save_role">Save Role</button>
+              {% endif %}
             </form>
           </div>
         </div>
@@ -27,6 +32,8 @@
               <thead class="table-dark">
                 <th>#</th>
                 <th>Role Name</th>
+                <th>Created Date</th>
+                <th>Updated Date</th>
                 <th>Action</th>
               </thead>
               <tbody>
@@ -35,8 +42,10 @@
                     <tr>
                       <td>{{ forloop.counter }}</td>
                       <td>{{ role.role_name }}</td>
+                      <td>{{ role.created_at }}</td>
+                      <td>{{ role.updated_at }}</td>
                       <td>
-                        <a href="#" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
+                        <a href="{% url 'dashboard:updateRole' role.id %}" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
                         <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Delete</a>
                       </td>
                     </tr>

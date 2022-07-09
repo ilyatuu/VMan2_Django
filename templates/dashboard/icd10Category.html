@@ -16,7 +16,12 @@
             <form class="" action="" method="post">
               {% csrf_token %}
               {{ form }}
-              <button type="submit" class="btn" name="save_icd_10_category">Save ICD10 Category</button>
+
+              {% if get_icd10_to_update %}
+                <button type="submit" class="btn" name="update_icd_10_category">Update ICD10 Category</button>
+              {% else %}
+                <button type="submit" class="btn" name="save_icd_10_category">Save ICD10 Category</button>
+              {% endif %}
             </form>
           </div>
         </div>
@@ -27,6 +32,8 @@
               <thead class="table-dark">
                 <th>#</th>
                 <th>ICD10 Category Name</th>
+                <th>Created Date</th>
+                <th>Updated Date</th>
                 <th>Action</th>
               </thead>
               <tbody>
@@ -35,8 +42,10 @@
                     <tr>
                       <td>{{ forloop.counter }}</td>
                       <td>{{ icd_10_cat.icd10_category_name }}</td>
+                      <td>{{ icd_10_cat.created_at }}</td>
+                      <td>{{ icd_10_cat.updated_at }}</td>
                       <td>
-                        <a href="#" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
+                        <a href="{% url 'dashboard:updateICD10Category' icd_10_cat.id %}" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
                         <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Delete</a>
                       </td>
                     </tr>

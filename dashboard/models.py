@@ -45,3 +45,34 @@ class ICD10List(models.Model):
         verbose_name_plural = 'ICD10 List'
     def __str__(self):
         return self.icd10_name
+
+
+class Authorization(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    authorize_user = models.ForeignKey(User, on_delete = models.CASCADE)
+    dashboard = models.BooleanField(default = False)
+    coded_va_data = models.BooleanField(default = False)
+    create_graph = models.BooleanField(default = False)
+    create_table = models.BooleanField(default = False)
+    create_map = models.BooleanField(default = False)
+    concordant_vas = models.BooleanField(default = False)
+    discordant_vas = models.BooleanField(default = False)
+    coding_work = models.BooleanField(default = False)
+    update_profile = models.BooleanField(default = False)
+    system_user = models.BooleanField(default = False)
+    system_role = models.BooleanField(default = False)
+    icd_10_category = models.BooleanField(default = False)
+    interviewer_data = models.BooleanField(default = False)
+    organization = models.BooleanField(default = False)
+    upload_csmf = models.BooleanField(default = False)
+    icd_10_list = models.BooleanField(default = False)
+    settings = models.BooleanField(default = False)
+    download_data = models.BooleanField(default = False)
+    user_authorization = models.BooleanField(default = False)
+    created_at = models.DateTimeField(auto_now_add = True)
+    updated_at = models.DateTimeField(auto_now = True)
+
+    class Meta:
+        verbose_name_plural = 'Authorization List'
+    def __str__(self):
+        return self.authorize_user.email

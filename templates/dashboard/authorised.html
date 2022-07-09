@@ -1,0 +1,107 @@
+{% extends '../base.html' %}
+{% block title %}Manage User Authorization{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <div class="authorization_page">
+    <div class="container-fluid">
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="title_section">
+            <h1>Manage User Authorization</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="form_content">
+            <form class="" action="" method="post">
+              {% csrf_token %}
+              {{ form|crispy }}
+
+              {% if get_role_to_update %}
+                <button type="submit" class="btn" name="update_authorization">Update Authorization</button>
+              {% else %}
+                <button type="submit" class="btn" name="authorize_user">Authorize User</button>
+              {% endif %}
+            </form>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="list_content">
+            <h1>Authorization List</h1>
+            <div class="table-responsive">
+              <table class="table table-sm table-striped table-bordered">
+                <thead class="table-dark">
+                  <th>#</th>
+                  <th>Full Name</th>
+                  <th>Email</th>
+                  <th>Dashboard</th>
+                  <th>Coded VA Data</th>
+                  <th>Create Graph</th>
+                  <th>Create Table</th>
+                  <th>Create Map</th>
+                  <th>Concordant VAS</th>
+                  <th>Discordant VAS</th>
+                  <th>Coding Work</th>
+                  <th>User Profile</th>
+                  <th>System User</th>
+                  <th>System Role</th>
+                  <th>ICD10 Category</th>
+                  <th>Interviewer Data</th>
+                  <th>Organization</th>
+                  <th>Upload CSMF</th>
+                  <th>ICD10 List</th>
+                  <th>Settings</th>
+                  <th>Download Data</th>
+                  <th>User Authorization</th>
+                  <th>Created Date</th>
+                  <th>Updated Date</th>
+                  <th>Action</th>
+                </thead>
+                <tbody>
+                  {% if get_authorization_list %}
+                    {% for authorization in get_authorization_list %}
+                      <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ authorization.authorize_user.first_name }} {{ authorization.authorize_user.last_name }}</td>
+                        <td>{{ authorization.authorize_user.email }}</td>
+                        <td>{{ authorization.dashboard }}</td>
+                        <td>{{ authorization.coded_va_data }}</td>
+                        <td>{{ authorization.create_graph }}</td>
+                        <td>{{ authorization.create_table }}</td>
+                        <td>{{ authorization.create_map }}</td>
+                        <td>{{ authorization.concordant_vas }}</td>
+                        <td>{{ authorization.discordant_vas }}</td>
+                        <td>{{ authorization.coding_work }}</td>
+                        <td>{{ authorization.update_profile }}</td>
+                        <td>{{ authorization.system_user }}</td>
+                        <td>{{ authorization.system_role }}</td>
+                        <td>{{ authorization.icd_10_category }}</td>
+                        <td>{{ authorization.interviewer_data }}</td>
+                        <td>{{ authorization.organization }}</td>
+                        <td>{{ authorization.icd_10_list }}</td>
+                        <td>{{ authorization.settings }}</td>
+                        <td>{{ authorization.download_data }}</td>
+                        <td>{{ authorization.user_authorization }}</td>
+                        <td>{{ authorization.created_at }}</td>
+                        <td>{{ authorization.updated_at }}</td>
+                        <td>
+                          <a href="#" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
+                          <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Delete</a>
+                        </td>
+                      </tr>
+                    {% endfor %}
+                  {% else %}
+                  <tr>
+                    <td colspan="25" style="text-align: center">No authorization done yet.</td>
+                  </tr>
+                  {% endif %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
