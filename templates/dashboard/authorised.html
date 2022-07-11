@@ -17,12 +17,7 @@
             <form class="" action="" method="post">
               {% csrf_token %}
               {{ form|crispy }}
-
-              {% if get_role_to_update %}
-                <button type="submit" class="btn" name="update_authorization">Update Authorization</button>
-              {% else %}
-                <button type="submit" class="btn" name="authorize_user">Authorize User</button>
-              {% endif %}
+              <button type="submit" class="btn" name="authorize_user_button">Authorize User</button>
             </form>
           </div>
         </div>
@@ -65,24 +60,101 @@
                         <td>{{ forloop.counter }}</td>
                         <td>{{ authorization.authorize_user.first_name }} {{ authorization.authorize_user.last_name }}</td>
                         <td>{{ authorization.authorize_user.email }}</td>
-                        <td>{{ authorization.dashboard }}</td>
-                        <td>{{ authorization.coded_va_data }}</td>
-                        <td>{{ authorization.create_graph }}</td>
-                        <td>{{ authorization.create_table }}</td>
-                        <td>{{ authorization.create_map }}</td>
-                        <td>{{ authorization.concordant_vas }}</td>
-                        <td>{{ authorization.discordant_vas }}</td>
-                        <td>{{ authorization.coding_work }}</td>
-                        <td>{{ authorization.update_profile }}</td>
-                        <td>{{ authorization.system_user }}</td>
-                        <td>{{ authorization.system_role }}</td>
-                        <td>{{ authorization.icd_10_category }}</td>
-                        <td>{{ authorization.interviewer_data }}</td>
-                        <td>{{ authorization.organization }}</td>
-                        <td>{{ authorization.icd_10_list }}</td>
-                        <td>{{ authorization.settings }}</td>
-                        <td>{{ authorization.download_data }}</td>
-                        <td>{{ authorization.user_authorization }}</td>
+                        {% if authorization.dashboard %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.coded_va_data %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.create_graph %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.create_table %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.create_map %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.concordant_vas %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.discordant_vas %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.coding_work %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.update_profile %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.system_user %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.system_role %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.icd_10_category %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.interviewer_data %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.organization %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.upload_csmf %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.icd_10_list %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.settings %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.download_data %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.user_authorization %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
                         <td>{{ authorization.created_at }}</td>
                         <td>{{ authorization.updated_at }}</td>
                         <td>

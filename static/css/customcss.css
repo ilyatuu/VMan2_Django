@@ -51,6 +51,7 @@
   --whiteColor: #ffffff;
   --blueColor: #3399ff;
   --redColor: #ff0000;
+  --greenColor: #228B22;
   --fontSizeH1: 50px;
   --fontSizeH2: 30px;
   --fontSizeH3: 18px;
@@ -585,7 +586,19 @@ table tbody tr td{
   font-family: var(--fontFamily);
   margin-bottom: 10px;
 }
-
+.authorization_page table tr td{
+  text-align: center;
+}
+table tr td i.bi-check{
+  color: var(--greenColor);
+  font-weight: bold;
+  font-size: 18px;
+}
+table tr td i.bi-x{
+  color: var(--redColor);
+  font-weight: bold;
+  font-size: 18px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

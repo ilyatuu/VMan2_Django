@@ -157,13 +157,18 @@ def manageICD10(request):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def manageAuthorization(request):
-    if request.method == "POST" and "authorize_user" in request.POST:
+    if request.method == "POST" and "authorize_user_button" in request.POST:
         form = AuthorizationForm(request.POST or None)
+        # print(form.data['authorize_user'])
         if form.is_valid():
             form.save()
             messages.success(request, f"User authorised successfully successfully")
             return redirect('dashboard:manageAuthorization')
-    form = AuthorizationForm(request.POST or None)
+        else:
+            messages.error(request, f"User authorization failed")
+            # print(form.errors)
+            return redirect('dashboard:manageAuthorization')
+    form = AuthorizationForm()
     get_authorization_list = Authorization.objects.all().order_by('authorize_user')
     template_name = 'dashboard/authorised.html'
     context = {
