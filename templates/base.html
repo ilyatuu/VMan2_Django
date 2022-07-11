@@ -19,6 +19,7 @@
     {% url 'dashboard:manageICD10' as manage_ic10 %}
     {% url 'dashboard:manageOrganization' as manage_org %}
     {% url 'authentication:addNewUser' as manage_user %}
+    {% url 'authentication:manageCSMFDataset' as manage_csmf_dataset %}
     {% url 'dashboard:manageAuthorization' as manage_authorization %}
 
 
@@ -50,7 +51,7 @@
         <li><a href="{% url 'dashboard:manageICD10Category' %}" class="{% if request.path == manage_ic10_cat %}active{% endif %}"><i class="bi bi-bookmarks"></i> ICD10 Category</a></li>
         <li><a href="#"><i class="bi bi-activity"></i> Interviewer Data</a></li>
         <li><a href="{% url 'dashboard:manageOrganization' %}" class="{% if request.path == manage_org %}active{% endif %}"><i class="bi bi-building"></i> Organization</a></li>
-        <li><a href="#"><i class="bi bi-cloud-upload"></i> Upload CSMF</a></li>
+        <li><a href="{% url 'dashboard:manageCSMFDataset' %}" class="{% if request.path == manage_csmf_dataset %}active{% endif %}"><i class="bi bi-cloud-upload"></i> Upload CSMF</a></li>
         <li><a href="{% url 'dashboard:manageICD10' %}" class="{% if request.path == manage_ic10 %}active{% endif %}"><i class="bi bi-list-task"></i> ICD10 List</a></li>
         <li><a href="#"><i class="bi bi-gear"></i> Settings</a></li>
         <li><a href="#"><i class="bi bi-cloud-download"></i> Download Data</a></li>

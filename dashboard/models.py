@@ -46,6 +46,16 @@ class ICD10List(models.Model):
     def __str__(self):
         return self.icd10_name
 
+class CSMFData(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    upload_csmf_dataset = models.FileField()
+    created_at = models.DateTimeField(auto_now_add = True)
+    updated_at = models.DateTimeField(auto_now = True)
+    class Meta:
+        verbose_name_plural = 'CSMF Data'
+    def __str__(self):
+        return self.id
+
 
 class Authorization(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)

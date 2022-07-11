@@ -29,6 +29,12 @@ class ICD10ListForm(forms.ModelForm):
         fields = '__all__'
         exclude = ['created_at', 'updated_at']
 
+class CSMFDataForm(forms.ModelForm):
+    class Meta:
+        model = CSMFData
+        fields = '__all__'
+        exclude = ['created_at', 'updated_at']
+
 class AuthorizationForm(forms.ModelForm):
     class Meta:
         model = Authorization

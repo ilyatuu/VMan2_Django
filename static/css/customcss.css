@@ -541,6 +541,43 @@ table tbody tr td{
 
 
 
+/* csmf_dataset_page */
+.csmf_dataset_page{
+  padding: 100px 0px;
+}
+.csmf_dataset_page .title_section h1{
+  margin: auto;
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.csmf_dataset_page .form_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.csmf_dataset_page .form_content form input[type='file']{
+  display: block;
+  width: 100%;
+  outline: none;
+  height: 50px;
+  background: var(--whiteColor);
+  border: 2px solid var(--grayColor);
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.csmf_dataset_page .form_content form button{
+  display: block;
+  background: var(--blueColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 50px;
+  padding: 10px 30px;
+}
+
+
 /* authorization_page */
 .authorization_page{
   padding: 100px 0px;
