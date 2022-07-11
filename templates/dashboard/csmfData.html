@@ -1,0 +1,29 @@
+{% extends '../base.html' %}
+{% block title %}CSMF Data Processing{% endblock %}
+{% block content %}
+  <div class="csmf_dataset_page">
+    <div class="container-fluid">
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="title_section">
+            <h1>Process CSMF Dataset</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form_content">
+            <form class="" action="" method="post" enctype="multipart/form-data">
+              <small><code>Note: The uploaded file should be in a CSV format only</code></small>
+              {% csrf_token %}
+              {{ form }}
+              <button type="submit" class="btn" name="process_csmf_dataset_button">Process CSMF Dataset</button>
+            </form>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
