@@ -156,6 +156,29 @@ def manageICD10(request):
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
+def updateICD10List(request, id):
+    get_icd10_list_to_update = get_object_or_404(ICD10List, pk = id)
+    form = ICD10ListForm(request.POST or None, instance = get_icd10_list_to_update)
+    if request.method == "POST" and "update_icd_10" in request.POST:
+        form = ICD10ListForm(request.POST or None, instance = get_icd10_list_to_update)
+        if form.is_valid():
+            form.save()
+            messages.success(request, f"ICD10 updated successfully")
+            return redirect('dashboard:manageICD10')
+    get_icd10_list = ICD10List.objects.all().order_by('icd10_code')
+    template_name = 'dashboard/icd10.html'
+    context = {
+        'form': form,
+        'get_icd10_list': get_icd10_list,
+        'get_icd10_list_to_update': get_icd10_list_to_update
+    }
+    return render(request, template_name, context)
+
+
+
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
 def manageAuthorization(request):
     if request.method == "POST" and "authorize_user_button" in request.POST:
         form = AuthorizationForm(request.POST or None)
@@ -168,7 +191,7 @@ def manageAuthorization(request):
             messages.error(request, f"User authorization failed")
             # print(form.errors)
             return redirect('dashboard:manageAuthorization')
-    form = AuthorizationForm()
+    form = AuthorizationForm(request.POST or None)
     get_authorization_list = Authorization.objects.all().order_by('authorize_user')
     template_name = 'dashboard/authorised.html'
     context = {
