@@ -50,7 +50,7 @@
   --mainColor: #000;
   --whiteColor: #ffffff;
   --blueColor: #3399ff;
-  --redColor: #ff0000;
+  --redColor: #C30000;
   --greenColor: #228B22;
   --fontSizeH1: 50px;
   --fontSizeH2: 30px;
@@ -275,6 +275,27 @@ table tbody tr td{
   white-space:nowrap;
 }
 
+
+.modal-content{
+  border-radius: 0px !important;
+  border: none;
+}
+.modal a{
+  outline: none;
+  border: none;
+}
+.modal-footer .cancel_btn{
+  background: var(--blueColor);
+  color: var(--whiteColor);
+  font-weight: var(--fontBold);
+  /* font-family: var(--fontFamily); */
+}
+.modal-footer .proceed_btn{
+  background: var(--redColor);
+  color: var(--whiteColor);
+  font-weight: var(--fontBold);
+  /* font-family: var(--fontFamily); */
+}
 
 .login_page .content form button{
   background: var(--buttonLoginColor);

@@ -79,6 +79,9 @@ class Authorization(models.Model):
     settings = models.BooleanField(default = False)
     download_data = models.BooleanField(default = False)
     user_authorization = models.BooleanField(default = False)
+    update_access = models.BooleanField(default = False)
+    delete_access = models.BooleanField(default = False)
+    view_access = models.BooleanField(default = False)
     created_at = models.DateTimeField(auto_now_add = True)
     updated_at = models.DateTimeField(auto_now = True)
 

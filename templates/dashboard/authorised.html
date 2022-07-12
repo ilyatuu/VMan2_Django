@@ -12,16 +12,20 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
           <div class="form_content">
             <form class="" action="" method="post">
               {% csrf_token %}
               {{ form|crispy }}
-              <button type="submit" class="btn" name="authorize_user_button">Authorize User</button>
+              {% if get_action_to_update %}
+                <button type="submit" class="btn" name="update_authorize_user_button">Update User Authorization</button>
+              {% else %}
+                <button type="submit" class="btn" name="authorize_user_button">Authorize User</button>
+              {% endif %}
             </form>
           </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
           <div class="list_content">
             <h1>Authorization List</h1>
             <div class="table-responsive">
@@ -49,6 +53,9 @@
                   <th>Settings</th>
                   <th>Download Data</th>
                   <th>User Authorization</th>
+                  <th>Update Access</th>
+                  <th>Delete Access</th>
+                  <th>View Access</th>
                   <th>Created Date</th>
                   <th>Updated Date</th>
                   <th>Action</th>
@@ -58,8 +65,8 @@
                     {% for authorization in get_authorization_list %}
                       <tr>
                         <td>{{ forloop.counter }}</td>
-                        <td>{{ authorization.authorize_user.first_name }} {{ authorization.authorize_user.last_name }}</td>
-                        <td>{{ authorization.authorize_user.email }}</td>
+                        <td style="text-align:left"><small>{{ authorization.authorize_user.first_name|title }} {{ authorization.authorize_user.last_name|title }}</small></td>
+                        <td style="text-align:left"><small>{{ authorization.authorize_user.email }}</small></td>
                         {% if authorization.dashboard %}
                           <td><i class="bi bi-check"></i></td>
                         {% else %}
@@ -155,13 +162,45 @@
                         {% else %}
                           <td><i class="bi bi-x"></i></td>
                         {% endif %}
+                        {% if authorization.update_access %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.delete_access %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
+                        {% if authorization.view_access %}
+                          <td><i class="bi bi-check"></i></td>
+                        {% else %}
+                          <td><i class="bi bi-x"></i></td>
+                        {% endif %}
                         <td>{{ authorization.created_at }}</td>
                         <td>{{ authorization.updated_at }}</td>
                         <td>
-                          <a href="#" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
-                          <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Delete</a>
+                          <a href="{% url 'dashboard:updateAuthorization' authorization.id %}" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
+                          <a href="#" class="btn btn-sm delete" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{authorization.id}}"><i class="bi bi-trash"></i> Delete</a>
                         </td>
                       </tr>
+
+                      <!-- Delete Modal -->
+                      <div class="modal fade" id="staticBackdrop{{authorization.id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel{{authorization.id}}" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p>Are sure you want to delete user {{ authorization.authorize_user.first_name|title }} {{ authorization.authorize_user.last_name|title }}?</p>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="#" class="btn cancel_btn" data-bs-dismiss="modal">Close</a>
+                              <a href="{% url 'dashboard:deleteAuthorization' authorization.id %}" class="btn proceed_btn">Proceed to delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
                     {% endfor %}
                   {% else %}
                   <tr>

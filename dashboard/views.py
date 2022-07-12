@@ -208,7 +208,7 @@ def manageAuthorization(request):
         # print(form.data['authorize_user'])
         if form.is_valid():
             form.save()
-            messages.success(request, f"User authorised successfully successfully")
+            messages.success(request, f"User authorised successfully")
             return redirect('dashboard:manageAuthorization')
         else:
             messages.error(request, f"User authorization failed")
@@ -222,3 +222,33 @@ def manageAuthorization(request):
         'get_authorization_list': get_authorization_list
     }
     return render(request, template_name, context)
+
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def updateAuthorization(request, id):
+    get_action_to_update = get_object_or_404(Authorization, pk = id)
+    form = AuthorizationForm(request.POST or None, instance = get_action_to_update)
+    if request.method == "POST":
+        form = AuthorizationForm(request.POST or None, instance = get_action_to_update)
+        if form.is_valid():
+            form.save()
+            messages.success(request, f"User authorization updated successfully")
+            return redirect('dashboard:manageAuthorization')
+    get_authorization_list = Authorization.objects.all().order_by('authorize_user')
+    template_name = 'dashboard/authorised.html'
+    context = {
+        'form': form,
+        'get_authorization_list': get_authorization_list,
+        'get_action_to_update': get_action_to_update
+    }
+    return render(request, template_name, context)
+
+
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def deleteAuthorization(request, id):
+    get_action_to_delete = get_object_or_404(Authorization, pk = id)
+    get_action_to_delete.delete()
+    messages.success(request, f"User authorization deleted successfully")
+    return redirect('dashboard:manageAuthorization')
