@@ -199,6 +199,14 @@ def manageCSMFDataset(request):
     return render(request, template_name, context)
 
 
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+@login_required
+def manageCodingWork(request):
+    template_name = 'dashboard/codingWork.html'
+    context = {}
+    return render(request, template_name, context)
+
+
 
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
