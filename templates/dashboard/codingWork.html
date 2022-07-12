@@ -1,0 +1,44 @@
+{% extends '../base.html' %}
+{% block title %}Manage Coding Work{% endblock %}
+{% block content %}
+<div class="coding_work_page">
+  <div class="container-fluid">
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <div class="title_section">
+          <h1>Manage Coding Work</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="list_content">
+          <h1>Coding Work</h1>
+          <table class="table table-sm table-striped table-bordered">
+            <thead class="table-dark">
+              <th>#</th>
+              <th>Coder Name</th>
+              <th>Assigned</th>
+              <th>Coded</th>
+              <th>Pending</th>
+              <th>Concordant</th>
+              <th>Discordant</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ forloop.counter }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

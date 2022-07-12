@@ -16,5 +16,6 @@ urlpatterns = [
     path('csmf-dataset-processing/', views.manageCSMFDataset, name = 'manageCSMFDataset'),
     path('user-authorization/', views.manageAuthorization, name = 'manageAuthorization'),
     path('user-authorization/update/<str:id>/', views.updateAuthorization, name = 'updateAuthorization'),
-    path('user-authorization/delete/<str:id>/', views.deleteAuthorization, name = 'deleteAuthorization')
+    path('user-authorization/delete/<str:id>/', views.deleteAuthorization, name = 'deleteAuthorization'),
+    path('coding-work/', views.manageCodingWork, name = 'manageCodingWork'),
 ]

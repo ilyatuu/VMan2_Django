@@ -308,6 +308,32 @@ table tbody tr td{
 }
 
 
+/* user_role */
+.coding_work_page{
+  padding: 100px 0px;
+}
+.coding_work_page .title_section h1{
+  margin: auto;
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.coding_work_page .list_content{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.coding_work_page .list_content h1{
+  margin: auto;
+  font-size: var(--fontSizeH3);
+  font-weight: var(--fontBold);
+  margin-bottom: 30px;
+}
+
+
+
+
+
 
 /* user_role */
 .user_role{
@@ -350,6 +376,7 @@ table tbody tr td{
   margin: auto;
   font-size: var(--fontSizeH3);
   font-weight: var(--fontBold);
+  margin-bottom: 30px;
 }
 
 
@@ -394,6 +421,7 @@ table tbody tr td{
   margin: auto;
   font-size: var(--fontSizeH3);
   font-weight: var(--fontBold);
+  margin-bottom: 30px;
 }
 
 /* organization_page */
@@ -437,6 +465,7 @@ table tbody tr td{
   margin: auto;
   font-size: var(--fontSizeH3);
   font-weight: var(--fontBold);
+  margin-bottom: 30px;
 }
 
 /* icd10_page */
@@ -484,6 +513,7 @@ table tbody tr td{
   margin: auto;
   font-size: var(--fontSizeH3);
   font-weight: var(--fontBold);
+  margin-bottom: 30px;
 }
 
 /* add_user_page */
@@ -557,7 +587,7 @@ table tbody tr td{
   font-size: var(--fontSizeH3);
   font-weight: var(--fontBold);
   font-family: var(--fontFamily);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 
@@ -642,7 +672,7 @@ table tbody tr td{
   font-size: var(--fontSizeH3);
   font-weight: var(--fontBold);
   font-family: var(--fontFamily);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .authorization_page table tr td{
   text-align: center;
