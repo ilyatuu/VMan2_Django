@@ -1,0 +1,141 @@
+{% extends '../base.html' %}
+{% block title %}VA Records{% endblock %}
+{% block content %}
+<div class="va_records_page">
+  <div class="container-fluid">
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <div class="title_section">
+          <h1>VA Records</h1>
+          <div class="table-responsive">
+            <table class="table table-bordered table-sm">
+              <thead class="table-dark">
+                <tr>
+                  <th>Rceord ID</th>
+                  <th>Region</th>
+                  <th>District</th>
+                  <th>Ward</th>
+                  <th>Interviewer</th>
+                  <th>Date of Interview</th>
+                  <!-- <th>Minutes</th> -->
+                  <th>Latitude</th>
+                  <th>Longitude</th>
+                  <th>GPS Accuracy</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for my_data in crvs_data %}
+                  <tr>
+                    <td>{{ my_data.deviceid }}</td>
+                    <td>{{ my_data.get_region }}</td>
+                    <td>{{ my_data.get_district }}</td>
+                    <td>{{ my_data.get_ward }}</td>
+                    <td>{{ my_data.get_interviwer_name }}</td>
+                    <td>{{ my_data.get_interview_date }}</td>
+                    <!-- <td>X</td> -->
+                    <td>{{ my_data.get_gps_latitude }}</td>
+                    <td>{{ my_data.get_gps_longitude }}</td>
+                    <td>{{ my_data.get_gps_location }}</td>
+                    <td>
+                      <a href="#" class="btn btn-sm update" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{ my_data.get_serial_number }}"><i class="bi bi-eye-fill"></i> View</a>
+                    </td>
+                  </tr>
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop{{ my_data.get_serial_number }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel{{ my_data.get_serial_number }}" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel{{ my_data.get_serial_number }}">Display VA Document</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-7">
+                                <div class="content">
+
+                                  <div class="card" style="width: 100%;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">VA Document</h5>
+                                      <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                              <div class="col-md-5">
+                                <div class="content">
+                                  <div class="card" style="width: 100%;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Summary</h5>
+
+                                      <p class="card-text"><strong>VA ID: </strong> {{ my_data.deviceid }}</p>
+                                      <p class="card-text"><strong>VA Type: </strong></p>
+                                      <p class="card-text"><strong>D2 Serial No: </strong>{{ my_data.get_serial_number }}</p>
+                                      <p class="card-text"><strong>Interviewer Name: </strong>{{ my_data.get_interviwer_name }}</p>
+                                      <p class="card-text"><strong>Interviewer Phone: </strong>{{ my_data.get_interviwer_phone }}</p>
+                                      <p class="card-text"><strong>Interviewer ID: </strong>{{ my_data.get_interviwer_national_id }}</p>
+                                      <p class="card-text"><strong>Respondent Name: </strong></p>
+                                      <p class="card-text"><strong>Respondent Phone: </strong></p>
+                                      <p class="card-text"><strong>Interview Date: </strong>{{ my_data.get_interview_date }}</p>
+                                      <p class="card-text"><strong>Interview Start: </strong>{{ my_data.get_start_time }}</p>
+                                      <p class="card-text"><strong>Interview End: </strong>{{ my_data.get_end_time }}</p>
+                                      <p class="card-text"><strong>Interview Time: </strong></p>
+                                      <!-- <p class="card-text"><strong>GPS Latitude: </strong></p>
+                                      <p class="card-text"><strong>GPS Longitude: </strong></p>
+                                      <p class="card-text"><strong>GPS Accuracy: </strong></p> -->
+                                      <p class="card-text"><strong>Narattive: </strong> {{ my_data.get_death_narrative }}</p>
+                                      <div class="button_map">
+                                        <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#mapModalView{{ my_data.get_serial_number }}-{{ my_data.get_serial_number }}"><i class="bi bi-geo-alt-fill"></i> View on map</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- Map Modal -->
+                  <div class="modal fade" id="mapModalView{{ my_data.get_serial_number }}-{{ my_data.get_serial_number }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mapModalViewLabel{{ my_data.deviceid }}-{{ my_data.deviceid }}" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="mapModalViewLabel{{ my_data.get_serial_number }}-{{ my_data.get_serial_number }}">VA ID: <code>{{ my_data.deviceid }}</code></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          This modal for Map only.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

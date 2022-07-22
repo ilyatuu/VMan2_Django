@@ -18,7 +18,8 @@
                 {{ form.username }}
               </div>
               <div class="username_field_right">
-                <i class="bi bi-person-fill"></i>
+                <!-- <i class="bi bi-person-fill"></i> -->
+                <img src="{% static 'images/user.png' %}" alt="">
               </div>
             </div>
             <label for="">Password:</label>
@@ -27,7 +28,8 @@
                 {{ form.password }}
               </div>
               <div class="username_field_right">
-                <i class="bi bi-lock-fill"></i>
+                <!-- <i class="bi bi-lock-fill"></i> -->
+                <img src="{% static 'images/lock.png' %}" alt="">
               </div>
             </div>
             <input type="hidden" name="next" value="{{ request.GET.next }}"/>
