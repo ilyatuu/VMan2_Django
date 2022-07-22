@@ -55,7 +55,8 @@ def dashboardPage(request):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required
 def vaRecordsPage(request):
-    get_data_from_crvs = SubmissionDefs.objects.all()[:10]
+    # get_data_from_crvs = SubmissionDefs.objects.all()[:10]
+    get_data_from_crvs = SubmissionDefs.objects.all()
     my_crvs_data = []
     print(type(get_data_from_crvs))
     #
