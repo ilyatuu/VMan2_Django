@@ -47,6 +47,7 @@
 
 :root{
   --fontFamily: 'Montserrat', sans-serif;
+  /* --fontFamily: 'Helvetica Neue',Helvetica,Arial,sans-serif; */
   --mainColor: #000;
   --whiteColor: #ffffff;
   --blueColor: #3399ff;
@@ -152,12 +153,115 @@ body{
 .dashbaord_page{
   padding: 100px 0px;
 }
+.dashbaord_page .title_section{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
 .dashbaord_page .title_section h1{
   margin: auto;
   font-size: var(--fontSizeH2);
   font-weight: var(--fontBold);
   font-family: var(--fontFamily);
+  margin-bottom: 30px;
 }
+
+.va_records_page{
+  padding: 100px 0px;
+}
+.va_records_page .title_section{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.va_records_page .title_section h1{
+  margin: auto;
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+  margin-bottom: 30px;
+}
+.va_records_page .modal-content{
+  border: none;
+  border-radius: 0px;
+}
+.va_records_page .modal-content .summary{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+.va_records_page .modal-content .summary_section{
+
+}
+.va_records_page .modal-content .modal-header{
+  border: none;
+  background: var(--blueColor);
+  border-radius: 0px;
+  color: var(--whiteColor);
+}
+.va_records_page .modal-content .modal-header h5{
+  font-size: 15px;
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.va_records_page .modal-content .modal-header button{
+  font-size: 13px;
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+  color: var(--whiteColor);
+}
+.va_records_page .modal-content .table-responsive{
+  background: var(--whiteColor);
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* .va_records_page .modal-content .table-responsive table{
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 310px;
+}
+.va_records_page .modal-content .table-responsive table td{
+  border: solid 1px #666;
+  width: 110px;
+  word-wrap: break-word;
+} */
+/* .va_records_page .modal-content .table-responsive h1{
+  font-size: 15px;
+  font-weight: var(--fontBold);
+  border-bottom: 2px solid var(--blueColor);
+  background: var(--grayColor);
+  padding: 20px;
+  padding-bottom: 10px;
+} */
+/* .va_records_page .modal-content .summary h1{
+  font-size: 15px;
+  font-weight: var(--fontBold);
+  border-bottom: 2px solid var(--blueColor);
+  background: var(--grayColor);
+  padding: 20px;
+  padding-bottom: 10px;
+} */
+.va_records_page .modal-content .modal-body .content h5{
+  font-size: 15px;
+  font-weight: var(--fontBold);
+  color: var(--mainColor);
+}
+.va_records_page .modal-content .modal-body .content .card{
+  height: 500px;
+  overflow-y: scroll;
+}
+.va_records_page .modal-content .modal-body .content .card p{
+  font-size: 12px;
+  color: var(--blueColor);
+
+}
+.va_records_page .modal-content .modal-body .content .card p strong{
+  color: var(--mainColor);
+  /* font-family: var(--fontFamily); */
+}
+
+
+
 
 
 .login_page{
@@ -205,6 +309,9 @@ body{
 .login_page .content.left form .username_field .username_field_right{
   width: 8%;
   text-align: var(--justifyCenter);
+}
+.login_page .content.left form .username_field .username_field_right img{
+  width: 30px;
 }
 
 .login_page .content.right{
@@ -257,22 +364,33 @@ select{
 }
 
 table a.update{
-  border: 1px solid var(--blueColor);
+  /* border: 1px solid var(--blueColor); */
   border-radius: 20px;
   padding: 5px 20px;
   color: var(--blueColor);
 }
 table a.delete{
-  border: 1px solid var(--redColor);
+  /* border: 1px solid var(--redColor); */
   border-radius: 20px;
   padding: 5px 20px;
   color: var(--redColor);
 }
 table thead tr th{
   white-space:nowrap;
+  font-size: 14px;
+  font-weight: var(--fontBold);
+  /* font-family: var(--fontFamily); */
 }
 table tbody tr td{
   white-space:nowrap;
+  /* font-family: var(--fontFamily); */
+  font-size: 14px;
+}
+table tbody tr th{
+  white-space:nowrap;
+  font-size: 14px;
+  font-weight: var(--fontBold);
+  /* font-family: var(--fontFamily); */
 }
 
 

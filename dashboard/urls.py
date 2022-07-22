@@ -5,6 +5,7 @@ from . import views
 app_name = 'dashboard'
 urlpatterns = [
     path('', views.dashboardPage, name = 'dashboardPage'),
+    path('va-records/', views.vaRecordsPage, name = 'vaRecordsPage'),
     path('user-role/', views.manageRole, name = 'manageRole'),
     path('user-role/update/<str:id>/', views.updateRole, name = 'updateRole'),
     path('icd-10-category/', views.manageICD10Category, name = 'manageICD10Category'),

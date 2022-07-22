@@ -68,45 +68,57 @@
       <div class="col-md-12">
         <div class="list_content">
           <h1>User List</h1>
-          <table class="table table-sm table-striped table-bordered">
-            <thead class="table-dark">
-              <th>#</th>
-              <th>Full Name</th>
-              <th>Phone</th>
-              <th>Role</th>
-              <th>Username</th>
-              <th>Password</th>
-              <th>Organization</th>
-              <th>Is Active</th>
-              <th>Last Login</th>
-              <th>Action</th>
-            </thead>
-            <tbody>
-              {% if get_users %}
-                {% for get_user in get_users %}
-                  <tr>
-                    <td>{{ forloop.counter }}</td>
-                    <td>{{ get_user.first_name|title }} {{ get_user.last_name|title }}</td>
-                    <td>{{ get_user.profile.mobile_number }}</td>
-                    <td>{{ get_user.profile.user_role }}</td>
-                    <td>{{ get_user.username }}</td>
-                    <td>********</td>
-                    <td>{{ get_user.profile.organization }}</td>
-                    <td>{{ get_user.is_active }}</td>
-                    <td>{{ get_user.last_login }}</td>
-                    <td>
-                      <a href="#" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
-                      <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Delete</a>
-                    </td>
-                  </tr>
-                {% endfor %}
-              {% else %}
-              <tr>
-                <td colspan="9" style="text-align: center">No user added yet.</td>
-              </tr>
-              {% endif %}
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="table table-sm table-striped table-bordered">
+              <thead class="table-dark">
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Phone</th>
+                <th>Role</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Organization</th>
+                <th>User Status</th>
+                <th>Last Login</th>
+                <th>Action</th>
+              </thead>
+              <tbody>
+                {% if get_users %}
+                  {% for get_user in get_users %}
+                    <tr>
+                      <td>{{ forloop.counter }}</td>
+                      <td>{{ get_user.first_name|title }} {{ get_user.last_name|title }}</td>
+                      <td>{{ get_user.profile.mobile_number }}</td>
+                      <td>{{ get_user.profile.user_role }}</td>
+                      <td>{{ get_user.username }}</td>
+                      <td>********</td>
+                      <td>{{ get_user.profile.organization }}</td>
+                      {% if get_user.is_active %}
+                        <td style="color: var(--greenColor); font-weight:bold">Activated</td>
+                      {% else %}
+                        <td style="color: var(--redColor); font-weight:bold">Deactivated</td>
+                      {% endif %}
+
+                      <td>{{ get_user.last_login }}</td>
+                      <td>
+                        <a href="#" class="btn btn-sm update"><i class="bi bi-pencil-square"></i> Update</a>
+                        <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Delete</a>
+                        {% if get_user.is_active %}
+                          <a href="#" class="btn btn-sm delete"><i class="bi bi-trash"></i> Deactivate user</a>
+                        {% else %}
+                          <a href="#" class="btn btn-sm success"><i class="bi bi-trash"></i> Activate user</a>
+                        {% endif %}
+                      </td>
+                    </tr>
+                  {% endfor %}
+                {% else %}
+                <tr>
+                  <td colspan="9" style="text-align: center">No user added yet.</td>
+                </tr>
+                {% endif %}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
