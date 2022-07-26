@@ -259,6 +259,43 @@ body{
   color: var(--mainColor);
   /* font-family: var(--fontFamily); */
 }
+.va_records_page .modal-content .modal-body .content .card .va_data{
+  /* background: var(--grayColor); */
+  padding: 2px 0px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid var(--grayColor);
+}
+.va_records_page .modal-content .modal-body .content .card .va_data .label_and_response{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.va_records_page .modal-content .modal-body .content .card .va_data .label_and_response:nth-child(odd){
+  background: var(--grayColor);
+}
+.va_records_page .modal-content .modal-body .content .card .va_data .label_and_response p.id_number{
+  color: var(--mainColor);
+  font-weight: bold;
+}
+.va_records_page .modal-content .modal-body .content .card .va_data .label_and_response p.id_number span{
+  color: var(--whiteColor);
+  font-weight: bold;
+}
+.va_records_page .modal-content .modal-body .content .card .va_data .label_and_response p.label{
+  color: var(--mainColor);
+  font-weight: bold;
+}
+.va_records_page .modal-content .modal-body .content .card .va_data .label_and_response p.response{
+  color: var(--mainColor);
+  font-weight: bold;
+}
+.va_records_page .modal-content .modal-body .content .card .va_data .label_and_response p.response span{
+  color: var(--blueColor);
+  font-weight: bold;
+}
+.va_records_page .modal-content .modal-body .content .card .va_data .label_and_response p{
+  margin-left: 10px;
+}
 
 
 

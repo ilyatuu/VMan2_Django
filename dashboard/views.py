@@ -82,9 +82,18 @@ def vaRecordsPage(request):
         get_interviwer_name = soup.find('Id10010').text
         get_interviwer_phone = soup.find("Id10010Phone").text
         get_interviwer_national_id = soup.find("Id10010c").text
+        get_respondent_name = soup.find('Id10007').text
+        get_respondent_sex = soup.find('Id10007a').text
+        get_respondent_phone = soup.find('Id10007Phone').text
+
         get_gps_space_string = soup.find('gps_location').text
         get_gps_location_in_list = list(get_gps_space_string.split(" "))
         get_death_narrative = soup.find('Id10476').text
+        get_region_of_high_hiv = soup.find('Id10002').text
+        get_region_of_high_maralia = soup.find('Id10003').text
+        get_season_did_she_or_he_die = soup.find('Id10004').text
+        get_region_where_this_interview_happening = soup.find('Id10005R').text
+        get_district_where_this_interview_happening = soup.find('Id10005D').text
         # get_gps_location_in_list = [get_gps_space_string]
 
 
@@ -103,10 +112,18 @@ def vaRecordsPage(request):
             'get_interviwer_name': get_interviwer_name,
             'get_interviwer_phone': get_interviwer_phone,
             'get_interviwer_national_id': get_interviwer_national_id,
+            'get_respondent_name': get_respondent_name,
+            'get_respondent_sex': get_respondent_sex,
+            'get_respondent_phone': get_respondent_phone,
             'get_gps_latitude': get_gps_location_in_list[0],
             'get_gps_longitude': get_gps_location_in_list[1],
             'get_gps_location': get_gps_location_in_list[-1],
-            'get_death_narrative': get_death_narrative
+            'get_death_narrative': get_death_narrative,
+            'get_region_of_high_hiv': get_region_of_high_hiv,
+            'get_region_of_high_maralia': get_region_of_high_maralia,
+            'get_season_did_she_or_he_die': get_season_did_she_or_he_die,
+            'get_region_where_this_interview_happening': get_region_where_this_interview_happening,
+            'get_district_where_this_interview_happening': get_district_where_this_interview_happening,
         }
         my_crvs_data.append(my_data_dict)
     # print(my_crvs_data)
