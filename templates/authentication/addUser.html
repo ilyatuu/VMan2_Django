@@ -29,6 +29,16 @@
                 <label for="">{{ form_profile.nationality.label }}</label>
                 {{ form_profile.nationality}}
               </div>
+              <div class="col-md-2">
+                <label for="">Region</label>
+                <select class="user_access_region" name="">
+                  <option value="">Access region</option>
+                  <option value="All Regions">All regions</option>
+                  {% for region in crvs_data %}
+                    <option value="{{ region.get_region }}">{{ region.get_region|title }}</option>
+                  {% endfor %}
+                </select>
+              </div>
               <div class="col-md-3">
                 <label for="">{{ form_profile.mobile_number.label }}</label>
                 <div class="phone_number_selection">
