@@ -16,8 +16,12 @@ from django.utils.encoding import force_bytes, force_str
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 import threading
 import shortuuid
-
+from dashboard.models_crvs import *
 from .forms import *
+import xmltodict
+import xml.etree.ElementTree as ET
+from bs4 import BeautifulSoup
+from itertools import chain
 
 # Create your views here.
 # This class used to process email faster
@@ -116,6 +120,31 @@ def addNewUser(request):
             messages.warning(request, f"Sorry, failed to create account")
             return redirect('authentication:addNewUser')
     else:
+        get_data_from_crvs = SubmissionDefs.objects.all()
+        my_crvs_data = []
+        for xml_data in get_data_from_crvs:
+            new_data_xml = xml_data.xml
+            soup = BeautifulSoup(new_data_xml,"xml")
+            get_region = soup.find('Id10005R').text
+
+            my_data_dict = {
+                'get_region': get_region,
+            }
+            my_crvs_data.append(my_data_dict)
+        print(my_crvs_data)
+        # print(my_data_dict)
+        #Get unique value from list (Distinct region)
+        #--------------------------------------------------
+        #
+        # extracted_my_crvs_data = set(my_crvs_data)
+        # new_my_crvs_data = list(extracted_my_crvs_data)
+        #
+        #---------------------------------------------------
+        # response = set(chain.from_iterable(sub.values() for sub in my_crvs_data))
+        # print(response)
+        response_my_crvs_data = list({v['get_region']:v for v in my_crvs_data}.values())
+        print(response_my_crvs_data)
+
         form = SignupForm()
         form_profile = ProfileForm()
         user_token_1 = shortuuid.ShortUUID(shortuuid.get_alphabet())
@@ -126,7 +155,8 @@ def addNewUser(request):
     context = {
         'form': form,
         'form_profile': form_profile,
-        'get_users': get_users
+        'get_users': get_users,
+        'crvs_data': response_my_crvs_data
     }
     return render(request, 'authentication/addUser.html', context = context)
 

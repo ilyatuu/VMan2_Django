@@ -58,8 +58,42 @@
 
                                   <div class="card" style="width: 100%;">
                                     <div class="card-body">
-                                      <h5 class="card-title">VA Document</h5>
-                                      <p class="card-text"><strong>VA ID: </strong> {{ my_data.deviceid }}</p>
+                                      <h5 class="card-title">** VA Document **</h5>
+
+                                      <div class="va_data">
+
+                                        <div class="label_and_response">
+                                          <p class="id_number">ID: <span><strong>Id10002</strong></span></p>
+                                          <p class="label">Label: <strong> Is this a region of high HIV/AIDS mortality?</strong></p>
+                                          <p class="response">Response: <span>{{ my_data.get_region_of_high_hiv }}</span></p>
+                                        </div>
+
+                                        <div class="label_and_response">
+                                          <p class="id_number">ID: <span><strong>Id10003</strong></span></p>
+                                          <p class="label">Label: <strong> Is this a region of high malaria mortality?</strong></p>
+                                          <p class="response">Response: <span>{{ my_data.get_region_of_high_maralia }}</span></p>
+                                        </div>
+
+                                        <div class="label_and_response">
+                                          <p class="id_number">ID: <span><strong>Id10004</strong></span></p>
+                                          <p class="label">Label: <strong> During which season did (s)he die?</strong></p>
+                                          <p class="response">Response: <span>{{ my_data.get_season_did_she_or_he_die }}</span></p>
+                                        </div>
+
+                                        <div class="label_and_response">
+                                          <p class="id_number">ID: <span><strong>Id10005R</strong></span></p>
+                                          <p class="label">Label: <strong> Region where this interview is happening</strong></p>
+                                          <p class="response">Response: <span>{{ my_data.get_region_where_this_interview_happening }}</span></p>
+                                        </div>
+
+                                        <div class="label_and_response">
+                                          <p class="id_number">ID: <span><strong>Id10005D</strong></span></p>
+                                          <p class="label">Label: <strong> District where this interview is happening?</strong></p>
+                                          <p class="response">Response: <span>{{ my_data.get_district_where_this_interview_happening }}</span></p>
+                                        </div>
+
+                                      </div>
+
                                     </div>
                                   </div>
 
@@ -70,7 +104,7 @@
                                 <div class="content">
                                   <div class="card" style="width: 100%;">
                                     <div class="card-body">
-                                      <h5 class="card-title">Summary</h5>
+                                      <h5 class="card-title">** Summary **</h5>
 
                                       <p class="card-text"><strong>VA ID: </strong> {{ my_data.deviceid }}</p>
                                       <p class="card-text"><strong>VA Type: </strong></p>
@@ -78,8 +112,9 @@
                                       <p class="card-text"><strong>Interviewer Name: </strong>{{ my_data.get_interviwer_name }}</p>
                                       <p class="card-text"><strong>Interviewer Phone: </strong>{{ my_data.get_interviwer_phone }}</p>
                                       <p class="card-text"><strong>Interviewer ID: </strong>{{ my_data.get_interviwer_national_id }}</p>
-                                      <p class="card-text"><strong>Respondent Name: </strong></p>
-                                      <p class="card-text"><strong>Respondent Phone: </strong></p>
+                                      <p class="card-text"><strong>Respondent Name: </strong>{{ my_data.get_respondent_name|title }}</p>
+                                      <p class="card-text"><strong>Respondent Sex: </strong>{{ my_data.get_respondent_sex|title }}</p>
+                                      <p class="card-text"><strong>Respondent Phone: </strong>{{ my_data.get_respondent_phone }}</p>
                                       <p class="card-text"><strong>Interview Date: </strong>{{ my_data.get_interview_date }}</p>
                                       <p class="card-text"><strong>Interview Start: </strong>{{ my_data.get_start_time }}</p>
                                       <p class="card-text"><strong>Interview End: </strong>{{ my_data.get_end_time }}</p>

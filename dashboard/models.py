@@ -62,6 +62,7 @@ class Authorization(models.Model):
     authorize_user = models.ForeignKey(User, on_delete = models.CASCADE)
     dashboard = models.BooleanField(default = False)
     coded_va_data = models.BooleanField(default = False)
+    va_record = models.BooleanField(default = False)
     create_graph = models.BooleanField(default = False)
     create_table = models.BooleanField(default = False)
     create_map = models.BooleanField(default = False)
