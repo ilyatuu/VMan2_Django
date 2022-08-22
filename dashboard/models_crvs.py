@@ -9,7 +9,7 @@ from django.db import models
 
 
 class Actees(models.Model):
-    id = models.CharField(max_length=36)
+    id = models.CharField(max_length=36, primary_key=True)
     species = models.CharField(max_length=36, blank=True, null=True)
     parent = models.CharField(max_length=36, blank=True, null=True)
     purgedat = models.DateTimeField(db_column='purgedAt', blank=True, null=True)  # Field name made lowercase.
@@ -17,7 +17,7 @@ class Actees(models.Model):
     details = models.JSONField(blank=True, null=True)
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'actees'
 
 
@@ -115,12 +115,12 @@ class Config(models.Model):
 
 
 class FieldKeys(models.Model):
-    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', primary_key=True)  # Field name made lowercase.
-    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy')  # Field name made lowercase.
+    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', related_name='actor_id', blank=True, null=True, primary_key=True)  # Field name made lowercase.
+    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy', related_name='created_by')  # Field name made lowercase.
     projectid = models.ForeignKey('Projects', models.DO_NOTHING, db_column='projectId', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'field_keys'
 
 
@@ -192,14 +192,14 @@ class Forms(models.Model):
     deletedat = models.DateTimeField(db_column='deletedAt', blank=True, null=True)  # Field name made lowercase.
     acteeid = models.CharField(db_column='acteeId', max_length=36)  # Field name made lowercase.
     state = models.TextField(blank=True, null=True)
-    projectid = models.ForeignKey('Projects', models.DO_NOTHING, db_column='projectId')  # Field name made lowercase.
-    currentdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='currentDefId', blank=True, null=True)  # Field name made lowercase.
-    draftdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='draftDefId', blank=True, null=True)  # Field name made lowercase.
+    projectid = models.ForeignKey('Projects', models.DO_NOTHING, db_column='projectId', blank=True, null=True)  # Field name made lowercase.
+    currentdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='currentDefId', related_name='currentdefid', blank=True, null=True)  # Field name made lowercase.
+    draftdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='draftDefId', related_name='draftdefid', blank=True, null=True)  # Field name made lowercase.
     enketoid = models.CharField(db_column='enketoId', max_length=255, blank=True, null=True)  # Field name made lowercase.
     enketoonceid = models.TextField(db_column='enketoOnceId', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'forms'
         unique_together = (('projectid', 'xmlformid'),)
 
@@ -250,13 +250,13 @@ class Projects(models.Model):
 
 
 class PublicLinks(models.Model):
-    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', primary_key=True)  # Field name made lowercase.
-    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy')  # Field name made lowercase.
-    formid = models.ForeignKey(Forms, models.DO_NOTHING, db_column='formId')  # Field name made lowercase.
+    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', related_name='actorid', primary_key=True)  # Field name made lowercase.
+    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy', related_name='createdby')  # Field name made lowercase.
+    formid = models.ForeignKey(Forms, models.DO_NOTHING, db_column='formId', blank=True, null=True)  # Field name made lowercase.
     once = models.BooleanField(blank=True, null=True)
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'public_links'
 
 

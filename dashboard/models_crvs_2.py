@@ -115,8 +115,8 @@ class Config(models.Model):
 
 
 class FieldKeys(models.Model):
-    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId' primary_key=True)  # Field name made lowercase.
-    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy')  # Field name made lowercase.
+    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', related_name='actorid', primary_key=True)  # Field name made lowercase.
+    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy', related_name='createdby',)  # Field name made lowercase.
     projectid = models.ForeignKey('Projects', models.DO_NOTHING, db_column='projectId', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
@@ -193,8 +193,8 @@ class Forms(models.Model):
     acteeid = models.CharField(db_column='acteeId', max_length=36)  # Field name made lowercase.
     state = models.TextField(blank=True, null=True)
     projectid = models.ForeignKey('Projects', models.DO_NOTHING, db_column='projectId')  # Field name made lowercase.
-    currentdefid = models.ForeignKey(FormDefs, related_name='currentdefid', models.DO_NOTHING, db_column='currentDefId', blank=True, null=True)  # Field name made lowercase.
-    draftdefid = models.ForeignKey(FormDefs, related_name='draftdefid', models.DO_NOTHING, db_column='draftDefId', blank=True, null=True)  # Field name made lowercase.
+    currentdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='currentDefId', related_name='currentdefid', blank=True, null=True)  # Field name made lowercase.
+    draftdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='draftDefId', related_name='draftdefid', blank=True, null=True)  # Field name made lowercase.
     enketoid = models.CharField(db_column='enketoId', max_length=255, blank=True, null=True)  # Field name made lowercase.
     enketoonceid = models.TextField(db_column='enketoOnceId', blank=True, null=True)  # Field name made lowercase.
 
@@ -250,8 +250,8 @@ class Projects(models.Model):
 
 
 class PublicLinks(models.Model):
-    actorid = models.OneToOneField(Actors, related_name='actorid', models.DO_NOTHING, db_column='actorId', primary_key=True)  # Field name made lowercase.
-    createdby = models.ForeignKey(Actors, related_name='createdby', models.DO_NOTHING, db_column='createdBy')  # Field name made lowercase.
+    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', related_name='actorid', primary_key=True)  # Field name made lowercase.
+    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy', related_name='createdby')  # Field name made lowercase.
     formid = models.ForeignKey(Forms, models.DO_NOTHING, db_column='formId')  # Field name made lowercase.
     once = models.BooleanField(blank=True, null=True)
 

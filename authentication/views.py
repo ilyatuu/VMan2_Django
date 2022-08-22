@@ -16,7 +16,7 @@ from django.utils.encoding import force_bytes, force_str
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 import threading
 import shortuuid
-from dashboard.models_crvs import *
+from dashboard.models_crvs_2 import *
 from .forms import *
 import xmltodict
 import xml.etree.ElementTree as ET
