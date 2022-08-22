@@ -148,24 +148,162 @@ body{
 } */
 
 
+
+/* w3-container */
+/* .w3-container h1{
+  padding: 300px 0px;
+} */
+
+
+
 /* dashbaord_page */
 
 .dashbaord_page{
   padding: 100px 0px;
 }
-.dashbaord_page .title_section{
+
+/* .content_va_display */
+
+.dashbaord_page .content_va_display .item_display{
+  display: flex;
+  justify-content: space-between;
   background: var(--whiteColor);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  border: none;
+  color: var(--whiteColor);
+
 }
-.dashbaord_page .title_section h1{
-  margin: auto;
+.dashbaord_page .content_va_display .item_display .left_total_va{
+  margin-right: 10px;
+}
+.dashbaord_page .content_va_display .item_display .right_total_va{
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.dashbaord_page .content_va_display .item_display .left_total_va h1{
   font-size: var(--fontSizeH2);
   font-weight: var(--fontBold);
+  font-family: var(--fontFamily)
+}
+.dashbaord_page .content_va_display .item_display .right_total_va h1{
+  font-size: 20px;
+  font-weight: var(--fontBold);
   font-family: var(--fontFamily);
-  margin-bottom: 30px;
+}
+.dashbaord_page .content_va_display .item_display .right_total_va a{
+  padding: 20px;
+  font-size: 15px;
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+  text-transform: none;
+  border: 2px solid var(--whiteColor);
+  /* border-radius: 50px; */
+  color: var(--mainColor);
+  background: var(--whiteColor);
+
 }
 
+/* content_other_va_display*/
+.dashbaord_page .content_other_va_display{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.dashbaord_page .content_other_va_display .va_item_data.adult{
+  background: var(--blueColor);
+  color: var(--whiteColor);
+  padding: 20px;
+}
+.dashbaord_page .content_other_va_display .va_item_data{
+  background: var(--whiteColor);
+  color: var(--mainColor);
+  /* padding: 32px 20px; */
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  border: none;
+}
+.dashbaord_page .content_other_va_display .va_item_data h1{
+  font-size: 20px;
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+.dashbaord_page .content_other_va_display .va_item_data p{
+  font-size: 30px;
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
+
+
+
+
+.dashbaord_page .va_region_list{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+}
+.dashbaord_page .va_region_list form .filter_div{
+  background: var(--grayColor);
+  padding: 1px 20px;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+}
+.dashbaord_page .va_region_list form .filter_div .filter_icon{
+  /* width: 5%; */
+}
+.dashbaord_page .va_region_list form .filter_div .filter_icon img{
+  height: 30px;
+}
+.dashbaord_page .va_region_list form .filter_div .form_selection{
+  width: 100%;
+}
+.dashbaord_page .va_region_list form .filter_div select{
+  width: 100%;
+  background: var(--grayColor);
+  font-family: var(--fontFamily);
+  font-size: 15px;
+}
+
+.dashbaord_page .va_graph{
+  height: 500px;
+  overflow-y: scroll;
+  padding: 10px;
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.dashbaord_page .region_list{
+  height: 500px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.dashbaord_page .region_list .region_item{
+  font-size: 16px;
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.dashbaord_page .region_list .region_item h1{
+  font-size: 16px;
+  font-weight: var(--fontBold);
+  /* font-family: var(--fontFamily); */
+}
+.dashbaord_page .region_item p{
+  font-size: 14px;
+  font-weight: var(--fontBold);
+  /* font-family: var(--fontFamily); */
+}
+
+
+/* va_records_page */
 .va_records_page{
   padding: 100px 0px;
 }

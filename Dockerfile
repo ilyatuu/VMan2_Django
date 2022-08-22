@@ -1,12 +1,5 @@
-FROM python:3.8.5-alpine
-RUN pip install --upgrade pip
-
-COPY ./requirements.txt .
-RUN pip install requirements.txt
-
-COPY .* /app
-
-WORKDIR /app
-
-COPY ./entrypoint.sh /
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+FROM python:3.8-slim-buster
+ENV PYTHONUNBUFFERED=1
+WORKDIR /vman_django
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt

@@ -1,22 +1,11 @@
-version: '3.7'
-
+version: '3.8'
 services:
-  django_gunicorn:
+  app:
+    build: .
     volumes:
-      - static:/static
-    env_file:
-      - .env
-    build:
-      context: .
+      - .:/vman_django
     ports:
-      - "8000:8000"
-  nginx:
-    build: ./nginx
-    volumes:
-      - static:/static
-    ports:
-      - "80:80"
-    depends_on:
-      - django_gunicorn
-volumes:
-  static:
+      - 8000:8484
+    image: app:vman_django
+    container_name: vman_django_container
+    command: python manage.py runserver 0.0.0.0:8000

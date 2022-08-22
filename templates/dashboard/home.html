@@ -1,33 +1,85 @@
 {% extends '../base.html' %}
 {% block title %}Dashboard{% endblock %}
+{% load static %}
+{% load humanize %}
 {% block content %}
 <div class="dashbaord_page">
   <div class="container-fluid">
-    <div class="row mb-4">
-      <div class="col-md-12">
-        <div class="title_section">
-          <h1>Welcome to Vman</h1>
 
-          <!-- {% for region in regions_from_data %}
-            <p>{{ region.get_region }}</p>
-          {% endfor %} -->
-
-
-          <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            {% for region in regions_from_data %}
-            <button class="nav-link active" id="{{ region.get_region }}-tab" data-bs-toggle="tab" data-bs-target="#{{ region.get_region }}" type="button" role="tab" aria-controls="{{ region.get_region }}" aria-selected="true">{{ region.get_region|upper }}</button>
-            {% endfor %}
+  <div class="row">
+    <div class="col-md-6">
+      <div class="content_va_display">
+        <div class="item_display bg-secondary">
+          <div class="left_total_va">
+            <h1>Total VA Recorded</h1>
           </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="{{ region.get_region }}" role="tabpanel" aria-labelledby="{{ region.get_region }}-tab">-----</div>
-        </div>
-
-
-
+          <div class="right_total_va">
+            <h1>{{ va_total|intcomma }}</h1>
+            <a href="{% url 'dashboard:vaRecordsPage' %}" class="btn"><i class="bi bi-card-checklist"></i> Go to VA records</a>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="col-md-6">
+      <div class="content_other_va_display">
+        <div class="va_item_data adult">
+          <h1>3,578</h1>
+          <p>Adult</p>
+        </div>
+        <div class="va_item_data">
+          <h1>3,578</h1>
+          <p>Child</p>
+        </div>
+        <div class="va_item_data">
+          <h1>3,578</h1>
+          <p>Neonatal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row my-2">
+    <div class="col-md-12">
+        <div class="va_region_list">
+          <form class="" action="" method="post">
+            <div class="filter_div">
+              <div class="filter_icon">
+                <img src="{% static 'images/filter.png' %}" alt="" class="img-fluid">
+              </div>
+              <div class="form_selection">
+                <select class="custom-select" name="">
+                  <option value="">Filter data by</option>
+                  <option value="Today">Today</option>
+                  <option value="Weekly">Weekly</option>
+                  <option value="Monthly">Monthly</option>
+                  <option value="Year">Year</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+  <div class="row my-4">
+    <div class="col-md-9">
+      <div class="va_graph">
+        {{ chart|safe }}
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="region_list">
+        {% for region in regions_from_data %}
+          <div class="region_item">
+            <h1>{{ region.get_region }}</h1>
+            <p>Adult: 3,457</p>
+            <p>Child: 2,256</p>
+            <p>Neonatal: 2987</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
     </div>
   </div>
 </div>
