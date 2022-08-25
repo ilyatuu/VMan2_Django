@@ -208,25 +208,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 
-<<<<<<< HEAD
-if not DEBUG:
-    #static and media directory when in production
-    STATICFILES_DIRS = [BASE_DIR, "static"]
-    STATIC_ROOT = ''
-    MEDIA_ROOT = ''
-
-else:
-    #static and media when in local(developemnt)
-    STATIC_URL = 'static/'
-    STATICFILES_DIRS = [BASE_DIR, "static"]
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = [BASE_DIR, 'media']
-    # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-
-# DATABASE_ROUTERS = ['routers.db_routers.AuthRouter',]
-
-=======
 # if not DEBUG:
 #     #static and media directory when in production
 #     STATICFILES_DIRS = [BASE_DIR, "static"]
@@ -247,7 +228,6 @@ STATICFILES_DIRS = [BASE_DIR, "static"]
 #MEDIA_URL = '/media/'
 MEDIA_ROOT = [BASE_DIR, 'media']
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
->>>>>>> b11e20fb5fca37f67e7889d271b937a8527613a4
 
 LOGIN_URL = 'authentication:loginPage'
 LOGOUT_REDIRECT_URL = 'authentication:loginPage'
