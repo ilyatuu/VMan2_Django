@@ -27,15 +27,16 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-if not DEBUG:
-    ALLOWED_HOSTS = ['www.vman.aaph.or.tz', 'vman.aaph.or.tz']
-    SECURE_SSL_REDIRECT=True
-    SECURE_PROXY_SSL_HEADER=('HTTP_X_FORWARDED_PROTO', 'https')
-    SESSION_COOKIE_SECURE=True
-    SESSION_EXPIRE_AT_BROWSER_CLOSE=True
-else:
-    ALLOWED_HOSTS = ["*"]
+# if not DEBUG:
+#     ALLOWED_HOSTS = ['www.vman.aaph.or.tz', 'vman.aaph.or.tz']
+#     SECURE_SSL_REDIRECT=True
+#     SECURE_PROXY_SSL_HEADER=('HTTP_X_FORWARDED_PROTO', 'https')
+#     SESSION_COOKIE_SECURE=True
+#     SESSION_EXPIRE_AT_BROWSER_CLOSE=True
+# else:
+#     ALLOWED_HOSTS = ["*"]
 
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -197,21 +198,26 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 
-if not DEBUG:
-    #static and media directory when in production
-    STATICFILES_DIRS = [BASE_DIR, "static"]
-    STATIC_ROOT = ''
-    MEDIA_ROOT = ''
+# if not DEBUG:
+#     #static and media directory when in production
+#     STATICFILES_DIRS = [BASE_DIR, "static"]
+#     STATIC_ROOT = ''
+#     MEDIA_ROOT = ''
 
-else:
-    #static and media when in local(developemnt)
-    STATIC_URL = 'static/'
-    STATICFILES_DIRS = [BASE_DIR, "static"]
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = [BASE_DIR, 'media']
-    # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# else:
+#     #static and media when in local(developemnt)
+#     STATIC_URL = 'static/'
+#     STATICFILES_DIRS = [BASE_DIR, "static"]
+#     MEDIA_URL = '/media/'
+#     MEDIA_ROOT = [BASE_DIR, 'media']
+#     # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
+#static and media when in local(developemnt)
+#STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR, "static"]
+#MEDIA_URL = '/media/'
+MEDIA_ROOT = [BASE_DIR, 'media']
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_URL = 'authentication:loginPage'
 LOGOUT_REDIRECT_URL = 'authentication:loginPage'

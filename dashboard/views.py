@@ -124,33 +124,87 @@ def vaRecordsPage(request):
             get_respondent_phone = soup.find('Id10007Phone').text
 
             get_gps_space_string = soup.find('gps_location').text
+
             get_gps_location_in_list = list(get_gps_space_string.split(" "))
-            get_death_narrative = soup.find('Id10476').text
-            get_region_of_high_hiv = soup.find('Id10002').text
-            get_region_of_high_maralia = soup.find('Id10003').text
-            get_season_did_she_or_he_die = soup.find('Id10004').text
-            get_region_where_this_interview_happening = soup.find('Id10005R').text
-            get_district_where_this_interview_happening = soup.find('Id10005D').text
+            
+            try:
+              get_death_narrative = soup.find('Id10476').text
+            except Exception as e:
+              get_death_narrative = "None"
+
+            try:
+              get_region_of_high_hiv = soup.find('Id10002').text
+            except Exception as e:
+              get_region_of_high_hiv = "None"
+            try:
+              get_region_of_high_maralia = soup.find('Id10003').text
+            except Exception as e:
+              get_region_of_high_maralia = "None"
+            try:
+              get_season_did_she_or_he_die = soup.find('Id10004').text
+            except Exception as e:
+              get_season_did_she_or_he_die = "None"
+            try:
+              get_region_where_this_interview_happening = soup.find('Id10005R').text
+            except Exception as e:
+              get_region_where_this_interview_happening = "None"
+            try:
+              get_district_where_this_interview_happening = soup.find('Id10005D').text
+            except Exception as e:
+              get_district_where_this_interview_happening = "None"
             try:
                 get_other_district = soup.find('Id10005Dother').text
             except Exception as e:
                 get_other_district = "None"
-            get_ward_where_this_interview_happening = soup.find('Id10005W').text
-            get_shehia_where_this_interview_happening = soup.find('Id10005S')
-            get_village_street_where_this_interview_happening = soup.find('Id10005V').text
-            get_vrespondent_relationship_to_the_deceased = soup.find('Id10008').text
-            get_respondent_live_with_the_deceased_in_the_period_leading_to_her_his_death = soup.find('Id10009').text
-            get_did_respondent_give_consent = soup.find('Id10013').text
-            get_what_was_the_first_or_given_name_of_the_deceased = soup.find('Id10017').text
-            get_what_was_the_surname_or_famil_name_of_the_deceased = soup.find('Id10018').text
-            get_what_was_sex_of_the_deceased = soup.find('Id10019').text
-            get_is_the_date_of_birth_known = soup.find('Id10020').text
+
+            try:
+              get_ward_where_this_interview_happening = soup.find('Id10005W').text
+            except Exception as e:
+              get_ward_where_this_interview_happening = "None"
+            try:
+              get_shehia_where_this_interview_happening = soup.find('Id10005S')
+            except Exception as e:
+              get_shehia_where_this_interview_happening = "None"
+            try:
+              get_village_street_where_this_interview_happening = soup.find('Id10005V').text
+            except Exception as e:
+              get_village_street_where_this_interview_happening = "None"
+            try:
+              get_vrespondent_relationship_to_the_deceased = soup.find('Id10008').text
+            except Exception as e:
+              get_vrespondent_relationship_to_the_deceased = "None"
+            try:
+              get_respondent_live_with_the_deceased_in_the_period_leading_to_her_his_death = soup.find('Id10009').text
+            except Exception as e:
+              get_respondent_live_with_the_deceased_in_the_period_leading_to_her_his_death = "None"
+            try:
+              get_did_respondent_give_consent = soup.find('Id10013').text
+            except Exception as e:
+              get_did_respondent_give_consent = "None"
+            try:
+              get_what_was_the_first_or_given_name_of_the_deceased = soup.find('Id10017').text
+            except Exception as e:
+              get_what_was_the_first_or_given_name_of_the_deceased = "None"
+            try:
+              get_what_was_the_surname_or_famil_name_of_the_deceased = soup.find('Id10018').text
+            except Exception as e:
+              get_what_was_the_surname_or_famil_name_of_the_deceased = "None"
+            try:
+              get_what_was_sex_of_the_deceased = soup.find('Id10019').text
+            except Exception as e:
+              get_what_was_sex_of_the_deceased = "None"
+            try:
+              get_is_the_date_of_birth_known = soup.find('Id10020').text
+            except Exception as e:
+              get_is_the_date_of_birth_known = "None"
             try:
                 get_when_was_the_deceased_born = soup.find('Id10021').text
             except:
                 get_when_was_the_deceased_born = "None"
-
-            get_is_the_date_of_death_known = soup.find('Id10022').text
+            try:
+              get_is_the_date_of_death_known = soup.find('Id10022').text
+            except Exception as e:
+              get_is_the_date_of_death_known = "None"
 
             try:
                 get_when_did_she_or_he_die_a = soup.find('Id10023_a').text
