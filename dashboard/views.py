@@ -22,7 +22,7 @@ import pandas as pd
 def dashboardPage(request):
     get_auth = Authorization.objects.get(authorize_user = request.user)
     if get_auth.dashboard:
-        print(get_auth.id)
+        #print(get_auth.id)
         get_data_from_crvs = SubmissionDefs.objects.all()
         my_crvs_data = []
         get_region_ = []
@@ -92,7 +92,7 @@ def vaRecordsPage(request):
     if get_auth.va_record:
         get_data_from_crvs = SubmissionDefs.objects.all()
         my_crvs_data = []
-        print(type(get_data_from_crvs))
+        # print(type(get_data_from_crvs))
         # print(get_data_from_crvs)
         #
         # Loop one record at a time
@@ -3884,7 +3884,7 @@ def vaRecordsPage(request):
             }
             my_crvs_data.append(my_data_dict)
         # print(my_crvs_data)
-        print(my_data_dict)
+        # print(my_data_dict)
 
 
         template_name = 'dashboard/vaRecord.html'
