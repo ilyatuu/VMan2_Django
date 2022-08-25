@@ -14,6 +14,9 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
+          <a href="#" class="nav-link">Welcome: {{request.user.first_name}} {{request.user.last_name}} </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{% url 'authentication:logout' %}"><i class="bi bi-box-arrow-left"></i> Logout</a>
         </li>
       </ul>
