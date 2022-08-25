@@ -16,18 +16,18 @@
                   <th>District</th>
                   <th>Ward</th>
                   <th>Interviewer</th>
-                  <th>Date of Interview</th>
+                  <th>Int. Date</th>
                   <!-- <th>Minutes</th> -->
                   <th>Latitude</th>
                   <th>Longitude</th>
-                  <th>GPS Accuracy</th>
+                  <th>GPS Acc.</th>
                   <th>Action</th>
                 </tr>
               </thead>
               <tbody>
                 {% for my_data in crvs_data %}
                   <tr>
-                    <td><span class="badge rounded-pill badge-secondary">{{ my_data.deviceid }}</span></td>
+                    <td><span class="badge rounded-pill badge-secondary">{{ my_data.deviceid | truncatechars:15 }}</span></td>
                     <td>{{ my_data.get_region }}</td>
                     <td>{{ my_data.get_district }}</td>
                     <td>{{ my_data.get_ward }}</td>

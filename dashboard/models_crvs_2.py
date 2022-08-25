@@ -1,4 +1,4 @@
-# This is an auto-generated Django model module.
+#    "field_keys_pkey" PRIMARY KEY, btree ("actorId") This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
 #   * Rearrange models' order
 #   * Make sure each model has one field with primary_key=True
@@ -9,7 +9,7 @@ from django.db import models
 
 
 class Actees(models.Model):
-    id = models.CharField(max_length=36, primary_key=True)
+    id = models.CharField(primary_key=True, max_length=36)
     species = models.CharField(max_length=36, blank=True, null=True)
     parent = models.CharField(max_length=36, blank=True, null=True)
     purgedat = models.DateTimeField(db_column='purgedAt', blank=True, null=True)  # Field name made lowercase.
@@ -23,7 +23,7 @@ class Actees(models.Model):
 
 class Actors(models.Model):
     type = models.CharField(max_length=15, blank=True, null=True)
-    acteeid = models.CharField(db_column='acteeId', max_length=36)  # Field name made lowercase.
+    acteeid = models.ForeignKey(Actees, models.DO_NOTHING, db_column='acteeId')  # Field name made lowercase.
     displayname = models.CharField(db_column='displayName', max_length=64)  # Field name made lowercase.
     meta = models.JSONField(blank=True, null=True)
     createdat = models.DateTimeField(db_column='createdAt', blank=True, null=True)  # Field name made lowercase.
@@ -39,7 +39,7 @@ class Actors(models.Model):
 class Assignments(models.Model):
     actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', primary_key=True)  # Field name made lowercase.
     roleid = models.ForeignKey('Roles', models.DO_NOTHING, db_column='roleId')  # Field name made lowercase.
-    acteeid = models.CharField(db_column='acteeId', max_length=36)  # Field name made lowercase.
+    acteeid = models.ForeignKey(Actees, models.DO_NOTHING, db_column='acteeId')  # Field name made lowercase.
 
     class Meta:
         managed = False
@@ -50,7 +50,7 @@ class Assignments(models.Model):
 class Audits(models.Model):
     actorid = models.ForeignKey(Actors, models.DO_NOTHING, db_column='actorId', blank=True, null=True)  # Field name made lowercase.
     action = models.TextField()
-    acteeid = models.CharField(db_column='acteeId', max_length=36, blank=True, null=True)  # Field name made lowercase.
+    acteeid = models.ForeignKey(Actees, models.DO_NOTHING, db_column='acteeId', blank=True, null=True)  # Field name made lowercase.
     details = models.JSONField(blank=True, null=True)
     loggedat = models.DateTimeField(db_column='loggedAt', blank=True, null=True)  # Field name made lowercase.
     claimed = models.DateTimeField(blank=True, null=True)
@@ -115,8 +115,8 @@ class Config(models.Model):
 
 
 class FieldKeys(models.Model):
-    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', related_name='actorid', primary_key=True)  # Field name made lowercase.
-    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy', related_name='createdby',)  # Field name made lowercase.
+    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', primary_key=True, related_name='actors2_actorid')  # Field name made lowercase.
+    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy', related_name='actors2_createdby')  # Field name made lowercase.
     projectid = models.ForeignKey('Projects', models.DO_NOTHING, db_column='projectId', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
@@ -190,11 +190,11 @@ class Forms(models.Model):
     createdat = models.DateTimeField(db_column='createdAt', blank=True, null=True)  # Field name made lowercase.
     updatedat = models.DateTimeField(db_column='updatedAt', blank=True, null=True)  # Field name made lowercase.
     deletedat = models.DateTimeField(db_column='deletedAt', blank=True, null=True)  # Field name made lowercase.
-    acteeid = models.CharField(db_column='acteeId', max_length=36)  # Field name made lowercase.
+    acteeid = models.ForeignKey(Actees, models.DO_NOTHING, db_column='acteeId')  # Field name made lowercase.
     state = models.TextField(blank=True, null=True)
     projectid = models.ForeignKey('Projects', models.DO_NOTHING, db_column='projectId')  # Field name made lowercase.
-    currentdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='currentDefId', related_name='currentdefid', blank=True, null=True)  # Field name made lowercase.
-    draftdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='draftDefId', related_name='draftdefid', blank=True, null=True)  # Field name made lowercase.
+    currentdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='currentDefId', blank=True, null=True, related_name='forms_currentdefid')  # Field name made lowercase.
+    draftdefid = models.ForeignKey(FormDefs, models.DO_NOTHING, db_column='draftDefId', blank=True, null=True,related_name='forms_draftdefid')  # Field name made lowercase.
     enketoid = models.CharField(db_column='enketoId', max_length=255, blank=True, null=True)  # Field name made lowercase.
     enketoonceid = models.TextField(db_column='enketoOnceId', blank=True, null=True)  # Field name made lowercase.
 
@@ -250,8 +250,8 @@ class Projects(models.Model):
 
 
 class PublicLinks(models.Model):
-    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', related_name='actorid', primary_key=True)  # Field name made lowercase.
-    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy', related_name='createdby')  # Field name made lowercase.
+    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', primary_key=True,related_name='actors_actorid')  # Field name made lowercase.
+    createdby = models.ForeignKey(Actors, models.DO_NOTHING, db_column='createdBy',related_name='actors_createdby')  # Field name made lowercase.
     formid = models.ForeignKey(Forms, models.DO_NOTHING, db_column='formId')  # Field name made lowercase.
     once = models.BooleanField(blank=True, null=True)
 
@@ -333,3 +333,14 @@ class Submissions(models.Model):
         managed = False
         db_table = 'submissions'
         unique_together = (('formid', 'instanceid', 'draft'),)
+
+
+class Users(models.Model):
+    actorid = models.OneToOneField(Actors, models.DO_NOTHING, db_column='actorId', primary_key=True)  # Field name made lowercase.
+    password = models.CharField(max_length=64, blank=True, null=True)
+    mfasecret = models.CharField(db_column='mfaSecret', max_length=20, blank=True, null=True)  # Field name made lowercase.
+    email = models.TextField()  # This field type is a guess.
+
+    class Meta:
+        managed = False
+        db_table = 'users'
