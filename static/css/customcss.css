@@ -68,7 +68,7 @@ body{
   font-family: var(--fontFamily);
 }
 .w3-sidebar{
-  width: 300px !important;
+  width: 200px !important;
   padding: 100px 20px;
   border-right: 2px solid var(--mainColor);
 }
