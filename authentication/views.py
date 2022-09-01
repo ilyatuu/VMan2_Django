@@ -75,6 +75,8 @@ def addNewUser(request):
         full_name = get_fname+ ' ' + get_lname
         new_full_name = full_name.capitalize()
 
+        get_user_region = request.POST.get('user_region')
+
         user_token_1 = shortuuid.ShortUUID(shortuuid.get_alphabet())
         user_generated_token = user_token_1.random(length=100)
         required_user_token = user_generated_token
@@ -93,6 +95,7 @@ def addNewUser(request):
                 user.save()
                 profile = form_profile.save(commit = False)
                 profile.user = user
+                profile.region = get_user_region
                 profile.user_token = required_user_token
                 profile.save()
 
