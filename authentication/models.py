@@ -12,6 +12,7 @@ class Profile(models.Model):
     organization = models.ForeignKey(Organization, on_delete = models.CASCADE)
     user_role = models.ForeignKey(UserRole, on_delete = models.CASCADE)
     nationality = CountryField()
+    region = models.CharField(max_length = 100, null = True, blank = True)
     mobile_number = PhoneNumberField()
     created_at = models.DateTimeField(auto_now_add = True)
     updated_at = models.DateTimeField(auto_now = True)
