@@ -30,6 +30,9 @@ def dashboardPage(request):
         get_data_from_crvs = SubmissionDefs.objects.all()
         my_crvs_data = []
         get_region_ = []
+        get_adult_ = []
+        get_child_ = []
+        get_neonatal_ = []
         for xml_data in get_data_from_crvs:
             new_data_xml = xml_data.xml
             soup = BeautifulSoup(new_data_xml,"xml")
@@ -45,9 +48,42 @@ def dashboardPage(request):
                 my_crvs_data.append(my_data_dict)
             if get_user_region == "All Regions":
                 get_region = soup.find('Id10005R').text
+
+                get_va_type = None
+                try:
+                    get_va_type_neonatal = soup.find('isNeonatal').text
+                except Exception as e:
+                    get_va_type_neonatal = "None"
+                try:
+                    get_va_type_child = soup.find('isChild').text
+                except Exception as e:
+                    get_va_type_child = "None"
+                try:
+                    get_va_type_adult = soup.find('isAdult').text
+                except Exception as e:
+                    get_va_type_adult = "None"
+                if get_va_type_neonatal == "1":
+                    get_va_type = "Neonatal"
+                    get_neonatal_.append(get_va_type)
+                if get_va_type_child == "1":
+                    get_va_type = "Child"
+                    get_child_.append(get_va_type)
+                if get_va_type_adult == "1":
+                    get_va_type = "Adult"
+                    get_adult_.append(get_va_type)
+                print(get_va_type)
+                get_va_type = get_va_type
+                print("***********: ", get_va_type)
+                print("Adult: ", len(get_adult_))
+                print("Child: ", len(get_child_))
+                print("Neonatal: ", len(get_neonatal_))
+
                 get_region_.append(get_region)
                 my_data_dict = {
                     'get_region': get_region,
+                    # 'adult': 10,
+                    # 'child': 15,
+                    # 'neonatal': 10,
                 }
                 my_crvs_data.append(my_data_dict)
         get_regions_as_tab = list({v['get_region']:v for v in my_crvs_data}.values())
@@ -84,6 +120,8 @@ def dashboardPage(request):
 
         chart = fig.to_html()
 
+        print(get_regions_as_tab)
+        print(my_crvs_data)
 
         template_name = 'dashboard/home.html'
         context = {
@@ -91,7 +129,10 @@ def dashboardPage(request):
             'regions_from_data': get_regions_as_tab,
             'get_auth': get_auth,
             'chart': chart,
-            'va_total': len(get_region_)
+            'va_total': len(get_region_),
+            'get_adult_number': len(get_adult_),
+            'get_child_number': len(get_child_),
+            'get_neonatal_number': len(get_neonatal_),
         }
         return render(request, template_name, context = context)
     else:
@@ -131,6 +172,28 @@ def vaRecordsPage(request):
                 get_interview_end = soup.find('Id10481').text
                 get_instance_id = soup.find('instanceID').text
                 get_device_id = soup.find('deviceid')
+                get_va_type = None
+                try:
+                    get_va_type_neonatal = soup.find('isNeonatal').text
+                except Exception as e:
+                    get_va_type_neonatal = "None"
+                try:
+                    get_va_type_child = soup.find('isChild').text
+                except Exception as e:
+                    get_va_type_child = "None"
+                try:
+                    get_va_type_adult = soup.find('isAdult').text
+                except Exception as e:
+                    get_va_type_adult = "None"
+                if get_va_type_neonatal == "1":
+                    get_va_type = "Neonatal"
+                if get_va_type_child == "1":
+                    get_va_type = "Child"
+                if get_va_type_adult == "1":
+                    get_va_type = "Adult"
+                print(get_va_type)
+                get_va_type = get_va_type
+                print("***********: ", get_va_type)
                 get_phonenumber = soup.find('phonenumber').text
                 get_serial_number = soup.find('D2SN').text
                 get_respondent_background = soup.find('respondent_backgr')
@@ -2864,6 +2927,7 @@ def vaRecordsPage(request):
                     'get_interview_date': get_interview_date,
                     'get_interview_end': get_interview_end,
                     'deviceid': get_instance_id,
+                    'va_type': get_va_type,
                     'phonenumber': get_phonenumber,
                     'get_serial_number': get_serial_number,
                     'respondent_backgr': get_respondent_background,
@@ -3967,6 +4031,28 @@ def vaRecordsPage(request):
                 get_interview_end = soup.find('Id10481').text
                 get_instance_id = soup.find('instanceID').text
                 get_device_id = soup.find('deviceid')
+                get_va_type = None
+                try:
+                    get_va_type_neonatal = soup.find('isNeonatal').text
+                except Exception as e:
+                    get_va_type_neonatal = "None"
+                try:
+                    get_va_type_child = soup.find('isChild').text
+                except Exception as e:
+                    get_va_type_child = "None"
+                try:
+                    get_va_type_adult = soup.find('isAdult').text
+                except Exception as e:
+                    get_va_type_adult = "None"
+                if get_va_type_neonatal == "1":
+                    get_va_type = "Neonatal"
+                if get_va_type_child == "1":
+                    get_va_type = "Child"
+                if get_va_type_adult == "1":
+                    get_va_type = "Adult"
+                print(get_va_type)
+                get_va_type = get_va_type
+                print("***********: ", get_va_type)
                 get_phonenumber = soup.find('phonenumber').text
                 get_serial_number = soup.find('D2SN').text
                 get_respondent_background = soup.find('respondent_backgr')
@@ -6700,6 +6786,7 @@ def vaRecordsPage(request):
                     'get_interview_date': get_interview_date,
                     'get_interview_end': get_interview_end,
                     'deviceid': get_instance_id,
+                    'va_type': get_va_type,
                     'phonenumber': get_phonenumber,
                     'get_serial_number': get_serial_number,
                     'respondent_backgr': get_respondent_background,
