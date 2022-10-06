@@ -6,6 +6,7 @@ app_name = 'dashboard'
 urlpatterns = [
     path('', views.dashboardPage, name = 'dashboardPage'),
     path('va-records/', views.vaRecordsPage, name = 'vaRecordsPage'),
+    path('render_va/', views.render_va1, name='create_va_object'),
     path('user-role/', views.manageRole, name = 'manageRole'),
     path('user-role/update/<str:id>/', views.updateRole, name = 'updateRole'),
     path('icd-10-category/', views.manageICD10Category, name = 'manageICD10Category'),
@@ -19,4 +20,5 @@ urlpatterns = [
     path('user-authorization/update/<str:id>/', views.updateAuthorization, name = 'updateAuthorization'),
     path('user-authorization/delete/<str:id>/', views.deleteAuthorization, name = 'deleteAuthorization'),
     path('coding-work/', views.manageCodingWork, name = 'manageCodingWork'),
+    path('analysis/', views.manageAnalysisPage, name = 'manageAnalysisPage'),
 ]

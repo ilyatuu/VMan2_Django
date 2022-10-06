@@ -1,0 +1,2892 @@
+[
+    {
+      "id": "start-time",
+      "label_en": "Start",
+      "label_sw": "Mwanzo"
+    },
+    {
+      "id": "end",
+      "label_en": "End",
+      "label_sw": "Mwisho"
+    },
+    {
+      "id": "today",
+      "label_en": "Today",
+      "label_sw": "Leo"
+    },
+    {
+      "id": "deviceid",
+      "label_en": "Device ID",
+      "label_sw": "Namba ya kifaa"
+    },
+    {
+      "id": "phonenumber",
+      "label_en": "PhoneNumber",
+      "label_sw": "Namba ya Simu"
+    },
+    {
+      "id": "Id10002",
+      "label_en": "(Id10002) Is this a region of high HIV/AIDS mortality? ",
+      "label_sw": "10002. Je, Mkoa huu ni wenye vifo vingi vitokanavyo na VVU / UKIMWI?"
+    },
+    {
+      "id": "Id10003",
+      "label_en": "(Id10003) Is this a region of high malaria mortality? ",
+      "label_sw": "10003. Je, Mkoa huu ni wenye vifo vingi vitokanavyo na Malaria?"
+    },
+    {
+      "id": "Id10004",
+      "label_en": "(Id10004) During which season did (s)he die? ",
+      "label_sw": "10004. Je, marehemu alifariki dunia msimu gani?"
+    },
+    {
+      "id": "Id10005R",
+      "label_en": "Region where this interview is happening",
+      "label_sw": "Mkoa ambao mahojiano haya yanafanyika"
+    },
+    {
+      "id": "Id10005D",
+      "label_en": "District where this interview is happening",
+      "label_sw": "Wilaya ambayo mahojiano haya yanafanyika"
+    },
+    {
+      "id": "Id10005Dother",
+      "label_en": "Other District:",
+      "label_sw": "Taja Wilaya nyingine"
+    },
+    {
+      "id": "Id10005V",
+      "label_en": "Village or street where this interview is happening",
+      "label_sw": "Kijiji au mtaa ambapo mahojiano haya yanafanyika"
+    },
+    {
+      "id": "Id10007",
+      "label_en": "(Id10007) What is the name of VA respondent? ",
+      "label_sw": "10007. Jina la mhojiwa"
+    },
+    {
+      "id": "Id10007a",
+      "label_en": "(Id10007a) What is the sex of VA respondent? ",
+      "label_sw": "10007a. Jinsi ya mhojiwa"
+    },
+    {
+      "id": "Id10007Phone",
+      "label_en": "(Id10007Phone). Phone number for the VA respondent",
+      "label_sw": "10007b. Namba ya simu ya mhojiwa"
+    },
+    {
+      "id": "Id10008",
+      "label_en": "(Id10008) What is your/the respondents relationship to the deceased?",
+      "label_sw": "10008. Je, mhojiwa ana uhusiano gani na marehemu?"
+    },
+    {
+      "id": "Id10009",
+      "label_en": "(Id10009) Did you/the respondent live with the deceased in the period leading to her/his death?",
+      "label_sw": "10009. Je, mhojiwa aliishi na marehemu katika kipindi cha kuelekea kifo chake ?"
+    },
+    {
+      "id": "Id10010",
+      "label_en": "(Id10010) Name of VA interviewer ",
+      "label_sw": "10010. Jina la mhojaji"
+    },
+    {
+      "id": "Id10010Phone",
+      "label_en": "(Id10010Phone) Phone number of VA interviewer",
+      "label_sw": "10010Phone. Namba ya simu ya mhojaji"
+    },
+    {
+      "id": "Id10010a",
+      "label_en": "(Id10010a) Age of VA interviewer ",
+      "label_sw": "10010a. Umri wa mhojaji"
+    },
+    {
+      "id": "Id10010b",
+      "label_en": "(Id10010b) Sex of VA interviewer ",
+      "label_sw": "10010b. Jinsi ya mhojaji"
+    },
+    {
+      "id": "Id10010c",
+      "label_en": "(Id10010c) ID of VA interviewer ",
+      "label_sw": "10010c. Namba ya utambulisho ya mhojaji"
+    },
+    {
+      "id": "Id10012",
+      "label_en": "(Id10012) Date of the interview",
+      "label_sw": "10011. Tarehe ya mahojiano"
+    },
+    {
+      "id": "Id10013",
+      "label_en": "(Id10013) Did the respondent give consent? ",
+      "label_sw": "10013. Je, mhojiwa ameridhia kuhojiwa?"
+    },
+    {
+      "id": "Id10011",
+      "label_en": "Start time of the interview",
+      "label_sw": "10012. Muda wa kuanza mahojiano"
+    },
+    {
+      "id": "Id10017",
+      "label_en": "(Id10017) What was the first or given name(s) of the deceased?",
+      "label_sw": "10017.Taja jina la kwanza la marehemu"
+    },
+    {
+      "id": "Id10018",
+      "label_en": "(Id10018) What was the surname (or family name) of the deceased?",
+      "label_sw": "10018. Taja jina la ukoo la marehemu"
+    },
+    {
+      "id": "Id10019",
+      "label_en": "(Id10019) What was the sex of the deceased?",
+      "label_sw": "10019. Marehemu alikuwa wa jinsi gani?"
+    },
+    {
+      "id": "Id10020",
+      "label_en": "(Id10020) Is the date of birth known?",
+      "label_sw": "10020. Je, tarehe aliyozaliwa marehemu inafahamika?"
+    },
+    {
+      "id": "Id10021",
+      "label_en": "(Id10021) When was the deceased born?",
+      "label_sw": "10021. Je, marehemu alizaliwa lini?"
+    },
+    {
+      "id": "Id10022",
+      "label_en": "(Id10022) Is the date of death known?",
+      "label_sw": "10022. Je, tarehe aliyofariki marehemu inafahamika?"
+    },
+    {
+      "id": "Id10023_a",
+      "label_en": "(Id10023_a) When did (s)he die?",
+      "label_sw": "10023. Je, marehemu alifariki lini?"
+    },
+    {
+      "id": "Id10023_b",
+      "label_en": "(Id10023_b) When did (s)he die?",
+      "label_sw": "10023. Je, marehemu alifariki lini?"
+    },
+    {
+      "id": "Id10023",
+      "label_en": "(Id10023) When did (s)he die?",
+      "label_sw": "10023. Je, marehemu alifariki lini?"
+    },
+    {
+      "id": "Id10024",
+      "label_en": "(Id10024) Please indicate the year of death.",
+      "label_sw": "10024. Tafadhali andika mwaka aliofariki dunia marehemu"
+    },
+    {
+      "id": "ageInDays",
+      "label_en": "Age in Days",
+      "label_sw": "Umri katika siku"
+    },
+    {
+      "id": "ageInMonths",
+      "label_en": "Age in Months",
+      "label_sw": "Umri katika miezi "
+    },
+    {
+      "id": "ageInYears",
+      "label_en": "Age in Years",
+      "label_sw": "Umri katika miaka"
+    },
+    {
+      "id": "isNeonatal1",
+      "label_en": "The deceased person is a Neonate",
+      "label_sw": "Marehemu ni mtoto mchanga"
+    },
+    {
+      "id": "isChild1",
+      "label_en": "The deceased person is a Child",
+      "label_sw": "Marehemu ni mtoto"
+    },
+    {
+      "id": "isAdult1",
+      "label_en": "The deceased person is an Adult",
+      "label_sw": "Marehemu ni mtu mzima"
+    },
+    {
+      "id": "displayAgeNeonate",
+      "label_en": "NEONATE was ${ageInDays} days old.",
+      "label_sw": "Umri wa mtoto mchanga ulikuwa ni siku ${ageInDays}"
+    },
+    {
+      "id": "displayAgeChild",
+      "label_en": "CHILD was ${ageInYears} years ${ageInMonths} months and ${ageInMonthsRemain} days old.",
+      "label_sw": "Umri wa mtoto ulikuwa ni miaka ${ageInYears} miezi ${ageInMonths} na siku ${ageInMonthsRemain}"
+    },
+    {
+      "id": "displayAgeAdult",
+      "label_en": "ADULT was ${ageInYears} years old.",
+      "label_sw": "Umri wa mtu mzima: Umri wa Marehemu ulikuwa ni miaka ${ageInYears}"
+    },
+    {
+      "id": "age_group",
+      "label_en": " What age group corresponds to the deceased? ",
+      "label_sw": "Marehemu alikuwa kwenye kundi gani la umri?"
+    },
+    {
+      "id": "age_neonate_days",
+      "label_en": "How many days old was the baby? Enter neonates age in days: ",
+      "label_sw": "Mtoto mchanga alikuwa na umri wa siku ngapi?"
+    },
+    {
+      "id": "age_child_unit",
+      "label_en": "How old was the child? Enter childs age in: ",
+      "label_sw": "Mtoto alikuwa na Umri gani? (ingiza umri wa mtoto)"
+    },
+    {
+      "id": "age_child_days",
+      "label_en": " Enter childs age in days: ",
+      "label_sw": "Andika umri wa mtoto kwa siku alizoishi"
+    },
+    {
+      "id": "age_child_months",
+      "label_en": " Enter childs age in months: ",
+      "label_sw": "Andika umri wa mtoto kwa miezi aliyoishi"
+    },
+    {
+      "id": "age_child_years",
+      "label_en": " Enter childs age in years: ",
+      "label_sw": "Andika umri wa mtoto kwa miaka aliyoishi"
+    },
+    {
+      "id": "age_adult",
+      "label_en": " Enter adults age in years: ",
+      "label_sw": "Andika umri wa mtu mzima kwa miaka aliyoishi"
+    },
+    {
+      "id": "ageInMonthsByYear",
+      "label_en": "Age in Months",
+      "label_sw": "Umri kwa miezi"
+    },
+    {
+      "id": "ageInYears2",
+      "label_en": "Age in Years",
+      "label_sw": "Umri kwa miaka"
+    },
+    {
+      "id": "isNeonatal2",
+      "label_en": "The deceased person is a Neonate",
+      "label_sw": "Marehemu alikuwa ni mtoto mchanga"
+    },
+    {
+      "id": "isChild2",
+      "label_en": "The deceased person is a Child",
+      "label_sw": "Marehemu alikuwa ni mtoto"
+    },
+    {
+      "id": "isAdult2",
+      "label_en": "The deceased person is an Adult",
+      "label_sw": "Marehemu alikuwa ni mtu mzima"
+    },
+    {
+      "id": "isNeonatal",
+      "label_en": "The deceased person is a Neonate",
+      "label_sw": "Marehemu alikuwa ni mtoto mchanga"
+    },
+    {
+      "id": "isChild",
+      "label_en": "The deceased person is a Child",
+      "label_sw": "Marehemu alikuwa ni mtoto"
+    },
+    {
+      "id": "isAdult",
+      "label_en": "The deceased person is an Adult",
+      "label_sw": "Marehemu alikuwa ni mtu mzima"
+    },
+    {
+      "id": "ageInDaysNeonate",
+      "label_en": "Age in days",
+      "label_sw": "Umri kwa siku"
+    },
+    {
+      "id": "Id10008_check",
+      "label_en": "(Id10008_check) It is not possible to select that the respondent is the child of the deceased and enter that the deceased is a neonate or child. Please go back and correct the selection. ",
+      "label_sw": "10008. Haiwezekani kuchagua kuwa mhojiwa ni mtoto wa marehemu na ukachagua kuwa marehemu alikuwa ni mtoto mchanga au mtoto. Tafadahli rudi nyuma na urekebishe chaguo lako."
+    },
+    {
+      "id": "Id10058",
+      "label_en": "(Id10058) Where did the deceased die? ",
+      "label_sw": "10058. Marehemu alifia wapi?"
+    },
+    {
+      "id": "Id10058name",
+      "label_en": "(Id10058name) Name of the hospital or health facility where death occurred",
+      "label_sw": "10058. Taja jina la hospitali au kituo cha afya kifo kilipotokea"
+    },
+    {
+      "id": "Id10058Other",
+      "label_en": "(Id10058 Other): Specify",
+      "label_sw": "10058. Sehemu nyingine (taja):"
+    },
+    {
+      "id": "Id10058b",
+      "label_en": "(Id10058b). Was the deceased body taken to hospital or health facility for storage before burial",
+      "label_sw": "10058b. Je, mwili wa marehemu ulipelekwa hospitali au kituo cha afya kwa ajili ya kuhifadhiwa kabla ya mazishi?"
+    },
+    {
+      "id": "Id10058c",
+      "label_en": "(Id10058c). Which hospital or health facility was the body taken?",
+      "label_sw": "10058c. Mwili ulipelekwa hospitali au kituo gani cha afya?"
+    },
+    {
+      "id": "Id10487",
+      "label_en": "(Id10487) In the two weeks before death, did (s)he live with, visit, or care for someone who had any COVID-19 symptoms or a positive COVID-19 test?",
+      "label_sw": "10487. Wiki mbili kabla ya kifo chake, Je, marehemu aliishi au kumtembelea, au kumpatia huduma mtu ambaye alithibitika kuwa na namaambukizi au dalili zozote za Uviko 19?"
+    },
+    {
+      "id": "Id10488",
+      "label_en": "(Id10488) In the two weeks before death, did (s)he travel to an area where COVID-19 is known to be present?",
+      "label_sw": "10488. Wiki mbili kabla ya kifo chake; Je, marehemu alisafiri kwenda eneo ambalo linafahamika kuwa na maambukizi ya Uviko 19?"
+    },
+    {
+      "id": "Id10488a",
+      "label_en": "(Id10488a) Write the name of the place(s) where the deceased visited in the last two weeks",
+      "label_sw": "Id10488a. Andika jina la eneo ambalo marehemu alitembelea ndani ya wiki mbili zilizopita"
+    },
+    {
+      "id": "Id10051",
+      "label_en": "(Id10051) Is there a need to collect additional demographic data on the deceased? ",
+      "label_sw": "Id10051. Je kuna hitaji la kukusanya taarifa binafsi za ziada za marehemu?"
+    },
+    {
+      "id": "Id10052",
+      "label_en": "(Id10052) What was her/his citizenship/nationality?",
+      "label_sw": "10052. Alikuwa na uraia au utaifa wa aina gani? "
+    },
+    {
+      "id": "Id10053",
+      "label_en": "(Id10053) What was her/his ethnicity?",
+      "label_sw": "10053. Je, marehemu alikuwa kabila gani?"
+    },
+    {
+      "id": "Id10054_group",
+      "label_en": "(Id10054) What was her/his place of birth?",
+      "label_sw": " Marehemu alizaliwa wapi?"
+    },
+    {
+      "id": "Id10054R",
+      "label_en": "Region of birth",
+      "label_sw": "10054R Mkoa aliozaliwa"
+    },
+    {
+      "id": "Id10054D",
+      "label_en": "District of birth",
+      "label_sw": "10054W Wilaya aliyozaliwa"
+    },
+    {
+      "id": "Id10054D_other",
+      "label_en": "Other District:",
+      "label_sw": "10054W. Wilaya nyingine, taja:"
+    },
+    {
+      "id": "Id10054V",
+      "label_en": "Village of birth",
+      "label_sw": "10054K. Kijiji/Mtaa alichozaliwa"
+    },
+    {
+      "id": "Id10055",
+      "label_en": "(Id10055) What was her/his place of usual residence? (the place where the person lived most of the year)",
+      "label_sw": "10055. Je, marehemu aliishi wapi?( Mahali alipoishi muda mrefu ndani ya mwaka)"
+    },
+    {
+      "id": "Id10057",
+      "label_en": "(Id10057) Where did the death occur?",
+      "label_sw": "10057. Kifo kilitokea wapi?"
+    },
+    {
+      "id": "Id10057_group",
+      "label_en": "Within the country",
+      "label_sw": "Ndani ya nchi"
+    },
+    {
+      "id": "Id10057R",
+      "label_en": "(Id10057R) Region where death occurred",
+      "label_sw": "10057R. Mkoa kifo kilipotokea"
+    },
+    {
+      "id": "Id10057D",
+      "label_en": "(Id10057D) Disrtrict where death occurred",
+      "label_sw": "10057D. Wilaya kifo kilipotokea"
+    },
+    {
+      "id": "Id10057D_other",
+      "label_en": "Other District:",
+      "label_sw": "10057D. Wilaya nyingine, taja:"
+    },
+    {
+      "id": "Id10057V",
+      "label_en": "Village",
+      "label_sw": "10057V. Kijiji/Mtaa"
+    },
+    {
+      "id": "Id10057_death_outside",
+      "label_en": "If death occurred outside the country, please specify the place",
+      "label_sw": "10057b. Kama kifo kilitokea nje ya nchi, tafadhalli taja mahali husika"
+    },
+    {
+      "id": "Id10059",
+      "label_en": "(Id10059) What was her/his marital status?",
+      "label_sw": "10059. Hali yake ya ndoa ilikuaje?"
+    },
+    {
+      "id": "Id10060_check",
+      "label_en": "(Id10060_check) Is the date of marriage available? ",
+      "label_sw": "10060. Je, tarehe ya ndoa inafahamika?"
+    },
+    {
+      "id": "Id10060",
+      "label_en": "(Id10060) What was the date of marriage?",
+      "label_sw": "10060. Andika tarehe ya Ndoa"
+    },
+    {
+      "id": "Id10061",
+      "label_en": "(Id10061) What was the name of the father?",
+      "label_sw": "10061. Baba wa marehemu aliitwa nani? "
+    },
+    {
+      "id": "Id10062",
+      "label_en": "(Id10062) What was the name of the mother?",
+      "label_sw": "10062. Mama wa marehemu aliitwa nani? "
+    },
+    {
+      "id": "Id10063",
+      "label_en": "(Id10063) What was her/his highest level of schooling?",
+      "label_sw": "10063. Marehemu alifikia kiwango gani cha juu cha elimu rasmi?"
+    },
+    {
+      "id": "Id10064",
+      "label_en": "(Id10064) Was (s)he able to read and/or write?",
+      "label_sw": "10064. Je, aliweza kusoma na/au kuandika? "
+    },
+    {
+      "id": "Id10065",
+      "label_en": "(Id10065) What was her/his economic activity status in year prior to death?",
+      "label_sw": "10065. Je, marehemu alijishughulisha na shughuli gani za kiuchumi mwaka mmoja kabla ya kifo chake? "
+    },
+    {
+      "id": "Id10066",
+      "label_en": "(Id10066) What was her/his occupation, that is, what kind of work did (s)he mainly do?",
+      "label_sw": "10066. Marehemu alikuwa anafanya kazi gani, kazi ambayo aliifanya zaidi?"
+    },
+    {
+      "id": "Id10069",
+      "label_en": "(Id10069) Is there a need to collect civil registration numbers on the deceased? ",
+      "label_sw": "10069. Je, kuna umuhimu wa kuulizia namba za usajili wa cheti cha kifo cha marehemu?"
+    },
+    {
+      "id": "Id10069_a",
+      "label_en": "(Id10069_a) Do you have a Death Certificate from the Civil Registry?",
+      "label_sw": "10069_a. Je, una cheti cha kifo cha marehemu?"
+    },
+    {
+      "id": "Id10070",
+      "label_en": "(Id10070) Death registration number/certificate ",
+      "label_sw": "10070. Namba ya usajili wa kifo/cheti cha kifo "
+    },
+    {
+      "id": "Id10071_check",
+      "label_en": "(Id10071_check) Is the date of registration available? ",
+      "label_sw": "(Id10071_check) Je tarehe ya usajili wa kifo ipo?"
+    },
+    {
+      "id": "Id10071",
+      "label_en": "(Id10071) Date of registration ",
+      "label_sw": "10071. Tarehe ya usajili wa kifo"
+    },
+    {
+      "id": "Id10071note",
+      "label_en": "Date on the death certificate is before date of death. Kindly go back and fix it",
+      "label_sw": "Tarehe ya Kusajili kifo ni kabla ya tarehe ya kifo kutokea. Tafadhali rudi nyuma na hakikisha"
+    },
+    {
+      "id": "Id10072",
+      "label_en": "(Id10072) Place of registration ",
+      "label_sw": "10072. Mahali kifo kiliposajiliwa"
+    },
+    {
+      "id": "Id10073",
+      "label_en": "(Id10073) National identification number of deceased ",
+      "label_sw": "10073. Namba ya Kitambulisho cha Taifa cha marehemu"
+    },
+    {
+      "id": "stillbirth",
+      "label_en": "Verification of possible stillbirth",
+      "label_sw": "KUHAKIKI UWEZEKANO WA MTOTO KUZALIWA MFU"
+    },
+    {
+      "id": "Id10104",
+      "label_en": "(Id10104) Did the baby ever cry?",
+      "label_sw": "10104. Je, mtoto alilia alipozaliwa?"
+    },
+    {
+      "id": "Id10105",
+      "label_en": "(Id10105) Did the baby cry immediately after birth, even if only a little bit?",
+      "label_sw": "10105. Je, mtoto alilia angalau kidogo mara baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10106",
+      "label_en": "(Id10106) How many minutes after birth did the baby first cry?",
+      "label_sw": "10106. Mtoto alianza kulia dakika ngapi baada ya kuzaliwa? "
+    },
+    {
+      "id": "Id10107",
+      "label_en": "(Id10107) Did the baby stop being able to cry?",
+      "label_sw": "10107. Je, mtoto alipoteza uwezo wa kulia?"
+    },
+    {
+      "id": "Id10108",
+      "label_en": "(Id10108) How many hours before death did the baby stop crying?",
+      "label_sw": "10108. Mtoto aiacha kulia saa ngapi kabla ya kufariki dunia?"
+    },
+    {
+      "id": "Id10109",
+      "label_en": "(Id10109) Did the baby ever move?",
+      "label_sw": "10109. Je, mtoto alichezesha viungo angalau kidogo?"
+    },
+    {
+      "id": "Id10110",
+      "label_en": "(Id10110) Did the baby ever breathe?",
+      "label_sw": "10110. Je, mtoto alipumua?"
+    },
+    {
+      "id": "Id10111",
+      "label_en": "(Id10111) Did the baby breathe immediately after birth, even a little?",
+      "label_sw": "10111. Je, mtoto alipumua angalau kidogo mara baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10112",
+      "label_en": "(Id10112) Did the baby have a breathing problem?",
+      "label_sw": "10112. Je, mtoto alilkuwa na tatizo la kupumua?"
+    },
+    {
+      "id": "Id10113",
+      "label_en": "(Id10113) Was the baby given assistance to breathe at birth?",
+      "label_sw": "10113. Je, mtoto alipatiwa msaada wa kupumua alipozaliwa?"
+    },
+    {
+      "id": "Id10114",
+      "label_en": "(Id10114) If the baby didnt show any sign of life, was it born dead?",
+      "label_sw": "10114. Iwapo mtoto hakuonyesha dalili zozote za uhai uhai, Je, alizaliwa mfu?"
+    },
+    {
+      "id": "Id10115",
+      "label_en": "(Id10115) Were there any bruises or signs of injury on babys body after the birth?",
+      "label_sw": "10115. Je, mwili wa mtoto ulikuwa na dalili zozote za michubuko au majeraha baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10116",
+      "label_en": "(Id10116) Was the baby’s body soft, pulpy and discoloured and the skin peeling away?",
+      "label_sw": "10116. Je, mwili wa mtoto mchanga ulikuwa laini, tepetepe, kubadilika rangi na ngozi kubanduka banduka"
+    },
+    {
+      "id": "Id10077",
+      "label_en": "(Id10077) Did (s)he suffer from any injury or accident that led to her/his death?",
+      "label_sw": "10077. Je, marehemu alipata jeraha au ajali yoyote iliyosababisha kifo chake?"
+    },
+    {
+      "id": "Id10079",
+      "label_en": "(Id10079) Was it a road traffic accident?",
+      "label_sw": "10079. Je, ilikuwa ajali ya barabarani?"
+    },
+    {
+      "id": "Id10080",
+      "label_en": "(Id10080) What was her/his role in the road traffic accident?",
+      "label_sw": "10080. Je, alikuwa nani wakati wa ajali ya barabarani? "
+    },
+    {
+      "id": "Id10081",
+      "label_en": "(Id10081) What was the counterpart that was hit during the road traffic accident?",
+      "label_sw": "10081. Je, aligongwa au kugongana na kitu gani wakati wa ajali ya barabarani?"
+    },
+    {
+      "id": "Id10082",
+      "label_en": "(Id10082) Was (s)he injured in a non-road transport accident?",
+      "label_sw": "10082. Je, alijeruhiwa kwenye ajali isiyokuwa ya barabarani?"
+    },
+    {
+      "id": "Id10083",
+      "label_en": "(Id10083) Was (s)he injured in a fall?",
+      "label_sw": "10083. Je, alijeruhiwa kwa kuanguka? "
+    },
+    {
+      "id": "Id10084",
+      "label_en": "(Id10084) Was there any poisoning?",
+      "label_sw": "10084. Je, alidhurika kwa sumu?"
+    },
+    {
+      "id": "Id10085",
+      "label_en": "(Id10085) Did (s)he die of drowning?",
+      "label_sw": "10085. Je, alikufa kwa kuzama ndani ya maji?"
+    },
+    {
+      "id": "Id10086",
+      "label_en": "(Id10086) Was (s)he injured by a bite or sting by venomous animal?",
+      "label_sw": "10086. Je, alijeruhiwa kwa kungatwa na mdudu au mnyama mwenye sumu?"
+    },
+    {
+      "id": "Id10087",
+      "label_en": "(Id10087) Was (s)he injured by an animal or insect (non-venomous)?",
+      "label_sw": "10087. Je, alijeruhiwa na mdudu au mnyama asiyekuwa na sumu?"
+    },
+    {
+      "id": "Id10088",
+      "label_en": "(Id10088) What was the animal/insect?",
+      "label_sw": "10088. Je, alijeruhiwa na mnyama au mdudu gani?"
+    },
+    {
+      "id": "Id10089",
+      "label_en": "(Id10089) Was (s)he injured by burns/fire?",
+      "label_sw": "10089. Je, alipata majeraha ya kuungua au moto?"
+    },
+    {
+      "id": "Id10090",
+      "label_en": "(Id10090) Was (s)he subject to violence (suicide, homicide, abuse)?",
+      "label_sw": "10090. Je, alifanyiwa ukatili (kujiua, kuuawa au kunyanyaswa)?"
+    },
+    {
+      "id": "Id10091",
+      "label_en": "(Id10091) Was (s)he injured by a firearm?",
+      "label_sw": "10091. Je, alijeruhiwa kwa silaha ya moto?"
+    },
+    {
+      "id": "Id10092",
+      "label_en": "(Id10092) Was (s)he stabbed, cut or pierced?",
+      "label_sw": "10092. Je, alichomwa au kukatwa na kitu chenye ncha kali?"
+    },
+    {
+      "id": "Id10093",
+      "label_en": "(Id10093) Was (s)he strangled?",
+      "label_sw": "10093. Je, alinyongwa?"
+    },
+    {
+      "id": "Id10094",
+      "label_en": "(Id10094) Was (s)he injured by a blunt force?",
+      "label_sw": "10094. Je, alijeruhiwa na kitu kizito?"
+    },
+    {
+      "id": "Id10095",
+      "label_en": "(Id10095) Was (s)he injured by a force of nature?",
+      "label_sw": "10095. Je, alidhurika kutokana na majanga ya asili?"
+    },
+    {
+      "id": "Id10096",
+      "label_en": "(Id10096) Was it electrocution?",
+      "label_sw": "10096. Je, alipata ajali ya umeme?"
+    },
+    {
+      "id": "Id10097",
+      "label_en": "(Id10097) Did (s)he encounter any other injury?",
+      "label_sw": "10097. Je, alijeruhiwa kwa ajali nyingine?"
+    },
+    {
+      "id": "Id10098",
+      "label_en": "(Id10098) Was the injury accidental?",
+      "label_sw": "10098. Je, jeraha au ajali ilikuwa kwa bahati mbaya?"
+    },
+    {
+      "id": "Id10099",
+      "label_en": "(Id10099) Was the injury self-inflicted?",
+      "label_sw": "10099. Je, alijijeruhi mwenyewe?"
+    },
+    {
+      "id": "Id10100",
+      "label_en": "(Id10100) Was the injury intentionally inflicted by someone else?",
+      "label_sw": "10100. Je, jeraha au ajali ilisababishwa na mtu mwingine kwa makusudi?"
+    },
+    {
+      "id": "Id10351",
+      "label_en": "(Id10351) How many days old was the baby when the fatal illness started?",
+      "label_sw": "10351. Mtoto alikuwa na umri gani wakati ugonjwa unaodhaniwa kusababisha kifo chake ulipoanza?"
+    },
+    {
+      "id": "Id10408",
+      "label_en": "(Id10408) Before the illness that led to death, was the baby/the child growing normally?",
+      "label_sw": "10408. Kabla ya ugonjwa uliosababisha kifo, je mtoto alikuwa akikua kawaida?"
+    },
+    {
+      "id": "Id10120_0",
+      "label_en": "(Id10120_0) For how many days was (s)he ill before death? ",
+      "label_sw": "10120_0. Aliugua kwa siku ngapi kabla ya kifo?"
+    },
+    {
+      "id": "id10120_unit",
+      "label_en": "(id10120_unit) For how long was (s)he ill before death?",
+      "label_sw": "10120_unit. Aliugua kwa muda gani kabla ya kifo?"
+    },
+    {
+      "id": "Id10121",
+      "label_en": "(Id10121) Months",
+      "label_sw": "10121. Miezi"
+    },
+    {
+      "id": "Id10122",
+      "label_en": "(Id10122) Years",
+      "label_sw": "10122. Miaka"
+    },
+    {
+      "id": "Id10120_1",
+      "label_en": "(Id10120_1) Days",
+      "label_sw": "10120_1. Siku"
+    },
+    {
+      "id": "Id10120",
+      "label_en": "(Id10120) Calculated number of Days with illness",
+      "label_sw": ""
+    },
+    {
+      "id": "Id10123",
+      "label_en": "(Id10123) Did (s)he die suddenly?",
+      "label_sw": "10123. Je, alifariki dunia ghafla?"
+    },
+    {
+      "id": "Id10125",
+      "label_en": "(Id10125) Was there any diagnosis by a health professional of tuberculosis?",
+      "label_sw": "10125. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana kifua kikuu?"
+    },
+    {
+      "id": "Id10126",
+      "label_en": "(Id10126) Was an HIV test ever positive?",
+      "label_sw": "10126. Je, kipimo kiliwahi kuonyesha kuwa ana maambukizi ya Virusi vya Ukimwi?"
+    },
+    {
+      "id": "Id10127",
+      "label_en": "(Id10127) Was there any diagnosis by a health professional of AIDS?",
+      "label_sw": "10127. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana VVU au UKIMWI?"
+    },
+    {
+      "id": "Id10128",
+      "label_en": "(Id10128) Did (s)he have a recent positive test by a health professional for malaria?",
+      "label_sw": "10128. Je, aliwahi kugundulika kwa kipimo na daktari au mhudumu wa afya kuwa ANA malaria siku za karibuni kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10129",
+      "label_en": "(Id10129) Did (s)he have a recent negative test by a health professional for malaria?",
+      "label_sw": "10129. Je, aliwahi kugundulika kwa kipimo na daktari au mhudumu wa afya kuwa HANA malaria siku za karibuni kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10130",
+      "label_en": "(Id10130) Was there any diagnosis by a health professional of dengue fever?",
+      "label_sw": "10130. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana homa ya dengue?"
+    },
+    {
+      "id": "Id10131",
+      "label_en": "(Id10131) Was there any diagnosis by a health professional of measles?",
+      "label_sw": "10131. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana surua?"
+    },
+    {
+      "id": "Id10132",
+      "label_en": "(Id10132) Was there any diagnosis by a health professional of high blood pressure?",
+      "label_sw": "10132. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana shinikizo la juu la damu?"
+    },
+    {
+      "id": "Id10133",
+      "label_en": "(Id10133) Was there any diagnosis by a health professional of heart disease?",
+      "label_sw": "10133. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya moyo?"
+    },
+    {
+      "id": "Id10134",
+      "label_en": "(Id10134) Was there any diagnosis by a health professional of diabetes?",
+      "label_sw": "10134. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana kisukari?"
+    },
+    {
+      "id": "Id10135",
+      "label_en": "(Id10135) Was there any diagnosis by a health professional of asthma?",
+      "label_sw": "10135. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana pumu?"
+    },
+    {
+      "id": "Id10136",
+      "label_en": "(Id10136) Was there any diagnosis by a health professional of epilepsy?",
+      "label_sw": "10136. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana kifafa?"
+    },
+    {
+      "id": "Id10137",
+      "label_en": "(Id10137) Was there any diagnosis by a health professional of cancer?",
+      "label_sw": "10137. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana saratani?"
+    },
+    {
+      "id": "Id10138",
+      "label_en": "(Id10138) Was there any diagnosis by a health professional of Chronic Obstructive Pulmonary Disease (COPD)?",
+      "label_sw": "10138. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi sugu ya mfumo wa hewa?"
+    },
+    {
+      "id": "Id10139",
+      "label_en": "(Id10139) Was there any diagnosis by a health professional of dementia?",
+      "label_sw": "10139. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya kupoteza kumbukumbu?"
+    },
+    {
+      "id": "Id10140",
+      "label_en": "(Id10140) Was there any diagnosis by a health professional of depression?",
+      "label_sw": "10140. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya sonona?"
+    },
+    {
+      "id": "Id10141",
+      "label_en": "(Id10141) Was there any diagnosis by a health professional of stroke?",
+      "label_sw": "10141. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana kiharusi?"
+    },
+    {
+      "id": "Id10142",
+      "label_en": "(Id10142) Was there any diagnosis by a health professional of sickle cell disease?",
+      "label_sw": "10142. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana seli mundu (sickle cell)?"
+    },
+    {
+      "id": "Id10143",
+      "label_en": "(Id10143) Was there any diagnosis by a health professional of kidney disease?",
+      "label_sw": "10143. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya figo?"
+    },
+    {
+      "id": "Id10144",
+      "label_en": "(Id10144) Was there any diagnosis by a health professional of liver disease?",
+      "label_sw": "10144. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya ini?"
+    },
+    {
+      "id": "Id10482",
+      "label_en": "(Id10482) Was there any diagnosis by a health professional of COVID-19?",
+      "label_sw": "10482. Je, aliwahi kugunduliwa na dakari au mhudumu wa afya kuwa ana maambukizi ya Uviko 19?"
+    },
+    {
+      "id": "Id10483",
+      "label_en": "(Id10483) Did s(h)e have a recent test by a health professional for COVID-19?",
+      "label_sw": "10483. Je, aliwahi kupimwa maambukizi ya Uviko19 na daktari au mhudumu wa afya?"
+    },
+    {
+      "id": "Id10484",
+      "label_en": "(Id10484) What was the result? ",
+      "label_sw": "10484. Je, kipimo kilionesha majibu gani?"
+    },
+    {
+      "id": "Id10147",
+      "label_en": "(Id10147) Did (s)he have a fever?",
+      "label_sw": "10147. Je, alikuwa na homa?"
+    },
+    {
+      "id": "Id10148_a",
+      "label_en": "(Id10148_a) How many days did the fever last?",
+      "label_sw": "10148_a. Je, homa ilidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10148_units",
+      "label_en": "(Id10148_units) How long did the fever last?",
+      "label_sw": "10148_units. Je, homa ilidumu kwa muda gani?"
+    },
+    {
+      "id": "Id10148_b",
+      "label_en": "(Id10148_b) Enter how long the fever lasted in days :",
+      "label_sw": "10148_b. Kuugua homa kulidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10148_c",
+      "label_en": "(Id10148_c) Enter how long the fever lasted in months :",
+      "label_sw": "10148_c. Kuugua homa kulidumu kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10148",
+      "label_en": "(Id10148) How many days did the fever last?",
+      "label_sw": "10148. Je, homa ilidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10149",
+      "label_en": "(Id10149) Did the fever continue until death?",
+      "label_sw": "10149. Je, homa ilidumu hadi kifo?"
+    },
+    {
+      "id": "Id10150",
+      "label_en": "(Id10150) How severe was the fever?",
+      "label_sw": "10150. Homa ilikuwa kali kiasi gani?"
+    },
+    {
+      "id": "Id10151",
+      "label_en": "(Id10151) What was the pattern of the fever?",
+      "label_sw": "10151. Je, homa ilikuwa ya tabia au mfano gani?"
+    },
+    {
+      "id": "Id10152",
+      "label_en": "(Id10152) Did (s)he have night sweats?",
+      "label_sw": "10152. Je, alikuwa anatokwa jasho usiku?"
+    },
+    {
+      "id": "Id10153",
+      "label_en": "(Id10153) Did (s)he have a cough?",
+      "label_sw": "10153. Je, alikuwa anakohoa?"
+    },
+    {
+      "id": "Id10154_units",
+      "label_en": "(Id10154_units) For how long did (s)he have a cough?",
+      "label_sw": "10154_units. Je, alikohoa kwa muda gani?"
+    },
+    {
+      "id": "Id10154_a",
+      "label_en": "(Id10154_a) Enter how long (s)he had a cough in days :",
+      "label_sw": "10154_a. Andika idadi ya siku alizokuwa anakohoa:"
+    },
+    {
+      "id": "Id10154_b",
+      "label_en": "(Id10154_b) Enter how long (s)he had a cough in months :",
+      "label_sw": "10154_b. Andika idadi ya miezi aliyokuwa anakohoa:"
+    },
+    {
+      "id": "Id10154",
+      "label_en": "(Id10154) For how many days did (s)he have a cough?",
+      "label_sw": "10154. Je, alikohoa kwa siku ngapi?"
+    },
+    {
+      "id": "Id10155",
+      "label_en": "(Id10155) Was the cough productive, with sputum?",
+      "label_sw": "10155. Je, alipokohoa alitoa makohozi?"
+    },
+    {
+      "id": "Id10156",
+      "label_en": "(Id10156) Was the cough very severe?",
+      "label_sw": "10156. Je, kikohozi kilikuwa kikali sana?"
+    },
+    {
+      "id": "Id10157",
+      "label_en": "(Id10157) Did (s)he cough up blood?",
+      "label_sw": "10157. Je, alikohoa damu?"
+    },
+    {
+      "id": "Id10158",
+      "label_en": "(Id10158) Did (s)he make a whooping sound when coughing?",
+      "label_sw": "10158. Je, kukohoa kwake kulitoa mlio kama wa mtu mwenye kifaduro? "
+    },
+    {
+      "id": "Id10159",
+      "label_en": "(Id10159) Did (s)he have any difficulty breathing?",
+      "label_sw": "10159. Je, alikuwa na tatizo lolote la kupumua?"
+    },
+    {
+      "id": "Id10161_0",
+      "label_en": "(Id10161_0) For how many days did the difficulty breathing last?",
+      "label_sw": "10161_0. Kupumua kwa shida kulidumu kwa siku ngapi?"
+    },
+    {
+      "id": "id10161_unit",
+      "label_en": "(id10161_unit) For how long did the difficult breathing last?",
+      "label_sw": "10161_unit. Kupumua kwa shida kulidumu kwa muda gani?"
+    },
+    {
+      "id": "Id10161_1",
+      "label_en": "(Id10161_1) Enter how long the difficult breathing lasted in days :",
+      "label_sw": "10161_1. Kupumua kwa shida kulidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10162",
+      "label_en": "(Id10162) Enter how long the difficult breathing lasted in months :",
+      "label_sw": "10162. Kupumua kwa shida kulidumu kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10163",
+      "label_en": "(Id10163) Enter how long the difficult breathing lasted in years :",
+      "label_sw": "10163. Kupumua kwa shida kulidumu kwa miaka mingapi?"
+    },
+    {
+      "id": "Id10161",
+      "label_en": "(Id10161) Calculated number of Days with illness",
+      "label_sw": ""
+    },
+    {
+      "id": "Id10165",
+      "label_en": "(Id10165) Was the difficulty continuous or on and off?",
+      "label_sw": "10165. Je, shida ya kupumua ilikuwa ya mfululizo au ya vipindi?"
+    },
+    {
+      "id": "Id10166",
+      "label_en": "(Id10166) During the illness that led to death, did (s)he have fast breathing?",
+      "label_sw": "10166. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je, alikuwa anapumua haraka haraka?"
+    },
+    {
+      "id": "Id10167_a",
+      "label_en": "(Id10167_a) For how many days did the fast breathing last?",
+      "label_sw": "10167_a. Kupumua kwa haraka haraka kulidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10167_units",
+      "label_en": "(Id10167_units) How long did the fast breathing last?",
+      "label_sw": "10167_unit. Kupumua kwa haraka haraka kulidumu kwa muda gani?"
+    },
+    {
+      "id": "Id10167_b",
+      "label_en": "(Id10167_b) Enter how long the fast breathing lasted in days :",
+      "label_sw": "10167_b. Kupumua kwa haraka haraka kulidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10167_c",
+      "label_en": "(Id10167_c) Enter how long the fast breathing lasted in months :",
+      "label_sw": "10167_c. Kupumua kwa haraka haraka kulidumu kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10167",
+      "label_en": "Id10167. How long did the fast breathing last?",
+      "label_sw": "10167_c. Kupumua kwa haraka haraka kulidumu kwa muda gani?"
+    },
+    {
+      "id": "Id10168",
+      "label_en": "(Id10168) Did (s)he have breathlessness?",
+      "label_sw": "10168. Je, alikuwa anakosa pumzi?"
+    },
+    {
+      "id": "Id10169_a",
+      "label_en": "(Id10169_a) For how many days did (s)he have breathlessness?",
+      "label_sw": "10169_a. Je, ni kwa siku ngapi alikosa pumzi?"
+    },
+    {
+      "id": "Id10169_units",
+      "label_en": "(Id10169_units) How long did (s)he have breathlessness?",
+      "label_sw": "10169_units. Alikosa pumzi kwa muda gani?"
+    },
+    {
+      "id": "Id10169_b",
+      "label_en": "(Id10169_b) Enter how long (s)he had breathlessness in days :",
+      "label_sw": "10169_b. Ni kwa siku ngapi alikosa pumzi?"
+    },
+    {
+      "id": "Id10169_c",
+      "label_en": "(Id10169_c) Enter how long (s)he had breathlessness in months :",
+      "label_sw": "10169_c. Ni kwa miezi mingapi alikosa pumzi?"
+    },
+    {
+      "id": "Id10169",
+      "label_en": "(Id10169) How long did (s)he have breathlessness?",
+      "label_sw": "10169. Shinda ya kupumua ilidumu kwa muda gani?"
+    },
+    {
+      "id": "Id10170",
+      "label_en": "(Id10170) Was (s)he unable to carry out daily routines due to breathlessness?",
+      "label_sw": "10170. Je, aliwahi kushindwa kufanya shughuli zake za kawaida kutokana na kukosa pumzi?"
+    },
+    {
+      "id": "Id10171",
+      "label_en": "(Id10171) Was (s)he breathless while lying flat?",
+      "label_sw": "10171. Je, alikuwa akikosa pumzi akiwa amelala chali?"
+    },
+    {
+      "id": "Id10172",
+      "label_en": "(Id10172) Did you see the lower chest wall/ribs being pulled in as the child breathed in?",
+      "label_sw": "10172. Je, uliona sehemu ya chini ya kifua au mbavu za mtoto zikiingia ndani wakati akipumua?"
+    },
+    {
+      "id": "Id10173_nc",
+      "label_en": "(Id10173_nc) During the illness that led to death did his/her breathing sound like any of the following:",
+      "label_sw": "10173_nc. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, Je, kupumua kwake kulitoa mojawapo ya sauti zifuatazo?"
+    },
+    {
+      "id": "id10173_check",
+      "label_en": "(id10173_check) It is not possible to select Dontknow or refuse together with other options. Please go back and correct the selection. ",
+      "label_sw": "Haiwezekani kuchagua Sijui au kukataa pamoja na chaguzi nyingine. Tafadhali rudi nyuma na urekebishe chaguo lako."
+    },
+    {
+      "id": "Id10173_a",
+      "label_en": "(Id10173_a) During the illness that led to death did (s)he have wheezing?",
+      "label_sw": "10173_a. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake. Je, kupumua kwake kulitoa Sauti ya mluzi au filimbi wakati wa kuvuta hewa ndani na wakati wa kutoa nje? hewa nje?"
+    },
+    {
+      "id": "Id10173",
+      "label_en": "(Id10173) During the illness that led to death did his/her breathing sound like any of the following:",
+      "label_sw": "10173. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake. Je, kupumua kwake kulitoa mlio upi kati ya ifuatayo?"
+    },
+    {
+      "id": "Id10174",
+      "label_en": "(Id10174) Did (s)he have chest pain?",
+      "label_sw": "10174. Je, alikuwa na maumivu ya kifua?"
+    },
+    {
+      "id": "Id10175",
+      "label_en": "(Id10175) Was the chest pain severe?",
+      "label_sw": "10175. Je, maumivu ya kifua yalikuwa makali? "
+    },
+    {
+      "id": "Id10176",
+      "label_en": "(Id10176) How many days before death did (s)he have chest pain?",
+      "label_sw": "10176. Je, maumivu ya kifua yalikuwa kwa siku ngapi kabla ya kifo chake?"
+    },
+    {
+      "id": "paindur",
+      "label_en": "Duration of the chest pain",
+      "label_sw": "KIPINDI CHA MAUMIVU YA KIFUA"
+    },
+    {
+      "id": "Id10178_unit",
+      "label_en": "(Id10178_unit) How long did the chest pain last? ",
+      "label_sw": "10178_unit. Je alikuwa na maumivu ya kifua kwa muda gani?"
+    },
+    {
+      "id": "Id10178",
+      "label_en": "(Id10178) Enter how long the chest pain lasted in minutes :",
+      "label_sw": "10178. Maumivu ya kifua yalidumu kwa dakika ngapi?"
+    },
+    {
+      "id": "Id10179",
+      "label_en": "(Id10179) Enter how long the chest pain lasted in hours :",
+      "label_sw": "10179. Maumivu ya kifua yalidumu kwa masaa mangapi?"
+    },
+    {
+      "id": "Id10179_1",
+      "label_en": "(Id10179_1) Enter how long the chest pain lasted in days :",
+      "label_sw": "10179_1. Maumivu ya kifua yalidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10181",
+      "label_en": "(Id10181) Did (s)he have more frequent loose or liquid stools than usual?",
+      "label_sw": "10181. Je, aliharisha mara kwa mara zaidi kuliko kawaida?"
+    },
+    {
+      "id": "Id10182_units",
+      "label_en": "(Id10182_units) How long did (s)he have frequent loose or liquid stools?",
+      "label_sw": "10182_units. Aliharisha mara kwa mara kuliko kawaida kwa muda gani?"
+    },
+    {
+      "id": "Id10182_a",
+      "label_en": "(Id10182_a) Enter how long (s)he had frequent loose or liquid stools in days :",
+      "label_sw": "10182_a. Aliharisha mara kwa mara kuliko kawaida kwa siku ngapi?"
+    },
+    {
+      "id": "Id10182_b",
+      "label_en": "(Id10182_b) Enter how long (s)he had frequent loose or liquid stools in months :",
+      "label_sw": "10182_b. Aliharisha mara kwa mara kuliko kawaida kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10182",
+      "label_en": "(Id10182) For how many days did (s)he have frequent loose or liquid stools?",
+      "label_sw": "10182. kuharisha kulidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10183",
+      "label_en": "(Id10183) How many stools did the baby or child have on the day that loose liquid stools were most frequent?",
+      "label_sw": "10183. Je, siku mtoto alipokuwa anaharisha mara kwa mara, aliharisha mara ngapi?"
+    },
+    {
+      "id": "Id10184_a",
+      "label_en": "(Id10184_a) How many days before death did the frequent loose or liquid stools start?",
+      "label_sw": "10184_a. Ni siku ngapi kabla ya kifo chake alianza kuharisha mara kwa mara?"
+    },
+    {
+      "id": "Id10184_units",
+      "label_en": "(Id10184_units) How long before death did the frequent loose or liquid stools start?",
+      "label_sw": "10184_units. Ni muda ngani kabla ya kifo chake alianza kuharisha mara kwa mara?"
+    },
+    {
+      "id": "Id10184_b",
+      "label_en": "(Id10184_b) Enter how long before death the frequent loose or liquid stools started in days :",
+      "label_sw": "10184_b. Ni siku ngapi kabla ya kifo chake alianza kuharisha mara kwa mara?"
+    },
+    {
+      "id": "Id10184_c",
+      "label_en": "(Id10184_c) Enter how long before death the frequent loose or liquid stools started in months :",
+      "label_sw": "10184_c. Ni miezi mingapi kabla ya kifo chake alianza kuharisha mara kwa mara?"
+    },
+    {
+      "id": "Id10185",
+      "label_en": "(Id10185) Did the frequent loose or liquid stools continue until death?",
+      "label_sw": "10185. Je, kuharisha mara kwa mara kuliendelea hadi alipofariki dunia?"
+    },
+    {
+      "id": "Id10186",
+      "label_en": "(Id10186) At any time during the final illness was there blood in the stools?",
+      "label_sw": "10186. Je, wakati wa ugonjwa wake wa mwisho, choo chake kilionekana kuwa na damu?"
+    },
+    {
+      "id": "Id10187",
+      "label_en": "(Id10187) Was there blood in the stool up until death?",
+      "label_sw": "10187. Je, choo chake kilionekana kuwa na damu mpaka alipofariki dunia?"
+    },
+    {
+      "id": "Id10188",
+      "label_en": "(Id10188) Did (s)he vomit?",
+      "label_sw": "10188. Je, alitapika?"
+    },
+    {
+      "id": "Id10189",
+      "label_en": "(Id10189) To clarify: Did (s)he vomit in the week preceding the death?",
+      "label_sw": "10189. Je, alitapika katika wiki moja kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10190_units",
+      "label_en": "(Id10190_units) How long before death did (s)he vomit?",
+      "label_sw": "10190_units. Ni kwa muda gani kabla ya kifo alitapika?"
+    },
+    {
+      "id": "Id10190_a",
+      "label_en": "(Id10190_a) Enter how long before death(s)he vomited in days :",
+      "label_sw": "10190_a. Ni siku ngapi kabla ya kifo alitapika?"
+    },
+    {
+      "id": "Id10190_b",
+      "label_en": "(Id10190_b) Enter how long before death(s)he vomited in months :",
+      "label_sw": "10190_b. Ni miezi mingapi kabla ya kifo alitapika?"
+    },
+    {
+      "id": "Id10191",
+      "label_en": "(Id10191) Was there blood in the vomit?",
+      "label_sw": "10191. Je, alitapika damu?"
+    },
+    {
+      "id": "Id10192",
+      "label_en": "(Id10192) Was the vomit black?",
+      "label_sw": "10192. Je, matapishi yalikuwa meusi?"
+    },
+    {
+      "id": "Id10193",
+      "label_en": "(Id10193) Did (s)he have any belly (abdominal) problem?",
+      "label_sw": "10193. Je, alikuwa na tatizo lolote la tumbo?"
+    },
+    {
+      "id": "Id10194",
+      "label_en": "(Id10194) Did (s)he have belly (abdominal) pain?",
+      "label_sw": "10194. Je, alikuwa na maumivu yoyote ya tumbo?"
+    },
+    {
+      "id": "Id10195",
+      "label_en": "(Id10195) Was the belly (abdominal) pain severe?",
+      "label_sw": "10195. Je, maumivu ya tumbo yalikuwa makali?"
+    },
+    {
+      "id": "id10196_unit",
+      "label_en": "(id10196_unit) For how long did (s)he have belly (abdominal) pain? ",
+      "label_sw": "10196. Ni kwa muda gani alikuwa na maumivu makali ya tumbo"
+    },
+    {
+      "id": "Id10196",
+      "label_en": "(Id10196) Enter how long (s)he had belly (abdominal) pain in hours :",
+      "label_sw": "10196. Alilkuwa na maumivu ya tumbo kwa Saa ngapi?"
+    },
+    {
+      "id": "Id10197_a",
+      "label_en": "(Id10197_a) Enter how long (s)he had belly (abdominal) pain in days :",
+      "label_sw": "10197_a. Alilkuwa na maumivu ya tumbo kwa Siku ngapi?"
+    },
+    {
+      "id": "Id10198",
+      "label_en": "(Id10198) Enter how long (s)he had belly (abdominal) pain in months :",
+      "label_sw": "10198. Alilkuwa na maumivu ya tumbo kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10197",
+      "label_en": "(Id10197) Calculated number of Days with belly pain",
+      "label_sw": ""
+    },
+    {
+      "id": "Id10199",
+      "label_en": "(Id10199) Was the pain in the upper or lower belly (abdomen)?",
+      "label_sw": "10199. Je, maumivu yalikuwa kwenye sehemu ya juu au ya chini ya tumbo?"
+    },
+    {
+      "id": "Id10200",
+      "label_en": "(Id10200) Did (s)he have a more than usually protruding belly (abdomen)?",
+      "label_sw": "10200. Je, alikuwa amevimba tumbo?"
+    },
+    {
+      "id": "Id10201_unit",
+      "label_en": "(Id10201_unit) For how long before death did (s)he have a more than usually protruding belly (abdomen)? ",
+      "label_sw": "10201_unit. Je, alikuwa amevimba tumbo kwa muda gani kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10201_a",
+      "label_en": "(Id10201_a) Enter how long before death (s)he had a more than usually protruding belly (abdomen) in days :",
+      "label_sw": "10201_a. Je, alikuwa amevimba tumbo kwa siku ngapi kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10202",
+      "label_en": "(Id10202) Enter how long before death (s)he had a more than usually protruding belly (abdomen) in months :",
+      "label_sw": "10202. Je, alikuwa amevimba tumbo kwa miezi mingapi kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10201",
+      "label_en": "(Id10201) Calculated number of Days with protruding belly (abdomen)",
+      "label_sw": ""
+    },
+    {
+      "id": "Id10203",
+      "label_en": "(Id10203) How rapidly did (s)he develop the protruding belly (abdomen)?",
+      "label_sw": "10203. Tumbo lilikuwa likivimba kwa kasi gani?"
+    },
+    {
+      "id": "Id10204",
+      "label_en": "(Id10204) Did (s)he have any mass in the belly (abdomen)?",
+      "label_sw": "10204. Je, alikuwa na uvimbe tumboni?"
+    },
+    {
+      "id": "Id10205_unit",
+      "label_en": "(Id10205_unit) For how long did (s)he have a mass in the belly (abdomen)?",
+      "label_sw": "10205_unit. Je, alikuwa na uvimbe tumboni kwa muda gani?"
+    },
+    {
+      "id": "Id10205_a",
+      "label_en": "(Id10205_a) Enter how long (s)he had a mass in the belly (abdomen) in days :",
+      "label_sw": "10205_a. je, alikuwa na uvimbe tumboni kwa siku ngapi?"
+    },
+    {
+      "id": "Id10206",
+      "label_en": "(Id10206) Enter how long (s)he had a mass in the belly (abdomen) in months :",
+      "label_sw": "10206. Je, alikuwa na uvimbe tumboni kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10205",
+      "label_en": "(Id10205) Calculated number of Days with a mass in the belly (abdomen)",
+      "label_sw": ""
+    },
+    {
+      "id": "Id10207",
+      "label_en": "(Id10207) Did (s)he have a severe headache?",
+      "label_sw": "10207. Je, alikuwa na maumivu makali ya kichwa?"
+    },
+    {
+      "id": "Id10208",
+      "label_en": "(Id10208) Did (s)he have a stiff neck during illness that led to death?",
+      "label_sw": "10208. Je, shingo ilikakamaa wakati wa ugonjwa unaodhaniwa kusababisha kifo chake?"
+    },
+    {
+      "id": "Id10209_units",
+      "label_en": "(Id10209_units) How long before death did (s)he have stiff neck?",
+      "label_sw": "10209_unit. Ni kwa muda gani kabla ya kifo chake alikakamaa shingo?"
+    },
+    {
+      "id": "Id10209_a",
+      "label_en": "(Id10209_a) Enter how long before death did (s)he have stiff neck in days :",
+      "label_sw": "10209_a. Ni siku ngapi kabla ya kifo chake alikakamaa shingo?"
+    },
+    {
+      "id": "Id10209_b",
+      "label_en": "(Id10209_b) Enter how long before death did (s)he have stiff neck in months :",
+      "label_sw": "10209_b. Ni kwa miezi mingapi kabla ya kifo chake alikakamaa shingo?"
+    },
+    {
+      "id": "Id10209",
+      "label_en": "(Id10209) For how many days before death did (s)he have stiff neck?",
+      "label_sw": "10209. Ni kwa siku ngapi kabla ya kifo chake alikakamaa shingo?"
+    },
+    {
+      "id": "Id10210",
+      "label_en": "(Id10210) Did (s)he have a painful neck during the illness that led to death?",
+      "label_sw": "10210. Je, alikuwa na maumivu ya shingo wakati wa ugonjwa unaodhaniwa kusababisha kifo chake?"
+    },
+    {
+      "id": "Id10211_units",
+      "label_en": "(Id10211_units) How long before death did (s)he have a painful neck?",
+      "label_sw": "10211_unit. Ni kwa muda gani kabla ya kifo chake alikuwa na maumivu ya shingo?"
+    },
+    {
+      "id": "Id10211_a",
+      "label_en": "(Id10211_a) Enter how long before death (s)he had a painful neck in days :",
+      "label_sw": "10211_a. Ni siku ngapi kabla ya kifo chake alikuwa na maumivu ya shingo?"
+    },
+    {
+      "id": "Id10211_b",
+      "label_en": "(Id10211_b) Enter how long before death (s)he had a painful neck in months :",
+      "label_sw": "10211_b. Ni miezi mingapi kabla ya kifo chake alikuwa na maumivu ya shingo?"
+    },
+    {
+      "id": "Id10211",
+      "label_en": "(Id10211) For how many days before death did (s)he have a painful neck?",
+      "label_sw": "10211. Ni siku ngapi kabla ya kifo chake alikuwa na maumivu ya shingo?"
+    },
+    {
+      "id": "Id10212",
+      "label_en": "(Id10212) Did (s)he have mental confusion?",
+      "label_sw": "10212. Je, alikuwa na hali ya kuchanganyikiwa?"
+    },
+    {
+      "id": "Id10213_units",
+      "label_en": "(Id10213_units) How long did (s)he have mental confusion?",
+      "label_sw": "10213_unit. Je ni kwa muda gani alikuwa na hali ya kuchanganyikiwa?"
+    },
+    {
+      "id": "Id10213_a",
+      "label_en": "(Id10213_a) Enter how long (s)he had mental confusion in days :",
+      "label_sw": "10213_a. Ni kwa siku ngapi alikuwa na hali ya kuchanganyikiwa?"
+    },
+    {
+      "id": "Id10213_b",
+      "label_en": "(Id10213_b) Enter how long (s)he had mental confusion in months :",
+      "label_sw": "10213_b. Ni miezi mingapi alikuwa na hali ya kuchanganyikiwa?"
+    },
+    {
+      "id": "Id10213",
+      "label_en": "(Id10213) For how many months did (s)he have mental confusion?",
+      "label_sw": "10213. Ni kwa miezi mingapi alikuwa na hali ya kuchanganyikiwa?"
+    },
+    {
+      "id": "Id10214",
+      "label_en": "(Id10214) Was (s)he unconscious during the illness that led to death?",
+      "label_sw": "10214. Je, alikuwa amepoteza fahamu wakati wa ugonjwa wa mwisho unaodhaniwa kusababisha kifo?"
+    },
+    {
+      "id": "Id10215",
+      "label_en": "(Id10215) Was (s)he unconscious for more than 24 hours before death?",
+      "label_sw": "10215. Je, alipoteza fahamu zaidi ya saa 24 kabla ya kufariki dunia?"
+    },
+    {
+      "id": "Id10216_units",
+      "label_en": "(Id10216_units) How long before death did unconsciousness start?",
+      "label_sw": "10216_unit. Ni kwa muda gani kabla ya kifo chake,hii hali ya kupoteza fahamu ilianza?"
+    },
+    {
+      "id": "Id10216_a",
+      "label_en": "(Id10216_a) Enter how long before death unconsciousness started in hours ?",
+      "label_sw": "10216_a. Ni kwa saa ngapi kabla ya kifo chake, hii hali ya kupoteza fahamu ilianza?"
+    },
+    {
+      "id": "Id10216_b",
+      "label_en": "(Id10216_b) Enter how long before death unconsciousness started in days ?",
+      "label_sw": "10216_b. Ni kwa siku ngapi kabla ya kifo chake, hii hali ya kupoteza fahamu ilianza?"
+    },
+    {
+      "id": "Id10216",
+      "label_en": "(Id10216) How many hours before death did unconsciousness start?",
+      "label_sw": "10216. Ni kwa masaa mangapi kabla ya kifo chake, hii hali ya kupoteza fahamu ilianza?"
+    },
+    {
+      "id": "Id10217",
+      "label_en": "(Id10217) Did the unconsciousness start suddenly, quickly (at least within a single day)?",
+      "label_sw": "10217. Je, hali ya kupoteza fahamu ilianza ghafla ?"
+    },
+    {
+      "id": "Id10218",
+      "label_en": "(Id10218) Did the unconsciousness continue until death?",
+      "label_sw": "10218. Je, kupoteza fahamu kuliendelea hadi kifo chake?"
+    },
+    {
+      "id": "Id10219",
+      "label_en": "(Id10219) Did (s)he have convulsions?",
+      "label_sw": "10219. Je, alipata degedege?"
+    },
+    {
+      "id": "Id10220",
+      "label_en": "(Id10220) Did (s)he experience any generalized convulsions or fits during the illness that led to death?",
+      "label_sw": "10220. Je, alipata degedege au hali ya kushituka shituka wakati wa ugonjwa unaodhaniwa kusababisha kifo chake?"
+    },
+    {
+      "id": "Id10221",
+      "label_en": "(Id10221) For how many minutes did the convulsions last?",
+      "label_sw": "10221. Je, degedege ilidumu kwa dakika ngapi?"
+    },
+    {
+      "id": "Id10222",
+      "label_en": "(Id10222) Did (s)he become unconscious immediately after the convulsion?",
+      "label_sw": "10222. Je, alipoteza fahamu mara baada ya kupata degedege?"
+    },
+    {
+      "id": "Id10223",
+      "label_en": "(Id10223) Did (s)he have any urine problems?",
+      "label_sw": "10223. Je, alikuwa na matatizo yoyote ya mkojo?"
+    },
+    {
+      "id": "Id10225",
+      "label_en": "(Id10225) Did (s)he go to urinate more often than usual?",
+      "label_sw": "10225. Je, alikuwa anakojoa mara kwa mara kuliko kawaida?"
+    },
+    {
+      "id": "Id10226",
+      "label_en": "(Id10226) During the final illness did (s)he ever pass blood in the urine?",
+      "label_sw": "10226. Wakati wa ugonjwa wake wa mwisho, je aliwahi kukojoa mkojo uliochanganyika na damu?"
+    },
+    {
+      "id": "Id10224",
+      "label_en": "(Id10224) Did (s)he stop urinating?",
+      "label_sw": "10224. Je, aliacha kukojoa?"
+    },
+    {
+      "id": "Id10227",
+      "label_en": "(Id10227) Did (s)he have sores or ulcers anywhere on the body?",
+      "label_sw": "10227. Je, alikuwa na matatizo yoyote ya ngozi?"
+    },
+    {
+      "id": "Id10228",
+      "label_en": "(Id10228) Did (s)he have sores?",
+      "label_sw": "10228. Je, alikuwa na vidonda?"
+    },
+    {
+      "id": "Id10229",
+      "label_en": "(Id10229) Did the sores have clear fluid or pus?",
+      "label_sw": "10229. Je, vidonda vilikua na majimaji meupe au usaha?"
+    },
+    {
+      "id": "Id10230",
+      "label_en": "(Id10230) Did (s)he have an ulcer (pit) on the foot?",
+      "label_sw": "10230. Je, alikuwa na kidonda mguuni?"
+    },
+    {
+      "id": "Id10231",
+      "label_en": "(Id10231) Did the ulcer on the foot ooze pus?",
+      "label_sw": "10231. Je, kidonda cha mguuni kilitoa usaha?"
+    },
+    {
+      "id": "Id10232_units",
+      "label_en": "(Id10232_units) How long did the ulcer on the foot ooze pus?",
+      "label_sw": "10232_unit. Je, kidonda cha mguuni kilitoa usaha kwa muda ngapi?"
+    },
+    {
+      "id": "Id10232_a",
+      "label_en": "(Id10232_a) Enter how long the ulcer on the foot oozed pus in days :",
+      "label_sw": "10232_a. Je, kidonda cha mguuni kilitoa usaha kwa siku ngapi?"
+    },
+    {
+      "id": "Id10232_b",
+      "label_en": "(Id10232_b) Enter how long the ulcer on the foot oozed pus in months :",
+      "label_sw": "10232_b. Je, kidonda cha mguuni kilitoa usaha kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10232",
+      "label_en": "(Id10232) For how many days did the ulcer on the foot ooze pus?",
+      "label_sw": "10232. Kidonda cha mguuni kilitoa usaha kwa siku ngapi?"
+    },
+    {
+      "id": "Id10233",
+      "label_en": "(Id10233) During the illness that led to death, did (s)he have any skin rash?",
+      "label_sw": "10233. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je alikuwa na vipele vyovyote mwilini? "
+    },
+    {
+      "id": "Id10234",
+      "label_en": "(Id10234) For how many days did (s)he have the skin rash?",
+      "label_sw": "10234. Alikuwa na vipele kwenye ngozi kwa siku ngapi?"
+    },
+    {
+      "id": "Id10235",
+      "label_en": "(Id10235) Where was the rash?",
+      "label_sw": "10235. Vipele vilikuwa sehemu gani ya mwili?"
+    },
+    {
+      "id": "id10235_check",
+      "label_en": "(id10235_check) It is not possible to select DoesntKnow or Refusedtoanswer together with other options. Please go back and correct the selection. ",
+      "label_sw": "Haiwezekani kuchagua sijui au amekataakujibu pamoja na majibu mengine.Tafadahli rudi nyuma na urekebishe chaguo lako."
+    },
+    {
+      "id": "Id10236",
+      "label_en": "(Id10236) Did (s)he have measles rash (use local term)?",
+      "label_sw": "10236. Je, alikuwa na vipele vya surua?"
+    },
+    {
+      "id": "Id10237",
+      "label_en": "(Id10237) Did (s)he ever have shingles or herpes zoster?",
+      "label_sw": "10237. Je, aliwahi kuugua mkanda wa jeshi?"
+    },
+    {
+      "id": "Id10238",
+      "label_en": "(Id10238) During the illness that led to death, did her/his skin flake off in patches?",
+      "label_sw": "10238. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je, ngozi yake iliwahi kubanduka magamba?"
+    },
+    {
+      "id": "Id10239",
+      "label_en": "(Id10239) During the illness that led to death, did he/she have areas of the skin that turned black?",
+      "label_sw": "10239. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je, alikuwa na sehemu ya ngozi iliyobadilika na kuwa nyeusi?"
+    },
+    {
+      "id": "Id10240",
+      "label_en": "(Id10240) During the illness that led to death, did he/she have areas of the skin with redness and swelling?",
+      "label_sw": "10240. Wakati wa ugonjwa unaodhaniwa kusabasha kifo, je aliwahi kuwa na uvimbe na wekundu kwenye sehemu ya ngozi yake?"
+    },
+    {
+      "id": "Id10241",
+      "label_en": "(Id10241) During the illness that led to death, did (s)he bleed from anywhere?",
+      "label_sw": "10241. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, Je, alitokwa damu sehemu yoyote mwilini? "
+    },
+    {
+      "id": "Id10242",
+      "label_en": "(Id10242) Did (s)he bleed from the nose, mouth or anus?",
+      "label_sw": "10242. Je, alitokwa damu puani, mdomoni au kwenye njia ya haja kubwa?"
+    },
+    {
+      "id": "Id10243",
+      "label_en": "(Id10243) Did (s)he have noticeable weight loss?",
+      "label_sw": "10243. Je, alionekana kupungua uzito?"
+    },
+    {
+      "id": "Id10244",
+      "label_en": "(Id10244) Was (s)he severely thin or wasted?",
+      "label_sw": "10244. Je, alikonda au kupungua sana?"
+    },
+    {
+      "id": "Id10245",
+      "label_en": "(Id10245) During the illness that led to death, did s/he have a whitish rash inside the mouth or on the tongue?",
+      "label_sw": "10245. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je, aliwahi kuwa na utando mweupe kinywani au kwenye ulimi?"
+    },
+    {
+      "id": "Id10246",
+      "label_en": "(Id10246) Did (s)he have stiffness of the whole body or was unable to open the mouth?",
+      "label_sw": "10246. Je, alikuwa amekakamaa mwili mzima au kushindwa kufungua mdomo?"
+    },
+    {
+      "id": "Id10247",
+      "label_en": "(Id10247) Did (s)he have puffiness of the face?",
+      "label_sw": "10247. Je, alikuwa amevimba uso?"
+    },
+    {
+      "id": "Id10248_units",
+      "label_en": "(Id10248_units) How long did (s)he have puffiness of the face?",
+      "label_sw": "10248_unit. Alivimba uso kwa muda gani?"
+    },
+    {
+      "id": "Id10248_a",
+      "label_en": "(Id10248_a) Enter how long (s)he had puffiness of the face in days :",
+      "label_sw": "10248_a. Alivimba uso kwa siku ngapi?"
+    },
+    {
+      "id": "Id10248_b",
+      "label_en": "(Id10248_b) Enter how long (s)he had puffiness of the face in months :",
+      "label_sw": "10248_b. Alivimba uso kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10248",
+      "label_en": "(Id10248) For how many days did (s)he have puffiness of the face?",
+      "label_sw": "10248. Alivimba uso kwa siku ngapi?"
+    },
+    {
+      "id": "Id10249",
+      "label_en": "(Id10249) During the illness that led to death, did (s)he have swollen legs or feet?",
+      "label_sw": "10249. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je alikuwa amevimba miguu?"
+    },
+    {
+      "id": "Id10250_units",
+      "label_en": "(Id10250_units) How long did the swelling last?",
+      "label_sw": "10250_unit. Uvimbe ulidumu kwa muda wa muda gani?"
+    },
+    {
+      "id": "Id10250_a",
+      "label_en": "(Id10250_a) Enter how long the swelling lasted in days :",
+      "label_sw": "10250_a. Uvimbe ulidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10250_b",
+      "label_en": "(Id10250_b) Enter how long the swelling lasted in months :",
+      "label_sw": "10250_b. Uvimbe ulidumu kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10250",
+      "label_en": "(Id10250) How many days did the swelling last?",
+      "label_sw": "10250. Uvimbe ulidumu kwa siku ngapi?"
+    },
+    {
+      "id": "Id10251",
+      "label_en": "(Id10251) Did (s)he have both feet swollen?",
+      "label_sw": "10251. Je, miguu yote ilikuwa imevimba?"
+    },
+    {
+      "id": "Id10252",
+      "label_en": "(Id10252) Did (s)he have general puffiness all over his/her body?",
+      "label_sw": "10252. Je, alikuwa amevimba mwili mzima?"
+    },
+    {
+      "id": "Id10253",
+      "label_en": "(Id10253) Did (s)he have any lumps?",
+      "label_sw": "10253. Je, alikuwa na uvimbe wowote?"
+    },
+    {
+      "id": "Id10254",
+      "label_en": "(Id10254) Did (s)he have any lumps or lesions in the mouth?",
+      "label_sw": "10254. Je, alikuwa na uvimbe wowote au vidonda mdomoni?"
+    },
+    {
+      "id": "Id10255",
+      "label_en": "(Id10255) Did (s)he have any lumps on the neck?",
+      "label_sw": "10255. Je, alikuwa na uvimbe shingoni?"
+    },
+    {
+      "id": "Id10256",
+      "label_en": "(Id10256) Did (s)he have any lumps on the armpit?",
+      "label_sw": "10256. Je, alikuwa na uvimbe kwapani?"
+    },
+    {
+      "id": "Id10257",
+      "label_en": "(Id10257) Did (s)he have any lumps on the groin?",
+      "label_sw": "10257. Je, alikuwa na uvimbe wowote kwenye maeneo ya kinena?"
+    },
+    {
+      "id": "Id10258",
+      "label_en": "(Id10258) Was (s)he in any way paralysed?",
+      "label_sw": "10258. Je, alikuwa amepooza?"
+    },
+    {
+      "id": "Id10259",
+      "label_en": "(Id10259) Did (s)he have paralysis of only one side of the body?",
+      "label_sw": "10259. Je, alipooza upande mmoja wa mwili?"
+    },
+    {
+      "id": "Id10260",
+      "label_en": "(Id10260) Which were the limbs or body parts paralysed?",
+      "label_sw": "10260. Ni sehemu zipi za mwili zilipooza?"
+    },
+    {
+      "id": "id10260_check",
+      "label_en": "(id10260_check) It is not possible to select onlyonesideparalysed and leftandrightside or wholebody together. Please go back and correct the selection. ",
+      "label_sw": "Haiwezekani kuchagua amepooza upandemmoja tu na upande wa kulia na kushoto au Mwilimzima.Tafadahli rudi nyuma na urekebishe chaguo lako."
+    },
+    {
+      "id": "id10260_check2",
+      "label_en": "(id10260_check2) It is not possible to select DoesntKnow or Refusedtoanswer together with other options. Please go back and correct the selection. ",
+      "label_sw": "Haiwezekani kuchagua sijui au amekataakujibu pamoja na majibu mengine.Tafadahli rudi nyuma na urekebishe chaguo lako"
+    },
+    {
+      "id": "Id10261",
+      "label_en": "(Id10261) Did (s)he have difficulty swallowing?",
+      "label_sw": "10261. Je, alikuwa na shida ya kumeza?"
+    },
+    {
+      "id": "Id10262_units",
+      "label_en": "(Id10262_units) For how long before death did (s)he have difficulty swallowing?",
+      "label_sw": "10262_unit. Ni kwa muda gani kabla ya kifo alikuwa na shida ya kumeza?"
+    },
+    {
+      "id": "Id10262_a",
+      "label_en": "(Id10262_a) Enter how long before death (s)he had difficulty swallowing in days :",
+      "label_sw": "10262_a. Ni kwa siku ngapi kabla ya kifo alikuwa na shida ya kumeza?"
+    },
+    {
+      "id": "Id10262_b",
+      "label_en": "(Id10262_b) Enter how long before death (s)he had difficulty swallowing in months :",
+      "label_sw": "10262_b. Ni kwa miezi mingapi kabla ya kifo alikuwa na shida ya kumeza?"
+    },
+    {
+      "id": "Id10262",
+      "label_en": "(Id10262) For how many days before death did (s)he have difficulty swallowing?",
+      "label_sw": "10262. Ni kwa siku ngapi kalba ya kifo chake alikua na shida ya kumeza"
+    },
+    {
+      "id": "Id10263",
+      "label_en": "(Id10263) Was the difficulty with swallowing with solids, liquids, or both?",
+      "label_sw": "10263. Je, shida ya kumeza ilikuwa ya vitu vigumu, vya majimaji, au vyote?"
+    },
+    {
+      "id": "Id10264",
+      "label_en": "(Id10264) Did (s)he have pain upon swallowing?",
+      "label_sw": "10264. Je, alipata maumivu wakati wa kumeza?"
+    },
+    {
+      "id": "Id10265",
+      "label_en": "(Id10265) Did (s)he have yellow discoloration of the eyes?",
+      "label_sw": "10265. Je, macho yaligeuka rangi na kuwa manjano?"
+    },
+    {
+      "id": "Id10266_units",
+      "label_en": "(Id10266_units) For how long did (s)he have the yellow discoloration?",
+      "label_sw": "10266_unit. Macho yaligeuka rangi na kuwa manjano kwa muda gani?"
+    },
+    {
+      "id": "Id10266_a",
+      "label_en": "(Id10266_a) Enter how long (s)he had the yellow discoloration in days :",
+      "label_sw": "10266_a. Macho yaligeuka rangi na kuwa manjano kwa siku ngapi?"
+    },
+    {
+      "id": "Id10266_b",
+      "label_en": "(Id10266_b) Enter how long (s)he had the yellow discoloration in months :",
+      "label_sw": "10266_b. Macho yaligeuka rangi na kuwa manjano kwa miezi mingapi?"
+    },
+    {
+      "id": "Id10266",
+      "label_en": "(Id10266) For how many days did (s)he have the yellow discoloration?",
+      "label_sw": "10266. Ni kwa siku ngapi macho yalikua na manjano"
+    },
+    {
+      "id": "Id10267",
+      "label_en": "(Id10267) Did her/his hair change in color to a reddish or yellowish color?",
+      "label_sw": "10267. Je, nywele ziligeuka rangi na kuwa nyekundu au manjano?"
+    },
+    {
+      "id": "Id10268",
+      "label_en": "(Id10268) Did (s)he look pale (thinning/lack of blood) or have pale palms, eyes or nail beds?",
+      "label_sw": "10268. Je, alionekana mweupe (aliyepungukiwa damu) au viganja, macho, na sehemu za kucha kuwa nyeupe?"
+    },
+    {
+      "id": "Id10269",
+      "label_en": "(Id10269) Did (s)he have sunken eyes?",
+      "label_sw": "10269. Je, macho yalikuwa yameingia ndani?"
+    },
+    {
+      "id": "Id10270",
+      "label_en": "(Id10270) Did (s)he drink a lot more water than usual?",
+      "label_sw": "10270. Je, alikunywa maji mengi kuliko kawaida?"
+    },
+    {
+      "id": "Id10271",
+      "label_en": "(Id10271) Was the baby able to suckle or bottle-feed within the first 24 hours after birth?",
+      "label_sw": "10271. Je, mtoto alikuwa na uwezo wa kunyonya ziwa au chupa ya kulishia ndani ya saa 24 za kwanza baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10272",
+      "label_en": "(Id10272) Did the baby ever suckle in a normal way?",
+      "label_sw": "10272. Je, mtoto aliwahi kunyonya kawaida?"
+    },
+    {
+      "id": "Id10273",
+      "label_en": "(Id10273) Did the baby stop suckling?",
+      "label_sw": "10273. Je, mtoto aliacha kunyonya?"
+    },
+    {
+      "id": "Id10274_a",
+      "label_en": "(Id10274_a) How many days after birth did the baby stop suckling?",
+      "label_sw": "10274_a. Mtoto aliacha kunyonya siku ngapi baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10274_b",
+      "label_en": "(Id10274_b) Enter how long after birth the baby stopped suckling in days :",
+      "label_sw": "10274_b. Mtoto aliacha kunyonya siku ngapi baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10274_c",
+      "label_en": "(Id10274_c) Enter how long after birth the baby stopped suckling in months :",
+      "label_sw": "10274_c. Mtoto aliacha kunyonya miezi mingapi baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10274",
+      "label_en": "(Id10274) How many days after birth did the baby stop suckling?",
+      "label_sw": "10274. Ni siku ngapi baada ya kuzaliwa mtoto aliacha kunyonya"
+    },
+    {
+      "id": "Id10275",
+      "label_en": "(Id10275) Did the baby have convulsions starting within the first 24 hours of life?",
+      "label_sw": "10275. Je, mtoto alipatwa na degedege ndani ya saa 24 baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10276",
+      "label_en": "(Id10276) Did the baby have convulsions starting more than 24 hours after birth?",
+      "label_sw": "10276. Je, mtoto alipata degedege zaidi saa 24 baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10277",
+      "label_en": "(Id10277) Did the babys body become stiff, with the back arched backwards?",
+      "label_sw": "10277. Je, mwili wa mtoto ulikakamaa pamoja na kujipinda kwa nyuma?"
+    },
+    {
+      "id": "Id10278",
+      "label_en": "(Id10278) During the illness that led to death, did the baby have a bulging or raised fontanelle? ",
+      "label_sw": "10278. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, Je utosi wa mtoto ulikuwa umevimba?"
+    },
+    {
+      "id": "Id10279",
+      "label_en": "(Id10279) During the illness that led to death, did the baby have a sunken fontanelle? ",
+      "label_sw": "10279. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, Je utosi wa mtoto ulikuwa umebonyea?"
+    },
+    {
+      "id": "Id10281",
+      "label_en": "(Id10281) During the illness that led to death, did the baby become unresponsive or unconscious?",
+      "label_sw": "10281. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, Je mtoto alipoteza fahamu?"
+    },
+    {
+      "id": "Id10282",
+      "label_en": "(Id10282) Did the baby become unresponsive or unconscious soon after birth, within less than 24 hours?",
+      "label_sw": "10282. Je, mtoto alipoteza fahamu mara baada ya kuzaliwa, ndani ya saa 24 za mwanzo?"
+    },
+    {
+      "id": "Id10283",
+      "label_en": "(Id10283) Did the baby become unresponsive or unconscious more than 24 hours after birth?",
+      "label_sw": "10283. Je mtoto alipoteza fahamu baada ya kutimiza saa au zaidi 24 baada ya kuzaliwa?"
+    },
+    {
+      "id": "Id10284",
+      "label_en": "(Id10284) During the illness that led to death, did the baby become cold to touch?",
+      "label_sw": "10284. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, Je mtoto alikuwa wa baridi ukimgusa?"
+    },
+    {
+      "id": "Id10285",
+      "label_en": "(Id10285) How many days old was the baby when it started feeling cold to touch?",
+      "label_sw": "10285. Je, mtoto alikuwa na umri wa siku ngapi alipoanza kuwa wa baridi ukimgusa?"
+    },
+    {
+      "id": "Id10286",
+      "label_en": "(Id10286) During the illness that led to death, did the baby become lethargic after a period of normal activity?",
+      "label_sw": "10286. Wakati wa ugonjwa unaodhaniwa kusababisha kifo, Je, mtoto alikuwa amelegea baada ya kipindi cha hali ya kawaida?"
+    },
+    {
+      "id": "Id10287",
+      "label_en": "(Id10287) Did the baby have redness or pus drainage from the umbilical cord stump?",
+      "label_sw": "10287. Je, kitovu cha mtoto kilikuwa chekundu au kilitoa maji maji?"
+    },
+    {
+      "id": "Id10288",
+      "label_en": "(Id10288) During the illness that led to death, did the baby have skin ulcer(s) or pits?",
+      "label_sw": "10288. Wakati wa ugonjwa ulidhaniwa kusababisha kifo,Je mtoto alikuwa na vidonda kwenye ngozi?"
+    },
+    {
+      "id": "Id10289",
+      "label_en": "(Id10289) During the illness that led to death, did the baby have yellow skin, palms (hand) or soles (foot)?",
+      "label_sw": "10289. Wakati wa ugonjwa unaodhaniwa kusababisha kifo, Je, ngozi, viganja na nyayo za mtoto vilikuwa manjano?"
+    },
+    {
+      "id": "Id10290",
+      "label_en": "(Id10290) Did the baby or infant appear to be healthy and then just die suddenly?",
+      "label_sw": "10290. Je, mtoto alionekana kuwa na afya njema kisha akafariki dunia ghafla?"
+    },
+    {
+      "id": "Id10485",
+      "label_en": "(Id10485) Did s(h)e suffer from extreme fatigue? ",
+      "label_sw": "10485. Je, alipatwa na hali ya kuchoka sana?"
+    },
+    {
+      "id": "Id10486",
+      "label_en": "(Id10486) Did (s)he experience a new loss, change or decreased sense of smell or taste? ",
+      "label_sw": "10486. Je, alipungukiwa uwezo wa kusikia harufu au kuhisi ladha ya chakula "
+    },
+    {
+      "id": "Id10294",
+      "label_en": "(Id10294) Did she have any swelling or lump in the breast?",
+      "label_sw": "10294. Je, alikuwa na uvimbe wowote kwenye matiti?"
+    },
+    {
+      "id": "Id10295",
+      "label_en": "(Id10295) Did she have any ulcers (pits) in the breast?",
+      "label_sw": "10295. Je, alikuwa na vidonda vyovyote kwenye matiti?"
+    },
+    {
+      "id": "Id10296",
+      "label_en": "(Id10296) Did she ever have a period or menstruate?",
+      "label_sw": "10296. Je, alishawahi kupata hedhi?"
+    },
+    {
+      "id": "Id10297",
+      "label_en": "(Id10297) When she had her period, did she have vaginal bleeding in between menstrual periods?",
+      "label_sw": "10297. Je alikuwa akitokwa damu ukeni siku zisizo za hedhi?"
+    },
+    {
+      "id": "Id10298",
+      "label_en": "(Id10298) Was the bleeding excessive?",
+      "label_sw": "10298. Je, damu ilikuwa ikitoka kwa wingi?"
+    },
+    {
+      "id": "Id10301",
+      "label_en": "(Id10301) Was there excessive vaginal bleeding in the week prior to death?",
+      "label_sw": "10301. Je, alitokwa damu nyingi ukeni wiki moja kabla ya kifo?"
+    },
+    {
+      "id": "Id10299",
+      "label_en": "(Id10299) Did her menstrual period stop naturally because of menopause or removal of uterus?",
+      "label_sw": "10299. Je, alikuwa amekoma hedhi kwa sababu ya kawaida ya umri au kutolewa kizazi?"
+    },
+    {
+      "id": "Id10302",
+      "label_en": "(Id10302) At the time of death was her period overdue?",
+      "label_sw": "10302. Wakati wa kifo chake, je, alikuwa amepitiliza muda wake wa kupata siku zake za hedhi?"
+    },
+    {
+      "id": "Id10303",
+      "label_en": "(Id10303) For how many weeks had her period been overdue?",
+      "label_sw": "10303. Ni kwa wiki ngapi alikuwa amepitiliza muda wa kupata siku zake za hedhi?"
+    },
+    {
+      "id": "Id10300",
+      "label_en": "(Id10300) Did she have vaginal bleeding after cessation of menstruation?",
+      "label_sw": "10300. Je, alitokwa damu ukeni baada ya kukoma hedhi?"
+    },
+    {
+      "id": "Id10304",
+      "label_en": "(Id10304) Did she have a sharp pain in her belly (abdomen) shortly before death?",
+      "label_sw": "10304. Je, alipata maumivu makali ya tumbo muda mfupi kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10305",
+      "label_en": "(Id10305) Was she pregnant or in labour at the time of death?",
+      "label_sw": "10305. Je, alikuwa mjamzito wakati wa kifo chake?"
+    },
+    {
+      "id": "Id10306",
+      "label_en": "(Id10306) Did she die within 6 weeks of delivery, abortion or miscarriage?",
+      "label_sw": "10306. Je, alifariki ndani ya wiki 6 baada ya kujifungua, kutoa mimba au mimba kuharibika"
+    },
+    {
+      "id": "Id10307",
+      "label_en": "(Id10307) Did this woman die more than 6 weeks after being pregnant or delivering a baby?",
+      "label_sw": "10307. Je, alikuwa mwanamke aliyefariki zaidi ya wiki 6 baada ya kuwa mjamzito au kujifungua mtoto?"
+    },
+    {
+      "id": "Id10308",
+      "label_en": "(Id10308) Was this a woman who died less than 1 year after being pregnant or delivering a baby?",
+      "label_sw": "10308. Je, alikuwa mwanamke aliyefariki chini ya mwaka 1 baada ya kuwa mjamzito au kujifungua mtoto?"
+    },
+    {
+      "id": "Id10309",
+      "label_en": "(Id10309) For how many months was she pregnant?",
+      "label_sw": "10309. Je, alikuwa na ujauzito wa miezi mingapi?"
+    },
+    {
+      "id": "Id10310",
+      "label_en": "(Id10310) Please confirm, when she died, she was NEITHER pregnant NOR had delivered, had an abortion, or miscarried within 12 months of when she died--is that right?",
+      "label_sw": "10310. Tafadhali thibitisha: Ulisema hakuwa mjamzito na hakujifungua, hakutoa mimba au mimba kuharibika ndani ya miezi 12 kabla ya kifo chake, je ni sawa?"
+    },
+    {
+      "id": "Id10310_check",
+      "label_en": "(Id10310_check) If the response is NO, DONT KNOW, OR REFUSED, it indicates some uncertainty as to whether the cause of death could have been a maternal or pregnancy-related cause. Go back to the question Did she ever have a period or menstruate? and follow the process again. If it is confirmed that the death was related to pregnancy, proceed with the next question “Did she die during labour or delivery?",
+      "label_sw": "Kama jibu ni Hapana, Sijui au Amekataakujibu, inamaanisha kuna utatanishi kwenye sababu ya kifo kuwa ya uzazi au mimba. Rudi nyuma hadi swali la 10296. Je,aliwahi kupata hedhi? na umuulize maswali yote yanayofuata. kama ikithibikita kuwa kifo kilitokana na mimba, utaendelea na swali linalofuta 10312. Je, alifariki dunia wakati wa uchungu au wakati wa kujifungua?"
+    },
+    {
+      "id": "Id10312",
+      "label_en": "(Id10312) Did she die during labour or delivery?",
+      "label_sw": "10312. Je, alifariki dunia wakati wa uchungu au wakati wa kujifungua?"
+    },
+    {
+      "id": "Id10313",
+      "label_en": "(Id10313) Did she die after delivering a baby?",
+      "label_sw": "10313. Je, alifariki dunia baada ya kujifungua mtoto?"
+    },
+    {
+      "id": "Id10314",
+      "label_en": "(Id10314) Did she die within 24 hours after delivery?",
+      "label_sw": "10314. Je, alifariki ndani ya saa 24 baada ya kujifungua?"
+    },
+    {
+      "id": "Id10315_a",
+      "label_en": "(Id10315) Did she die within 6 weeks of childbirth?",
+      "label_sw": "10315. Je, alifariki dunia ndani ya wiki 6 za kujifungua mtoto?"
+    },
+    {
+      "id": "Id10315",
+      "label_en": "(Id10315) Did she die within 6 weeks of childbirth?",
+      "label_sw": "10315. Je, alifariki dunia ndani ya wiki 6 za kujifungua mtoto?"
+    },
+    {
+      "id": "Id10316",
+      "label_en": "(Id10316) Did she give birth to a live baby (within 6 weeks of her death)?",
+      "label_sw": "10316. Je, alijifungua mtoto aliye hai ndani ya wiki 6 za kifo chake?"
+    },
+    {
+      "id": "Id10317",
+      "label_en": "(Id10317) Did she die during or after a multiple pregnancy?",
+      "label_sw": "10317. Je, alifariki wakati au baada ya ujauzito wa mapacha?"
+    },
+    {
+      "id": "Id10318",
+      "label_en": "(Id10318) Was she breastfeeding the child in the days before death?",
+      "label_sw": "10318. Je, alikuwa ananyonyesha mtoto siku chache kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10319",
+      "label_en": "(Id10319) How many births, including stillbirths, did she/the mother have before this baby?",
+      "label_sw": "10319. Mama aliwahi kujifungua mara ngapi kabla ya mtoto huyu, ukijumuisha watoto waliozaliwa wafu?"
+    },
+    {
+      "id": "Id10320",
+      "label_en": "(Id10320) Had she had any previous Caesarean section?",
+      "label_sw": "10320. Je, aliwahi kujifungua kwa upasuaji?"
+    },
+    {
+      "id": "Id10321",
+      "label_en": "(Id10321) During pregnancy, did she suffer from high blood pressure?",
+      "label_sw": "10321. Je, alisumbuliwa na shinikizo juu la damu wakati wa ujauzito?"
+    },
+    {
+      "id": "Id10322",
+      "label_en": "(Id10322) Did she have foul smelling vaginal discharge during pregnancy or after delivery?",
+      "label_sw": "10322. Je, alitokwa na maji yenye harufu mbaya ukeni wakati wa ujauzito au baada ya kujifungua?"
+    },
+    {
+      "id": "Id10323",
+      "label_en": "(Id10323) During the last 3 months of pregnancy, did she suffer from convulsions?",
+      "label_sw": "10323. Je, alisumbuliwa na tatizo la kuanguka kama kifafa katika kipindi cha miezi 3 ya mwisho ya ujauzito?"
+    },
+    {
+      "id": "Id10324",
+      "label_en": "(Id10324) During the last 3 months of pregnancy did she suffer from blurred vision?",
+      "label_sw": "10324. Je, alipata matatizo ya kutoona vizuri katika kipindi cha miezi 3 ya mwisho ya ujauzito wake?"
+    },
+    {
+      "id": "Id10325",
+      "label_en": "(Id10325) Did bleeding occur while she was pregnant?",
+      "label_sw": "10325. Je, alitokwa damu nyingi ukeni wakati wa ujauzito?"
+    },
+    {
+      "id": "Id10326",
+      "label_en": "(Id10326) Was there vaginal bleeding during the first 6 months of pregnancy?",
+      "label_sw": "10326. Je, alitokwa damu ukeni katika kipindi cha miezi 6 ya mwanzo ya ujauzito?"
+    },
+    {
+      "id": "Id10327",
+      "label_en": "(Id10327) Was there vaginal bleeding during the last 3 months of pregnancy but before labour started?",
+      "label_sw": "10327. Je, alitokwa na damu ukeni katika kipindi cha miezi 3 ya mwisho ya ujauzito kabla ya uchungu kuanza?"
+    },
+    {
+      "id": "Id10328",
+      "label_en": "(Id10328) Did she have excessive bleeding during labour or delivery?",
+      "label_sw": "10328. Je, alitokwa damu nyingi wakati wa uchungu au kujifungua?"
+    },
+    {
+      "id": "Id10329",
+      "label_en": "(Id10329) Did she have excessive bleeding after delivery or abortion?",
+      "label_sw": "10329. Je, alitokwa damu nyingi baada ya kujifungua au mimba kutoka?"
+    },
+    {
+      "id": "Id10330",
+      "label_en": "(Id10330) Was the placenta completely delivered?",
+      "label_sw": "10330. Je, kondo la nyuma lilitoka lote?"
+    },
+    {
+      "id": "Id10331",
+      "label_en": "(Id10331) Did she deliver or try to deliver an abnormally positioned baby?",
+      "label_sw": "10331. Je, alijifungua au alijaribu kujifungua mtoto aliyekaa vibaya tumboni?"
+    },
+    {
+      "id": "Id10332",
+      "label_en": "(Id10332) For how many hours was she in labour?",
+      "label_sw": "10332. Uchungu ulichukua saa ngapi?"
+    },
+    {
+      "id": "Id10333",
+      "label_en": "(Id10333) Did she attempt to terminate the pregnancy?",
+      "label_sw": "10333. Je, alijaribu kutoa mimba?"
+    },
+    {
+      "id": "Id10334",
+      "label_en": "(Id10334) Did she recently have a pregnancy that ended in an abortion (spontaneous or induced)?",
+      "label_sw": "10334. Je, alikuwa na mimba siku za karibuni ambayo ilitoka au aliitoa?"
+    },
+    {
+      "id": "Id10335",
+      "label_en": "(Id10335) Did she die during an abortion?",
+      "label_sw": "10335. Je, alifariki dunia wakati mimba inatoka?"
+    },
+    {
+      "id": "Id10336",
+      "label_en": "(Id10336) Did she die within 6 weeks of having an abortion?",
+      "label_sw": "10336. Je, alifariki dunia ndani ya wiki 6 tangu mimba kutoka?"
+    },
+    {
+      "id": "Id10337",
+      "label_en": "(Id10337) Where did she give birth / complete the miscarriage / have the abortion?",
+      "label_sw": "10337. Mama alijifungulia wapi?"
+    },
+    {
+      "id": "Id10338",
+      "label_en": "(Id10338) Did she receive professional assistance during the delivery?",
+      "label_sw": "10338. Je, mama alipata msaada wa kitaalamu wakati wa kujifungua?"
+    },
+    {
+      "id": "Id10339",
+      "label_en": "(Id10339) Who delivered the baby / completed the miscarriage / performed the abortion?",
+      "label_sw": "10339. Je, nani alimzalisha mama?"
+    },
+    {
+      "id": "Id10342",
+      "label_en": "(Id10342) Was the delivery normal vaginal, without forceps or vacuum?",
+      "label_sw": "10342. Je, mama alijifungua kwa njia ya kawaida, bila msaada wa makoleo au ‘vacuum’?"
+    },
+    {
+      "id": "Id10343",
+      "label_en": "(Id10343) Was the delivery vaginal, with forceps or vacuum?",
+      "label_sw": "10343. Je, mama alijifungua kwa njia ya kawaida, kwa msaada wa makoleo au ‘vacuum’?"
+    },
+    {
+      "id": "Id10344",
+      "label_en": "(Id10344) Was the delivery a Caesarean section?",
+      "label_sw": "10344. Je, mama alijifungua kwa njia ya upasuaji?"
+    },
+    {
+      "id": "Id10347",
+      "label_en": "(Id10347) Was the baby born more than one month early?",
+      "label_sw": "10347. Je mtoto alizaliwa zaidi ya mwezi mmoja kabla ya muda wa matarajio?"
+    },
+    {
+      "id": "Id10340",
+      "label_en": "(Id10340) Did she have an operation to remove her uterus shortly before death?",
+      "label_sw": "10340. Je, alifanyiwa upasuaji wa kuondoa kizazi muda mfupi kabla ya kufariki dunia?"
+    },
+    {
+      "id": "Id10352_units",
+      "label_en": "(Id10352_units) How old was the child when the fatal illness started?",
+      "label_sw": "10352_unit. Mtoto alikuwa na umri gani wakati ugonjwa unaodhaniwa kusababisha kifo chake ulipoanza?"
+    },
+    {
+      "id": "Id10352_a",
+      "label_en": "(Id10352_a) Enter how old the child was when the fatal illness started in months :",
+      "label_sw": "10352_a. Mtoto alikuwa na umri wa miezi mingapi wakati ugonjwa unaodhaniwa kusababisha kifo chake ulipoanza?"
+    },
+    {
+      "id": "Id10352_b",
+      "label_en": "(Id10352_b) Enter how old the child was when the fatal illness started in years :",
+      "label_sw": "10352_b. Mtoto alikuwa na umri wa miaka mingapi wakati ugonjwa unaodhaniwa kusababisha kifo chake ulipoanza?"
+    },
+    {
+      "id": "Id10352",
+      "label_en": "(Id10352) How many years old was the child when the fatal illness started?",
+      "label_sw": "10352. Je, mtoto alikuwa na miaka mingapi?"
+    },
+    {
+      "id": "Id10354",
+      "label_en": "(Id10354) Was the child part of a multiple birth?",
+      "label_sw": "10354. Je, mtoto alikuwa pacha?"
+    },
+    {
+      "id": "Id10355",
+      "label_en": "(Id10355) Was the child the first, second, or later in the birth order?",
+      "label_sw": "10355. Mtoto alikuwa wa ngapi kuzaliwa katika uzazi huo?"
+    },
+    {
+      "id": "Id10356",
+      "label_en": "(Id10356) Is the mother still alive?",
+      "label_sw": "10356. Je, mama bado yupo hai?"
+    },
+    {
+      "id": "Id10357",
+      "label_en": "(Id10357) Did the mother die before, during or after the delivery?",
+      "label_sw": "10357. Mama alifariki dunia wakati au baada ya kujifungua?"
+    },
+    {
+      "id": "Id10358_units",
+      "label_en": "(Id10358_units) How long after the delivery did the mother die?",
+      "label_sw": "10358_unit. Mama alifariki muda gani baada ya kujifungua?"
+    },
+    {
+      "id": "Id10358",
+      "label_en": "(Id10358) How many months after the delivery did the mother die?",
+      "label_sw": "10358. Mama alifariki miezi mingapi baada ya kujifungua?"
+    },
+    {
+      "id": "Id10359",
+      "label_en": "(Id10359) How many days after the delivery did the mother die?",
+      "label_sw": "10359. Mama alifariki siku ngapi baada ya kujifungua?"
+    },
+    {
+      "id": "Id10359_a",
+      "label_en": "(Id10359_a) How many weeks after the delivery did the mother die?",
+      "label_sw": "10359_a. Mama alifariki wiki ngapi baada ya kujifungua?"
+    },
+    {
+      "id": "Id10360",
+      "label_en": "(Id10360) Where was the deceased born?",
+      "label_sw": "10360. Marehemu (mtoto) alizaliwa wapi?"
+    },
+    {
+      "id": "Id10361",
+      "label_en": "(Id10361) Did you/the mother receive professional assistance during the delivery?",
+      "label_sw": "10361. Je, mama alipata msaada wa kitaalamu wakati wa kujifungua? (Uliza tu hadi kwa mtoto wa mwaka mmoja)"
+    },
+    {
+      "id": "Id10362",
+      "label_en": "(Id10362) At birth, was the baby of usual size?",
+      "label_sw": "10362. Je, wakati wa kuzaliwa, mtoto alikuwa na ukubwa wa kawaida?"
+    },
+    {
+      "id": "Id10363",
+      "label_en": "(Id10363) At birth, was the baby smaller than usual, (weighing under 2.5 kg)?",
+      "label_sw": "10363. Je, wakati wa kuzaliwa, mtoto alikuwa na uzito mdogo kuliko kawaida (uzito chini ya kilo 2.5)?"
+    },
+    {
+      "id": "Id10364",
+      "label_en": "(Id10364) At birth, was the baby very much smaller than usual, (weighing under 1 kg)?",
+      "label_sw": "10364. Je, wakati wa kuzaliwa, mtoto alikuwa na uzito mdogo sana kuliko kawaida (uzito chini ya kilo 1)?"
+    },
+    {
+      "id": "Id10365",
+      "label_en": "(Id10365) At birth, was the baby larger than usual, (weighing over 4.5 kg)?",
+      "label_sw": "10365. Je, wakati wa kuzaliwa, mtoto alikuwa na uzito mkubwa kuliko kawaida (uzito zaidi ya kilo 4.5)?"
+    },
+    {
+      "id": "id1036X_check",
+      "label_en": "(id1036X_check) It is not possible to select No usual size at Birth, No weighing under 2.5kg and No weighing over4.5kg together. Please go back and correct the selection.",
+      "label_sw": "Haiwezekani kuchagua Hakuwa na uzito wa kawaida wakati wa kuzaliwa au hakuwa na uzito chini yakilo2.5 na hakuwa na uzito zaidi ya kilo 4.5 pamoja na majibu mengine. Tafadahli rudi nyuma na urekebishe chaguo lako"
+    },
+    {
+      "id": "Id10366",
+      "label_en": "(Id10366) What was the weight (in grammes) of the deceased at birth?",
+      "label_sw": "10366. Je, marehemu alikuwa na uzito gani wakati wa kuzaliwa? (katika gramu) "
+    },
+    {
+      "id": "Id10367",
+      "label_en": "(Id10367) How many months long was the pregnancy before the child was born?",
+      "label_sw": "10367. Je, ujauzito ulikuwa wa miezi mingapi kabla ya mtoto kuzaliwa?"
+    },
+    {
+      "id": "Id10368",
+      "label_en": "(Id10368) Were there any complications in the late part of the pregnancy (defined as the last 3 months, before labour)? ",
+      "label_sw": "10368. Je, kulikuwa na matatizo yoyote miezi mitatu ya mwisho ya ujauzito kabla ya uchungu wa uzazi kuanza?"
+    },
+    {
+      "id": "Id10369",
+      "label_en": "(Id10369) Were there any complications during labour or delivery? ",
+      "label_sw": "10369. Je, kulikuwa na matatizo yoyote wakati wa uchungu au kujifungua?"
+    },
+    {
+      "id": "Id10370",
+      "label_en": "(Id10370) Was any part of the baby physically abnormal at time of delivery? (for example: body part too large or too small, additional growth on body)?",
+      "label_sw": "10370. Je, mtoto alikuwa na hitilafu ya kimaumbile au kilema chochote (mfano: sehemu ya mwili kuwa kubwa au ndogo sana, kiungo cha ziada mwilini)? "
+    },
+    {
+      "id": "Id10371",
+      "label_en": "(Id10371) Did the baby/ child have a swelling or defect on the back at time of birth?",
+      "label_sw": "10371. Je, mtoto alikuwa na uvimbe au hitilafu mgongoni?"
+    },
+    {
+      "id": "Id10372",
+      "label_en": "(Id10372) Did the baby/ child have a very large head at time of birth?",
+      "label_sw": "10372. Je, mtoto alikuwa na kichwa kikubwa sana wakati wa kuzaliwa?"
+    },
+    {
+      "id": "Id10373",
+      "label_en": "(Id10373) Did the baby/ child have a very small head at time of birth?",
+      "label_sw": "10373. Je, mtoto alikuwa na kichwa kidogo sana wakati wa kuzaliwa?"
+    },
+    {
+      "id": "Id10394",
+      "label_en": "(Id10394) How many births, including stillbirths, did the babys mother have before this baby?",
+      "label_sw": "10394. Mama wa marehemu amewahi kujifungua mara ngapi kabla ya mtoto huyu aliyefariki ukijumuisha watoto waliozaliwa wafu"
+    },
+    {
+      "id": "Id10376",
+      "label_en": "(Id10376) Was the baby moving in the last few days before the birth?",
+      "label_sw": "10376. Je, mtoto alicheza tumboni siku chache kabla ya kuzaliwa?"
+    },
+    {
+      "id": "Id10377",
+      "label_en": "(Id10377) Did the baby stop moving in the womb before labour started?",
+      "label_sw": "10377. Je, mtoto aliacha kucheza tumboni kabla ya uchungu kuanza?"
+    },
+    {
+      "id": "Id10379_unit",
+      "label_en": "(Id10379_unit) How long before labour did you/the mother last feel the baby move?",
+      "label_sw": "10379_unit. Ni muda gani kabla ya uchungu kuanza ambapo mama au mhojiwa alihisi mtoto kuacha kucheza tumboni?"
+    },
+    {
+      "id": "Id10379",
+      "label_en": "(Id10379) Enter how long before labour did you/the mother last feel the baby move in days :",
+      "label_sw": "10379. Ni siku ngapi zilipita kabla ya uchungu kuanza ambapo mama au mhojiwa alihisi mtoto kuacha kucheza tumboni?"
+    },
+    {
+      "id": "Id10380",
+      "label_en": "(Id10380) Enter how long before labour did you/the mother last feel the baby move in hours :",
+      "label_sw": "10380. Ni saa ngapi zilipita kabla ya uchungu kuanza ambapo mama au mhojiwa alihisi mtoto kuacha kucheza tumboni? "
+    },
+    {
+      "id": "Id10382",
+      "label_en": "(Id10382) How many hours did labour and delivery take?",
+      "label_sw": "10382. Je, uchungu na kujifungua ulichukua masaa mangapi?"
+    },
+    {
+      "id": "Id10383",
+      "label_en": "(Id10383) Was the baby born 24 hours or more after the water broke?",
+      "label_sw": "10383. Je, mtoto alizaliwa saa 24 au zaidi baada ya chupa kuvunjika?"
+    },
+    {
+      "id": "Id10384",
+      "label_en": "(Id10384) Was the liquor foul smelling?",
+      "label_sw": "10384. Je, maji ya chupa yalikuwa na harufu mbaya?"
+    },
+    {
+      "id": "Id10385",
+      "label_en": "(Id10385) What was the colour of the liquor when the water broke?",
+      "label_sw": "10385. Je, maji ya chupa yalikuwa na rangi gani?"
+    },
+    {
+      "id": "mother_deliv",
+      "label_en": "(mother_deliv) How was the baby delivered?",
+      "label_sw": "MTOTO ALIZALIWAJE?"
+    },
+    {
+      "id": "Id10387",
+      "label_en": "(Id10387) Was the delivery normal vaginal, without forceps or vacuum?",
+      "label_sw": "10387. Je, mtoto alizaliwa kwa njia ya kawaida BILA msaada wa makoleo au vacuum?"
+    },
+    {
+      "id": "Id10388",
+      "label_en": "(Id10388) Was the delivery vaginal, with forceps or vacuum?",
+      "label_sw": "10388. Je, mtoto alizaliwa kwa njia ya kawaida KWA msaada wa makoleo au vacuum?"
+    },
+    {
+      "id": "Id10389",
+      "label_en": "(Id10389) Was the delivery a Caesarean section?",
+      "label_sw": "10389. Je, mama alijifungua kwa njia ya upasuaji?"
+    },
+    {
+      "id": "id10389_check",
+      "label_en": "(id10389_check) It is not possible to select No to all three previous questions. Please go back and review the answers.",
+      "label_sw": "Haiwezekani kuchagua Hapana kwa maswali yote matatu ya awali. Tafadahli rudi nyuma na urekebishe chaguo lako."
+    },
+    {
+      "id": "Id10391",
+      "label_en": "(Id10391) Did you/the mother receive any vaccinations since reaching adulthood including during this pregnancy?",
+      "label_sw": "10391. Je, mama ulipata au alipata chanjo yoyote tangu ulipo au alipofikisha umri wa kuzaa ikijumuisha ujauzito huu?"
+    },
+    {
+      "id": "Id10392",
+      "label_en": "(Id10392) How many doses?",
+      "label_sw": "10392. Ulipata au alipata chanjo ngapi?"
+    },
+    {
+      "id": "Id10393",
+      "label_en": "(Id10393) Did you/the mother receive tetanus toxoid (TT) vaccine?",
+      "label_sw": "10393. Je, mama alipata chanjo ya Pepopunda (TT)?"
+    },
+    {
+      "id": "Id10395",
+      "label_en": "(Id10395) During labour, did the babys mother suffer from fever?",
+      "label_sw": "10395. Je, wakati wa kujifugua mama wa mtoto alikuwa na homa?"
+    },
+    {
+      "id": "Id10396",
+      "label_en": "(Id10396) During the last 3 months of pregnancy, labour or delivery, did you/the babys mother suffer from high blood pressure?",
+      "label_sw": "10396. Je, mama alisumbuliwa na shinikizo juu la damu kipindi cha miezi 3 ya mwisho ya ujauzito, wakati wa uchungu au kujifungua?"
+    },
+    {
+      "id": "Id10397",
+      "label_en": "(Id10397) Did you/the babys mother have diabetes mellitus?",
+      "label_sw": "10397. Je, mama wa mtoto alikuwa na ugonjwa wa kisukari?"
+    },
+    {
+      "id": "Id10398",
+      "label_en": "(Id10398) Did you/the babys mother have foul smelling vaginal discharge during pregnancy or after delivery?",
+      "label_sw": "10398. Je, mama wa mtoto alitokwa na maji yenye harufu mbaya ukeni, wakati wa ujauzito au baada ya kujifungua?"
+    },
+    {
+      "id": "Id10399",
+      "label_en": "(Id10399) During the last 3 months of pregnancy, labour or delivery, did you/the babys mother suffer from convulsions?",
+      "label_sw": "10399. Je, mama wa mtoto alisumbuliwa na kuanguka kama kifafa katika kipindi cha miezi 3 ya mwisho ya ujauzito, wakati wa uchungu au kujifungua?"
+    },
+    {
+      "id": "Id10400",
+      "label_en": "(Id10400) During the last 3 months of pregnancy did you/the babys mother suffer from blurred vision?",
+      "label_sw": "10400. Je, mama wa mtoto alipata matatizo ya kutoona vizuri katika kipindi cha miezi 3 ya mwisho ya ujauzito?"
+    },
+    {
+      "id": "Id10401",
+      "label_en": "(Id10401) Did you/the babys mother have severe anemia?",
+      "label_sw": "10401. Je, mama wa mtoto alikuwa na upungufu mkubwa wa damu?"
+    },
+    {
+      "id": "Id10402",
+      "label_en": "(Id10402) Did you/the babys mother have vaginal bleeding during the last 3 months of pregnancy but before labour started?",
+      "label_sw": "10402. Je, mama wa mtoto alitokwa damu ukeni kabla ya uchungu kuanza katika kipindi cha miezi 3 ya mwisho ya ujauzito,?"
+    },
+    {
+      "id": "Id10403",
+      "label_en": "(Id10403) Did the babys bottom, feet, arm or hand come out of the vagina before its head?",
+      "label_sw": "10403. Je, mtoto alitanguliza matako, miguu, mkono au kiganja badala ya kichwa wakati wa kuzaliwa?"
+    },
+    {
+      "id": "Id10404",
+      "label_en": "(Id10404) Was the umbilical cord wrapped more than once around the neck of the child at birth?",
+      "label_sw": "10404. Je, kamba ya kitovu ilijisokota zaidi ya mara moja shingoni kwa mtoto wakati wa kuzaliwa?"
+    },
+    {
+      "id": "Id10405",
+      "label_en": "(Id10405) Was the umbilical cord delivered first?",
+      "label_sw": "10405. Je, Kamba ya kitovu ilikuwa ya kwanza kutoka wakati wa kujifugua?"
+    },
+    {
+      "id": "Id10406",
+      "label_en": "(Id10406) Was the baby blue in colour at birth?",
+      "label_sw": "10406. Je, mtoto alikuwa wa rangi ya bluu alipozaliwa?"
+    },
+    {
+      "id": "Id10411",
+      "label_en": "(Id10411) Did (s)he drink alcohol?",
+      "label_sw": "10411. Je, alikuwa anakunywa pombe?"
+    },
+    {
+      "id": "Id10412",
+      "label_en": "(Id10412) Did (s)he use tobacco?",
+      "label_sw": "10412. Je, alitumia tumbaku?"
+    },
+    {
+      "id": "Id10413",
+      "label_en": "(Id10413) Did (s)he smoke tobacco (cigarette, cigar, pipe, etc.)?",
+      "label_sw": "10413. Je, alikuwa anavuta tumbaku "
+    },
+    {
+      "id": "Id10414",
+      "label_en": "(Id10414) What kind of tobacco did (s)he use ?",
+      "label_sw": "10414. Je, alitumia aina gani ya tumbaku?"
+    },
+    {
+      "id": "id10414_check",
+      "label_en": "(id10414_check) It is not possible to select cigarettes or pipe and no to Did (s)he smoke tobacco?. Please go back and correct the selections.",
+      "label_sw": "Haiwezekani kuchagua sigara au kiko na Hapana kwenye alikuwa anavutatumbaku. Tafadahli rudi nyuma na urekebishe chaguo lako."
+    },
+    {
+      "id": "Id10415",
+      "label_en": "(Id10415) How many cigarettes did (s)he smoke daily?",
+      "label_sw": "10415. Alivuta sigara ngapi kwa siku?"
+    },
+    {
+      "id": "Id10416",
+      "label_en": "(Id10416) How many times did (s)he use tobacco products each day?",
+      "label_sw": "10416.Ni mara ngapi alikuwa anatumia bidhaa za tumbaku kwa siku?"
+    },
+    {
+      "id": "Id10418",
+      "label_en": "(Id10418) Did (s)he receive any treatment for the illness that led to death?",
+      "label_sw": "10418. Je, alipata matibabu yoyote kwa ugonjwa unaodhaniwa kusababisha kifo chake?"
+    },
+    {
+      "id": "Id10419",
+      "label_en": "(Id10419) Did (s)he receive oral rehydration salts?",
+      "label_sw": "10419. Je, alipatiwa maji ya kunywa ya ORS?"
+    },
+    {
+      "id": "Id10420",
+      "label_en": "(Id10420) Did (s)he receive (or need) intravenous fluids (drip) treatment?",
+      "label_sw": "10420. Je, alipatiwa (au alihitaji) matibabu ya maji kwa njia ya mishipa (dripu)?"
+    },
+    {
+      "id": "Id10421",
+      "label_en": "(Id10421) Did (s)he receive (or need) a blood transfusion?",
+      "label_sw": "10421. Je, alipatiwa (au alihitaji) matibabu ya kuongezewa damu?"
+    },
+    {
+      "id": "Id10422",
+      "label_en": "(Id10422) Did (s)he receive (or need) treatment/food through a tube passed through the nose?",
+      "label_sw": "10422. Je, alipatiwa (au alihitaji) matibabu au chakula kupitia mpira uliopitishwa puani?"
+    },
+    {
+      "id": "Id10423",
+      "label_en": "(Id10423) Did (s)he receive (or need) injectable antibiotics?",
+      "label_sw": "10423. Je, alipatiwa (au alihitaji) matibabu kwa njia ya sindano?"
+    },
+    {
+      "id": "Id10424",
+      "label_en": "(Id10424) Did (s)he receive (or need) antiretroviral therapy (ART)?",
+      "label_sw": "10424. Je, alipatiwa (au alihitaji) dawa za kufubaza makali ya virusi vya UKIMWI?"
+    },
+    {
+      "id": "Id10425",
+      "label_en": "(Id10425) Did (s)he have (or need) an operation for the illness?",
+      "label_sw": "10425. Je, alifanyiwa au alihitaji upasuaji kwa ugonjwa aliokuwa nao?"
+    },
+    {
+      "id": "Id10426",
+      "label_en": "(Id10426) Did (s)he have the operation within 1 month before death?",
+      "label_sw": "10426. Je, alifanyiwa upasuaji ndani ya mwezi 1 kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10427",
+      "label_en": "(Id10427) Was (s)he discharged from hospital very ill?",
+      "label_sw": "10427. Je, aliruhusiwa kutoka hospitalini akiwa mgonjwa sana?"
+    },
+    {
+      "id": "Id10428",
+      "label_en": "(Id10428) Did (s)he receive any immunizations?",
+      "label_sw": "10428. Je, alipata chanjo?"
+    },
+    {
+      "id": "Id10429",
+      "label_en": "(Id10429) Do you have the childs vaccination card?",
+      "label_sw": "10429. Je, unayo kadi ya chanjo ya mtoto?"
+    },
+    {
+      "id": "Id10430",
+      "label_en": "(Id10430) Can I see the vaccination card (note the vaccines the child received)?",
+      "label_sw": "10430. Je, naweza kuiona kadi ya chanjo ya mtoto? (nakili chanjo alizopewa mtoto)"
+    },
+    {
+      "id": "Id10431",
+      "label_en": "(Id10431) Select EPI vaccines done",
+      "label_sw": "10431. Nakili aina za chanjo hapa"
+    },
+    {
+      "id": "id10431_check",
+      "label_en": "(id10431_check) It is not possible to select Novaccines, Dont know or refuse together with other options. Please go back and correct the selection. ",
+      "label_sw": "Haiwezekani kuchagua Hamna chanjo, Sijui au Hapana pamoja na majibu mengine.Tafadahli rudi nyuma na urekebishe chaguo lako."
+    },
+    {
+      "id": "Id10432",
+      "label_en": "(Id10432) Was care sought outside the home while (s)he had this illness?",
+      "label_sw": "10432. Je, huduma ilitafutwa nje ya nyumbani wakati akiugua ugonjwa huu?"
+    },
+    {
+      "id": "Id10433",
+      "label_en": "(Id10433) Where or from whom did you seek care?",
+      "label_sw": "10433. Huduma hii ilitafutwa wapi au kutoka kwa nani?"
+    },
+    {
+      "id": "id10433_check",
+      "label_en": "(id10433_check) It is not possible to select Dont know or refuse together with other options. Please go back and correct the selection. ",
+      "label_sw": "Haiwezekani kuchagua sijui au amekataa kujibu pamoja na majibu mengine.Tafadahli rudi nyuma na urekebishe chaguo lako"
+    },
+    {
+      "id": "Id10434",
+      "label_en": "(Id10434) What was the name and address of any hospital, health center or clinic where care was sought",
+      "label_sw": "10434. Andika jina na anwani ambapo huduma ilitafutwa."
+    },
+    {
+      "id": "Id10435",
+      "label_en": "(Id10435) Did a health care worker tell you the cause of death?",
+      "label_sw": "10435 .Je, mhudumu wa afya aliwambia sababu ya kifo?"
+    },
+    {
+      "id": "Id10436",
+      "label_en": "(Id10436) What did the health care worker say?",
+      "label_sw": "10436. Je? Mhudumu wa afya aliwambia nini?"
+    },
+    {
+      "id": "Id10437",
+      "label_en": "(Id10437) Do you have any health records that belonged to the deceased?",
+      "label_sw": "10437. Je, una kumbukumbu zozote za afya za marehemu?"
+    },
+    {
+      "id": "Id10438",
+      "label_en": "(Id10438) Can I see the health records?",
+      "label_sw": "10438. Je, naweza kuziona hizo kumbukumbu za afya?"
+    },
+    {
+      "id": "Id10439_check",
+      "label_en": "(Id10439_check) Is the date of the most recent (last) visit available? ",
+      "label_sw": "10439_check. Je, tarehe ya hudhurio la hivi karibuni (mwisho) inapatikana?"
+    },
+    {
+      "id": "Id10439",
+      "label_en": "(Id10439) Record the date of the most recent (last) visit ",
+      "label_sw": "10439. Andika tarehe ya hudhurio la mwisho"
+    },
+    {
+      "id": "Id10440_check",
+      "label_en": "(Id10440_check) Is the date of the second most recent visit available? ",
+      "label_sw": "10440_check. Je, Tarehe ya hudhurio la pili la hivi karibuni inapatikana?"
+    },
+    {
+      "id": "Id10440",
+      "label_en": "(Id10440) Record the date of the second most recent visit ",
+      "label_sw": "10440. Andika tarehe ya mahudhurio ya pili kutoka mwisho"
+    },
+    {
+      "id": "Id10441_check",
+      "label_en": "(Id10441_check) Is the date of the last note on the health records available? ",
+      "label_sw": "10441_check. Je, Tarehe ya kumbukumbu ya mwisho kwenye rekodi za afya inapatikana?"
+    },
+    {
+      "id": "Id10441",
+      "label_en": "(Id10441) Record the date of the last note on the health records ",
+      "label_sw": "10441. Andika tarehe ya maelezo ya mwisho kutoka kwenye kumbukumbu za afya"
+    },
+    {
+      "id": "Id10442",
+      "label_en": "(Id10442) Record the weight (in kilogrammes) written at the most recent (last) visit ",
+      "label_sw": "10442. Nakili uzito (kwa kilogramu) ulioandikwa wakati wa mahudhurio ya mwisho"
+    },
+    {
+      "id": "Id10443",
+      "label_en": "(Id10443) Record the weight (in kilogrammes) written at the second most recent visit ",
+      "label_sw": "10443. Nakili uzito (kwa kilogramu) ulioandikwa wakati wa mahudhurio ya pili kutoka mwisho."
+    },
+    {
+      "id": "Id10444",
+      "label_en": "(Id10444) Transcribe the last note on the health records ",
+      "label_sw": "10444. Nakili kwa ukamilifu maelezo ya mwisho kutoka kwenye kumbukumbu za afya"
+    },
+    {
+      "id": "Id10445",
+      "label_en": "(Id10445) Has the deceased’s (biological) mother ever been tested for HIV?",
+      "label_sw": "10445. Je, mama mzazi wa marehemu aliwahi kupimwa Virusi vya UKIMWI?"
+    },
+    {
+      "id": "Id10446",
+      "label_en": "(Id10446) Has the deceased’s (biological) mother ever been told she had HIV/AIDS by a health worker?",
+      "label_sw": "10446. Je, mama mzazi wa marehemu aliwahi kuambiwa na mhudumu wa afya kuwa ana maambukizi ya Virusi vya UKIMWI?"
+    },
+    {
+      "id": "Id10450",
+      "label_en": "(Id10450) In the final days before death, did s/he travel to a hospital or health facility?",
+      "label_sw": "10450. Je, siku za mwisho kabla ya kifo chake, alipelekwa hospitali au kituo cha huduma za afya?"
+    },
+    {
+      "id": "Id10451",
+      "label_en": "(Id10451) Did (s)he use motorised transport to get to the hospital or health facility?",
+      "label_sw": "10451. Je, alitumia usafiri wa chombo cha moto kwenda hospital au kituo cha huduma za afya?"
+    },
+    {
+      "id": "Id10452",
+      "label_en": "(Id10452) Were there any problems during admission to the hospital or health facility?",
+      "label_sw": "10452. Je, kulikuwa na matatizo yoyote wakati wa kulazwa hospitalini au kwenye kituo cha huduma za afya?"
+    },
+    {
+      "id": "Id10453",
+      "label_en": "(Id10453) Were there any problems with the way (s)he was treated (medical treatment, procedures, interpersonal attitudes, respect, dignity) in the hospital or health facility?",
+      "label_sw": "10453. Je, kulikuwa na matatizo yoyote kuhusiana na jinsi alivyohudumiwa (kimatibabu na kupokelewa) hospitalini au kwenye kituo cha huduma za afya?"
+    },
+    {
+      "id": "Id10454",
+      "label_en": "(Id10454) Were there any problems getting medications or diagnostic tests in the hospital or health facility?",
+      "label_sw": "10454. Je, kulikuwa na matatizo yoyote ya kupata dawa au vipimo hospitalini au kwenye kituo cha huduma za afya?"
+    },
+    {
+      "id": "Id10455",
+      "label_en": "(Id10455) Does it take more than 2 hours to get to the nearest hospital or health facility from the deceaseds household?",
+      "label_sw": "10455. Je, inachukua zaidi ya saa 2 kufika kwenye hospitali au kituo cha huduma za afya kilicho karibu na makazi ya marehemu? "
+    },
+    {
+      "id": "Id10456",
+      "label_en": "(Id10456) In the final days before death, were there any doubts about whether medical care was needed?",
+      "label_sw": "10456. Je, siku za mwisho kabla ya kifo, kulikuwa na wasiwasi wowote iwapo huduma za matibabu zilihitajika? "
+    },
+    {
+      "id": "Id10457",
+      "label_en": "(Id10457) In the final days before death, was traditional medicine used?",
+      "label_sw": "10457. Je, marehemu alipewa dawa za kienyeji siku za mwisho kabla ya kifo chake?"
+    },
+    {
+      "id": "Id10458",
+      "label_en": "(Id10458) In the final days before death, did anyone use a telephone or cell phone to call for help?",
+      "label_sw": "10458. Siku za mwisho kabla ya kifo cha marehemu, Je, kuna mtu yeyote aliyetumia simu ya mezani au ya mkononi kuomba msaada?"
+    },
+    {
+      "id": "Id10459",
+      "label_en": "(Id10459) Over the course of illness, did the total costs of care and treatment prohibit other household payments?",
+      "label_sw": "10459. Katika kipindi chote cha ugonjwa, Je, gharama za matibabu ziliathiri malipo ya huduma nyingine za nyumbani?"
+    },
+    {
+      "id": "Health_Ins",
+      "label_en": "Health Insuarance",
+      "label_sw": "Maswali ya bima"
+    },
+    {
+      "id": "TZ001",
+      "label_en": "(TZ001) Did the deceased have Health Insuarance?",
+      "label_sw": "TZ001. Je, marehemu alikuwa na bima ya afya?"
+    },
+    {
+      "id": "TZ002",
+      "label_en": "(TZ002) Which among the following Health Insuarances did the deceased have?",
+      "label_sw": "TZ002. Ni ipi kati ya bima zifuatazo marehemu alikuwa nayo"
+    },
+    {
+      "id": "TZ002_other",
+      "label_en": "Other (Specify):",
+      "label_sw": "Nyingine (Taja):"
+    },
+    {
+      "id": "TZ003",
+      "label_en": "(TZ003) Did the deceased use his/her Health Insuarance during his/her final illness?",
+      "label_sw": "TZ003. Je, marehemu alitumia bima ya afya wakati wa matibabu yake ya mwisho"
+    },
+    {
+      "id": "TZ004",
+      "label_en": "(TZ004) Which services did the Health Insuarance provide? ",
+      "label_sw": "TZ004. Je, bima ya afya ilikidhi huduma gani?"
+    },
+    {
+      "id": "TZ004_other",
+      "label_en": "Other (Specify):",
+      "label_sw": "Nyingine (Taja):"
+    },
+    {
+      "id": "TZ005",
+      "label_en": "(TZ005) Why did the deceased not use his/her health insuarance?",
+      "label_sw": "TZ005. Ni kwanini marehemu hakutumia bima yake ya afya?"
+    },
+    {
+      "id": "TZ005_a",
+      "label_en": "(TZ005_a) There was another problem with using the Insuarance (specify):",
+      "label_sw": "Tatizo linguine la kutumia bima"
+    },
+    {
+      "id": "deathcert",
+      "label_en": "Death certificate with cause of death",
+      "label_sw": "CHETI CHA KIFO CHENYE SABABU YA KIFO"
+    },
+    {
+      "id": "Id10462",
+      "label_en": "(Id10462) Was a medical certificate of cause of death issued?",
+      "label_sw": "10462. Je, cheti cha kifo kilitolewa?"
+    },
+    {
+      "id": "Id10463",
+      "label_en": "(Id10463) Can I see the medical certificate of cause of death?",
+      "label_sw": "10463. Je, naweza kukiona hicho cheti cha kifo?"
+    },
+    {
+      "id": "Id10464",
+      "label_en": "(Id10464) Record the immediate cause of death from the certificate (line 1a) ",
+      "label_sw": "10464. Nakili sababu ya kifo inayosomeka kwenye mstari wa kwanza (1a) wa cheti cha kifo"
+    },
+    {
+      "id": "Id10465",
+      "label_en": "(Id10465) Duration (Ia): ",
+      "label_sw": "10465. Muda wa (1a)"
+    },
+    {
+      "id": "Id10466",
+      "label_en": "(Id10466) Record the first antecedent cause of death from the certificate (line 1b) ",
+      "label_sw": "10466. Nakili sababu ya kifo inayosomeka kwenye mstari wa pili (1b) wa cheti cha kifo (kama umejazwa)"
+    },
+    {
+      "id": "Id10467",
+      "label_en": "(Id10467) Duration (Ib): ",
+      "label_sw": "10467. Muda wa (1b)"
+    },
+    {
+      "id": "Id10468",
+      "label_en": "(Id10468) Record the second antecedent cause of death from the certificate (line 1c) ",
+      "label_sw": "10468. Nakili sababu ya kifo inayosomeka kwenye mstari wa tatu (1c) wa cheti cha kifo (kama umejazwa)"
+    },
+    {
+      "id": "Id10469",
+      "label_en": "(Id10469) Duration (Ic): ",
+      "label_sw": "10469. Muda wa (1c)"
+    },
+    {
+      "id": "Id10470",
+      "label_en": "(Id10470) Record the third antecedent cause of death from the certificate (line 1d) ",
+      "label_sw": "10470. Nakili sababu ya kifo inayosomeka kwenye mstari wa nne (1d) wa cheti cha kifo (kama umejazwa)"
+    },
+    {
+      "id": "Id10471",
+      "label_en": "(Id10471) Duration (Id): ",
+      "label_sw": "10471. Muda wa (1d)"
+    },
+    {
+      "id": "Id10472",
+      "label_en": "(Id10472) Record the contributing cause(s) of death from the certificate (part 2) ",
+      "label_sw": "10472. Nakili sababu iliyochangia kifo kutoka sehemu ya pili ya cheti cha kifo (kama imejazwa)"
+    },
+    {
+      "id": "Id10473",
+      "label_en": "(Id10473) Duration (part2): ",
+      "label_sw": "10473. Muda (sehemu ya pili)"
+    },
+    {
+      "id": "Id10476",
+      "label_en": "(Id10476) Thank you for your information. Now can you please tell me in your own words about the events that led to the death?",
+      "label_sw": "10476. Asante sana kwa taarifa zako. Sasa unaweza kunieleza kwa maneno yako mwenyewe matukio yaliyopelekea kifo cha marehemu?"
+    },
+    {
+      "id": "Id10477",
+      "label_en": "(Id10477) Select any of the following words that were mentioned as present in the narrative. ",
+      "label_sw": "10477. Je, kuna maneno yoyote yafuatayo ya msingi katika maelezo yaliyotajwa?"
+    },
+    {
+      "id": "Id10478",
+      "label_en": "(Id10478) Select any of the following words that were mentioned as present in the narrative. ",
+      "label_sw": "10478. Je, kuna maneno yoyote yafuatayo ya msingi katika maelezo yaliyotajwa?"
+    },
+    {
+      "id": "Id10479",
+      "label_en": "(Id10479) Select any of the following words that were mentioned as present in the narrative. ",
+      "label_sw": "10479. Je, kuna maneno yoyote yafuatayo ya msingi katika maelezo yaliyotajwa?"
+    },
+    {
+      "id": "id10477_check",
+      "label_en": "(id10477_check) It is not possible to select Dontknow or Noneoftheabove together with other options. Please go back and correct the selection. ",
+      "label_sw": "10477_check. Haiwezekani kuchagua sijui au Hakuna maneno yaliyotajwa kati ya hayo hapojuu pamoja na majibu mengine, tafadhali rudi nyuma na urekebishe chagua lako."
+    },
+    {
+      "id": "id10478_check",
+      "label_en": "(id10478_check) It is not possible to select Dontknow or Noneoftheabove together with other options. Please go back and correct the selection. ",
+      "label_sw": "10478_check. Haiwezekani kuchagua sijui au Hakuna maneno yaliyotajwa kati ya hayo hapojuu pamoja na majibu mengine, tafadhali rudi nyuma na urekebishe chagua lako."
+    },
+    {
+      "id": "id10479_check",
+      "label_en": "(id10479_check) It is not possible to select Dontknow or Noneoftheabove together with other options. Please go back and correct the selection. ",
+      "label_sw": "10479_check. Haiwezekani kuchagua sijui au Hakuna maneno yaliyotajwa kati ya hayo hapo juu pamoja na majibu mengine, tafadhali rudi nyuma na urekebishe chagua lako."
+    },
+    {
+      "id": "Id10481",
+      "label_en": "End time of the interview",
+      "label_sw": "Muda wa kumaliza maongezi"
+    },
+    {
+      "id": "comment",
+      "label_en": "(comment) Comment",
+      "label_sw": "Maoni"
+    },
+    {
+      "id": "gps_location",
+      "label_en": "Collect the GPS coordinates of this location",
+      "label_sw": " Kusanya vipimo vya GPS vya eneo hili"
+    },
+    {
+      "id": "gps_details",
+      "label_en": "The GPS coordinates represents",
+      "label_sw": "Vipimo vya GPS vinawakilisha"
+    },
+    {
+      "id": "vaid",
+      "label_en": "Verbal autopsy ID",
+      "label_sw": "Namba ya VA"
+    },
+    {
+      "id": "D2SN",
+      "label_en": "Death registration number/certificate",
+      "label_sw": "Namba ya usajili/cheti cha kifo "
+    }
+  ]

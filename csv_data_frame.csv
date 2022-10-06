@@ -1,0 +1,197 @@
+,id,value,label_en,label_sw
+0,start-time,2022-07-09T17:13:48.206+03:00,Start,Mwanzo
+1,end,2022-07-09T17:50:24.954+03:00,End,Mwisho
+2,today,2022-07-09,Today,Leo
+3,deviceid,collect:CbcFlKVgOLSR4uWH,Device ID,Namba ya kifaa
+4,phonenumber,,PhoneNumber,Namba ya Simu
+5,D2SN,0000188754,Death registration number/certificate,Namba ya usajili/cheti cha kifo 
+6,Id10002,high,(Id10002) Is this a region of high HIV/AIDS mortality? ,"10002. Je, Mkoa huu ni wenye vifo vingi vitokanavyo na VVU / UKIMWI?"
+7,Id10003,high,(Id10003) Is this a region of high malaria mortality? ,"10003. Je, Mkoa huu ni wenye vifo vingi vitokanavyo na Malaria?"
+8,Id10004,dry,(Id10004) During which season did (s)he die? ,"10004. Je, marehemu alifariki dunia msimu gani?"
+9,Id10005R,Katavi,Region where this interview is happening,Mkoa ambao mahojiano haya yanafanyika
+10,Id10005D,Nsimbo_District_Council,District where this interview is happening,Wilaya ambayo mahojiano haya yanafanyika
+11,Id10005V,Ivungwe b,Village or street where this interview is happening,Kijiji au mtaa ambapo mahojiano haya yanafanyika
+12,Id10007,Franko joseph mnoho,(Id10007) What is the name of VA respondent? ,10007. Jina la mhojiwa
+13,Id10007a,male,(Id10007a) What is the sex of VA respondent? ,10007a. Jinsi ya mhojiwa
+14,Id10007Phone,0656334133,(Id10007Phone). Phone number for the VA respondent,10007b. Namba ya simu ya mhojiwa
+15,Id10008,child,(Id10008) What is your/the respondents relationship to the deceased?,"10008. Je, mhojiwa ana uhusiano gani na marehemu?"
+16,Id10009,yes,(Id10009) Did you/the respondent live with the deceased in the period leading to her/his death?,"10009. Je, mhojiwa aliishi na marehemu katika kipindi cha kuelekea kifo chake ?"
+17,Id10010,Revocatus  Rungwa mapula,(Id10010) Name of VA interviewer ,10010. Jina la mhojaji
+18,Id10010Phone,0758433500,(Id10010Phone) Phone number of VA interviewer,10010Phone. Namba ya simu ya mhojaji
+19,Id10010a,48,(Id10010a) Age of VA interviewer ,10010a. Umri wa mhojaji
+20,Id10010b,male,(Id10010b) Sex of VA interviewer ,10010b. Jinsi ya mhojaji
+21,Id10010c,19740702411070000120,(Id10010c) ID of VA interviewer ,10010c. Namba ya utambulisho ya mhojaji
+22,Id10012,2022-07-09,(Id10012) Date of the interview,10011. Tarehe ya mahojiano
+23,Id10013,yes,(Id10013) Did the respondent give consent? ,"10013. Je, mhojiwa ameridhia kuhojiwa?"
+24,Id10011,2022-07-09T17:13:48.207+03:00,Start time of the interview,10012. Muda wa kuanza mahojiano
+25,Id10017,Fikirini,(Id10017) What was the first or given name(s) of the deceased?,10017.Taja jina la kwanza la marehemu
+26,Id10018,Josephu,(Id10018) What was the surname (or family name) of the deceased?,10018. Taja jina la ukoo la marehemu
+27,Id10019,male,(Id10019) What was the sex of the deceased?,10019. Marehemu alikuwa wa jinsi gani?
+28,Id10020,no,(Id10020) Is the date of birth known?,"10020. Je, tarehe aliyozaliwa marehemu inafahamika?"
+29,Id10022,yes,(Id10022) Is the date of death known?,"10022. Je, tarehe aliyofariki marehemu inafahamika?"
+30,Id10023_b,1956-07-01,(Id10023_b) When did (s)he die?,"10023. Je, marehemu alifariki lini?"
+31,Id10023,1956-07-01T00:00:00.000+02:45,(Id10023) When did (s)he die?,"10023. Je, marehemu alifariki lini?"
+32,ageInDays,,Age in Days,Umri katika siku
+33,ageInYears,,Age in Years,Umri katika miaka
+34,ageInMonths,,Age in Months,Umri katika miezi 
+35,isNeonatal1,0,The deceased person is a Neonate,Marehemu ni mtoto mchanga
+36,isChild1,0,The deceased person is a Child,Marehemu ni mtoto
+37,isAdult1,0,The deceased person is an Adult,Marehemu ni mtu mzima
+38,age_group,adult, What age group corresponds to the deceased? ,Marehemu alikuwa kwenye kundi gani la umri?
+39,age_adult,66, Enter adults age in years: ,Andika umri wa mtu mzima kwa miaka aliyoishi
+40,ageInMonthsByYear,,Age in Months,Umri kwa miezi
+41,ageInYears2,66,Age in Years,Umri kwa miaka
+42,isNeonatal2,0,The deceased person is a Neonate,Marehemu alikuwa ni mtoto mchanga
+43,isChild2,0,The deceased person is a Child,Marehemu alikuwa ni mtoto
+44,isAdult2,1,The deceased person is an Adult,Marehemu alikuwa ni mtu mzima
+45,isNeonatal,0,The deceased person is a Neonate,Marehemu alikuwa ni mtoto mchanga
+46,isChild,0,The deceased person is a Child,Marehemu alikuwa ni mtoto
+47,isAdult,1,The deceased person is an Adult,Marehemu alikuwa ni mtu mzima
+48,ageInDaysNeonate,,Age in days,Umri kwa siku
+49,Id10058,home,(Id10058) Where did the deceased die? ,10058. Marehemu alifia wapi?
+50,Id10058b,no,(Id10058b). Was the deceased body taken to hospital or health facility for storage before burial,"10058b. Je, mwili wa marehemu ulipelekwa hospitali au kituo cha afya kwa ajili ya kuhifadhiwa kabla ya mazishi?"
+51,Id10487,no,"(Id10487) In the two weeks before death, did (s)he live with, visit, or care for someone who had any COVID-19 symptoms or a positive COVID-19 test?","10487. Wiki mbili kabla ya kifo chake, Je, marehemu aliishi au kumtembelea, au kumpatia huduma mtu ambaye alithibitika kuwa na namaambukizi au dalili zozote za Uviko 19?"
+52,Id10488,no,"(Id10488) In the two weeks before death, did (s)he travel to an area where COVID-19 is known to be present?","10488. Wiki mbili kabla ya kifo chake; Je, marehemu alisafiri kwenda eneo ambalo linafahamika kuwa na maambukizi ya Uviko 19?"
+53,Id10051,yes,(Id10051) Is there a need to collect additional demographic data on the deceased? ,Id10051. Je kuna hitaji la kukusanya taarifa binafsi za ziada za marehemu?
+54,Id10052,foreign_national,(Id10052) What was her/his citizenship/nationality?,10052. Alikuwa na uraia au utaifa wa aina gani? 
+55,Id10053,Muhutu,(Id10053) What was her/his ethnicity?,"10053. Je, marehemu alikuwa kabila gani?"
+56,Id10054_group,,(Id10054) What was her/his place of birth?, Marehemu alizaliwa wapi?
+57,Id10054R,Katavi,Region of birth,10054R Mkoa aliozaliwa
+58,Id10054D,Nsimbo_District_Council,District of birth,10054W Wilaya aliyozaliwa
+59,Id10054V,Ivungwe b,Village of birth,10054K. Kijiji/Mtaa alichozaliwa
+60,Id10055,Ivungwe b,(Id10055) What was her/his place of usual residence? (the place where the person lived most of the year),"10055. Je, marehemu aliishi wapi?( Mahali alipoishi muda mrefu ndani ya mwaka)"
+61,Id10057,Within_the_country,(Id10057) Where did the death occur?,10057. Kifo kilitokea wapi?
+62,Id10057_group,,Within the country,Ndani ya nchi
+63,Id10057R,Katavi,(Id10057R) Region where death occurred,10057R. Mkoa kifo kilipotokea
+64,Id10057D,Nsimbo_District_Council,(Id10057D) Disrtrict where death occurred,10057D. Wilaya kifo kilipotokea
+65,Id10057V,Ivungwe b,Village,10057V. Kijiji/Mtaa
+66,Id10059,married,(Id10059) What was her/his marital status?,10059. Hali yake ya ndoa ilikuaje?
+67,Id10060_check,no,(Id10060_check) Is the date of marriage available? ,"10060. Je, tarehe ya ndoa inafahamika?"
+68,Id10063,no_formal_education,(Id10063) What was her/his highest level of schooling?,10063. Marehemu alifikia kiwango gani cha juu cha elimu rasmi?
+69,Id10064,yes,(Id10064) Was (s)he able to read and/or write?,"10064. Je, aliweza kusoma na/au kuandika? "
+70,Id10065,mainly_unemployed,(Id10065) What was her/his economic activity status in year prior to death?,"10065. Je, marehemu alijishughulisha na shughuli gani za kiuchumi mwaka mmoja kabla ya kifo chake? "
+71,Id10069,yes,(Id10069) Is there a need to collect civil registration numbers on the deceased? ,"10069. Je, kuna umuhimu wa kuulizia namba za usajili wa cheti cha kifo cha marehemu?"
+72,Id10069_a,no,(Id10069_a) Do you have a Death Certificate from the Civil Registry?,"10069_a. Je, una cheti cha kifo cha marehemu?"
+73,Id10077,no,(Id10077) Did (s)he suffer from any injury or accident that led to her/his death?,"10077. Je, marehemu alipata jeraha au ajali yoyote iliyosababisha kifo chake?"
+74,id10120_unit,months,(id10120_unit) For how long was (s)he ill before death?,10120_unit. Aliugua kwa muda gani kabla ya kifo?
+75,Id10121,6,(Id10121) Months,10121. Miezi
+76,Id10120,180,(Id10120) Calculated number of Days with illness,
+77,Id10123,no,(Id10123) Did (s)he die suddenly?,"10123. Je, alifariki dunia ghafla?"
+78,Id10125,no,(Id10125) Was there any diagnosis by a health professional of tuberculosis?,"10125. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana kifua kikuu?"
+79,Id10126,no,(Id10126) Was an HIV test ever positive?,"10126. Je, kipimo kiliwahi kuonyesha kuwa ana maambukizi ya Virusi vya Ukimwi?"
+80,Id10127,no,(Id10127) Was there any diagnosis by a health professional of AIDS?,"10127. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana VVU au UKIMWI?"
+81,Id10128,no,(Id10128) Did (s)he have a recent positive test by a health professional for malaria?,"10128. Je, aliwahi kugundulika kwa kipimo na daktari au mhudumu wa afya kuwa ANA malaria siku za karibuni kabla ya kifo chake?"
+82,Id10129,no,(Id10129) Did (s)he have a recent negative test by a health professional for malaria?,"10129. Je, aliwahi kugundulika kwa kipimo na daktari au mhudumu wa afya kuwa HANA malaria siku za karibuni kabla ya kifo chake?"
+83,Id10130,no,(Id10130) Was there any diagnosis by a health professional of dengue fever?,"10130. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana homa ya dengue?"
+84,Id10131,no,(Id10131) Was there any diagnosis by a health professional of measles?,"10131. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana surua?"
+85,Id10132,no,(Id10132) Was there any diagnosis by a health professional of high blood pressure?,"10132. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana shinikizo la juu la damu?"
+86,Id10133,no,(Id10133) Was there any diagnosis by a health professional of heart disease?,"10133. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya moyo?"
+87,Id10134,no,(Id10134) Was there any diagnosis by a health professional of diabetes?,"10134. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana kisukari?"
+88,Id10135,no,(Id10135) Was there any diagnosis by a health professional of asthma?,"10135. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana pumu?"
+89,Id10136,no,(Id10136) Was there any diagnosis by a health professional of epilepsy?,"10136. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana kifafa?"
+90,Id10137,yes,(Id10137) Was there any diagnosis by a health professional of cancer?,"10137. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana saratani?"
+91,Id10138,no,(Id10138) Was there any diagnosis by a health professional of Chronic Obstructive Pulmonary Disease (COPD)?,"10138. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi sugu ya mfumo wa hewa?"
+92,Id10139,no,(Id10139) Was there any diagnosis by a health professional of dementia?,"10139. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya kupoteza kumbukumbu?"
+93,Id10140,no,(Id10140) Was there any diagnosis by a health professional of depression?,"10140. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya sonona?"
+94,Id10141,no,(Id10141) Was there any diagnosis by a health professional of stroke?,"10141. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana kiharusi?"
+95,Id10142,no,(Id10142) Was there any diagnosis by a health professional of sickle cell disease?,"10142. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana seli mundu (sickle cell)?"
+96,Id10143,no,(Id10143) Was there any diagnosis by a health professional of kidney disease?,"10143. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya figo?"
+97,Id10144,no,(Id10144) Was there any diagnosis by a health professional of liver disease?,"10144. Je, aliwahi kugunduliwa na daktari au mhudumu wa afya kuwa ana maradhi ya ini?"
+98,Id10482,no,(Id10482) Was there any diagnosis by a health professional of COVID-19?,"10482. Je, aliwahi kugunduliwa na dakari au mhudumu wa afya kuwa ana maambukizi ya Uviko 19?"
+99,Id10483,no,(Id10483) Did s(h)e have a recent test by a health professional for COVID-19?,"10483. Je, aliwahi kupimwa maambukizi ya Uviko19 na daktari au mhudumu wa afya?"
+100,Id10147,no,(Id10147) Did (s)he have a fever?,"10147. Je, alikuwa na homa?"
+101,Id10152,no,(Id10152) Did (s)he have night sweats?,"10152. Je, alikuwa anatokwa jasho usiku?"
+102,Id10153,yes,(Id10153) Did (s)he have a cough?,"10153. Je, alikuwa anakohoa?"
+103,Id10154_units,months,(Id10154_units) For how long did (s)he have a cough?,"10154_units. Je, alikohoa kwa muda gani?"
+104,Id10154_b,3,(Id10154_b) Enter how long (s)he had a cough in months :,10154_b. Andika idadi ya miezi aliyokuwa anakohoa:
+105,Id10154,90,(Id10154) For how many days did (s)he have a cough?,"10154. Je, alikohoa kwa siku ngapi?"
+106,Id10155,yes,"(Id10155) Was the cough productive, with sputum?","10155. Je, alipokohoa alitoa makohozi?"
+107,Id10156,no,(Id10156) Was the cough very severe?,"10156. Je, kikohozi kilikuwa kikali sana?"
+108,Id10157,no,(Id10157) Did (s)he cough up blood?,"10157. Je, alikohoa damu?"
+109,Id10159,no,(Id10159) Did (s)he have any difficulty breathing?,"10159. Je, alikuwa na tatizo lolote la kupumua?"
+110,Id10166,yes,"(Id10166) During the illness that led to death, did (s)he have fast breathing?","10166. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je, alikuwa anapumua haraka haraka?"
+111,Id10167_units,days,(Id10167_units) How long did the fast breathing last?,10167_unit. Kupumua kwa haraka haraka kulidumu kwa muda gani?
+112,Id10167_b,7,(Id10167_b) Enter how long the fast breathing lasted in days :,10167_b. Kupumua kwa haraka haraka kulidumu kwa siku ngapi?
+113,Id10167,7,Id10167. How long did the fast breathing last?,10167_c. Kupumua kwa haraka haraka kulidumu kwa muda gani?
+114,Id10168,no,(Id10168) Did (s)he have breathlessness?,"10168. Je, alikuwa anakosa pumzi?"
+115,Id10173_a,no,(Id10173_a) During the illness that led to death did (s)he have wheezing?,"10173_a. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake. Je, kupumua kwake kulitoa Sauti ya mluzi au filimbi wakati wa kuvuta hewa ndani na wakati wa kutoa nje? hewa nje?"
+116,Id10173,no,(Id10173) During the illness that led to death did his/her breathing sound like any of the following:,"10173. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake. Je, kupumua kwake kulitoa mlio upi kati ya ifuatayo?"
+117,Id10174,yes,(Id10174) Did (s)he have chest pain?,"10174. Je, alikuwa na maumivu ya kifua?"
+118,Id10175,yes,(Id10175) Was the chest pain severe?,"10175. Je, maumivu ya kifua yalikuwa makali? "
+119,Id10176,3,(Id10176) How many days before death did (s)he have chest pain?,"10176. Je, maumivu ya kifua yalikuwa kwa siku ngapi kabla ya kifo chake?"
+120,paindur,,Duration of the chest pain,KIPINDI CHA MAUMIVU YA KIFUA
+121,Id10178_unit,DK,(Id10178_unit) How long did the chest pain last? ,10178_unit. Je alikuwa na maumivu ya kifua kwa muda gani?
+122,Id10181,no,(Id10181) Did (s)he have more frequent loose or liquid stools than usual?,"10181. Je, aliharisha mara kwa mara zaidi kuliko kawaida?"
+123,Id10186,no,(Id10186) At any time during the final illness was there blood in the stools?,"10186. Je, wakati wa ugonjwa wake wa mwisho, choo chake kilionekana kuwa na damu?"
+124,Id10188,no,(Id10188) Did (s)he vomit?,"10188. Je, alitapika?"
+125,Id10189,no,(Id10189) To clarify: Did (s)he vomit in the week preceding the death?,"10189. Je, alitapika katika wiki moja kabla ya kifo chake?"
+126,Id10193,no,(Id10193) Did (s)he have any belly (abdominal) problem?,"10193. Je, alikuwa na tatizo lolote la tumbo?"
+127,Id10194,no,(Id10194) Did (s)he have belly (abdominal) pain?,"10194. Je, alikuwa na maumivu yoyote ya tumbo?"
+128,Id10200,no,(Id10200) Did (s)he have a more than usually protruding belly (abdomen)?,"10200. Je, alikuwa amevimba tumbo?"
+129,Id10204,no,(Id10204) Did (s)he have any mass in the belly (abdomen)?,"10204. Je, alikuwa na uvimbe tumboni?"
+130,Id10207,no,(Id10207) Did (s)he have a severe headache?,"10207. Je, alikuwa na maumivu makali ya kichwa?"
+131,Id10208,no,(Id10208) Did (s)he have a stiff neck during illness that led to death?,"10208. Je, shingo ilikakamaa wakati wa ugonjwa unaodhaniwa kusababisha kifo chake?"
+132,Id10210,no,(Id10210) Did (s)he have a painful neck during the illness that led to death?,"10210. Je, alikuwa na maumivu ya shingo wakati wa ugonjwa unaodhaniwa kusababisha kifo chake?"
+133,Id10212,no,(Id10212) Did (s)he have mental confusion?,"10212. Je, alikuwa na hali ya kuchanganyikiwa?"
+134,Id10214,no,(Id10214) Was (s)he unconscious during the illness that led to death?,"10214. Je, alikuwa amepoteza fahamu wakati wa ugonjwa wa mwisho unaodhaniwa kusababisha kifo?"
+135,Id10219,no,(Id10219) Did (s)he have convulsions?,"10219. Je, alipata degedege?"
+136,Id10223,no,(Id10223) Did (s)he have any urine problems?,"10223. Je, alikuwa na matatizo yoyote ya mkojo?"
+137,Id10227,yes,(Id10227) Did (s)he have sores or ulcers anywhere on the body?,"10227. Je, alikuwa na matatizo yoyote ya ngozi?"
+138,Id10228,no,(Id10228) Did (s)he have sores?,"10228. Je, alikuwa na vidonda?"
+139,Id10230,no,(Id10230) Did (s)he have an ulcer (pit) on the foot?,"10230. Je, alikuwa na kidonda mguuni?"
+140,Id10233,no,"(Id10233) During the illness that led to death, did (s)he have any skin rash?","10233. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je alikuwa na vipele vyovyote mwilini? "
+141,Id10237,no,(Id10237) Did (s)he ever have shingles or herpes zoster?,"10237. Je, aliwahi kuugua mkanda wa jeshi?"
+142,Id10238,yes,"(Id10238) During the illness that led to death, did her/his skin flake off in patches?","10238. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je, ngozi yake iliwahi kubanduka magamba?"
+143,Id10241,no,"(Id10241) During the illness that led to death, did (s)he bleed from anywhere?","10241. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, Je, alitokwa damu sehemu yoyote mwilini? "
+144,Id10243,yes,(Id10243) Did (s)he have noticeable weight loss?,"10243. Je, alionekana kupungua uzito?"
+145,Id10244,yes,(Id10244) Was (s)he severely thin or wasted?,"10244. Je, alikonda au kupungua sana?"
+146,Id10245,no,"(Id10245) During the illness that led to death, did s/he have a whitish rash inside the mouth or on the tongue?","10245. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je, aliwahi kuwa na utando mweupe kinywani au kwenye ulimi?"
+147,Id10246,no,(Id10246) Did (s)he have stiffness of the whole body or was unable to open the mouth?,"10246. Je, alikuwa amekakamaa mwili mzima au kushindwa kufungua mdomo?"
+148,Id10247,no,(Id10247) Did (s)he have puffiness of the face?,"10247. Je, alikuwa amevimba uso?"
+149,Id10249,no,"(Id10249) During the illness that led to death, did (s)he have swollen legs or feet?","10249. Wakati wa ugonjwa unaodhaniwa kusababisha kifo chake, je alikuwa amevimba miguu?"
+150,Id10252,no,(Id10252) Did (s)he have general puffiness all over his/her body?,"10252. Je, alikuwa amevimba mwili mzima?"
+151,Id10253,no,(Id10253) Did (s)he have any lumps?,"10253. Je, alikuwa na uvimbe wowote?"
+152,Id10258,no,(Id10258) Was (s)he in any way paralysed?,"10258. Je, alikuwa amepooza?"
+153,Id10261,yes,(Id10261) Did (s)he have difficulty swallowing?,"10261. Je, alikuwa na shida ya kumeza?"
+154,Id10262_units,days,(Id10262_units) For how long before death did (s)he have difficulty swallowing?,10262_unit. Ni kwa muda gani kabla ya kifo alikuwa na shida ya kumeza?
+155,Id10262_a,7,(Id10262_a) Enter how long before death (s)he had difficulty swallowing in days :,10262_a. Ni kwa siku ngapi kabla ya kifo alikuwa na shida ya kumeza?
+156,Id10262,7,(Id10262) For how many days before death did (s)he have difficulty swallowing?,10262. Ni kwa siku ngapi kalba ya kifo chake alikua na shida ya kumeza
+157,Id10263,both,"(Id10263) Was the difficulty with swallowing with solids, liquids, or both?","10263. Je, shida ya kumeza ilikuwa ya vitu vigumu, vya majimaji, au vyote?"
+158,Id10264,no,(Id10264) Did (s)he have pain upon swallowing?,"10264. Je, alipata maumivu wakati wa kumeza?"
+159,Id10265,no,(Id10265) Did (s)he have yellow discoloration of the eyes?,"10265. Je, macho yaligeuka rangi na kuwa manjano?"
+160,Id10267,no,(Id10267) Did her/his hair change in color to a reddish or yellowish color?,"10267. Je, nywele ziligeuka rangi na kuwa nyekundu au manjano?"
+161,Id10268,yes,"(Id10268) Did (s)he look pale (thinning/lack of blood) or have pale palms, eyes or nail beds?","10268. Je, alionekana mweupe (aliyepungukiwa damu) au viganja, macho, na sehemu za kucha kuwa nyeupe?"
+162,Id10270,no,(Id10270) Did (s)he drink a lot more water than usual?,"10270. Je, alikunywa maji mengi kuliko kawaida?"
+163,Id10485,yes,(Id10485) Did s(h)e suffer from extreme fatigue? ,"10485. Je, alipatwa na hali ya kuchoka sana?"
+164,Id10486,no,"(Id10486) Did (s)he experience a new loss, change or decreased sense of smell or taste? ","10486. Je, alipungukiwa uwezo wa kusikia harufu au kuhisi ladha ya chakula "
+165,Id10411,no,(Id10411) Did (s)he drink alcohol?,"10411. Je, alikuwa anakunywa pombe?"
+166,Id10412,no,(Id10412) Did (s)he use tobacco?,"10412. Je, alitumia tumbaku?"
+167,Id10413,no,"(Id10413) Did (s)he smoke tobacco (cigarette, cigar, pipe, etc.)?","10413. Je, alikuwa anavuta tumbaku "
+168,Id10418,no,(Id10418) Did (s)he receive any treatment for the illness that led to death?,"10418. Je, alipata matibabu yoyote kwa ugonjwa unaodhaniwa kusababisha kifo chake?"
+169,Id10432,yes,(Id10432) Was care sought outside the home while (s)he had this illness?,"10432. Je, huduma ilitafutwa nje ya nyumbani wakati akiugua ugonjwa huu?"
+170,Id10433,government_hospital govment_health_center_or_clinic private_hospital pharmacy,(Id10433) Where or from whom did you seek care?,10433. Huduma hii ilitafutwa wapi au kutoka kwa nani?
+171,Id10434,"Hosipitali ya serikali,zahanat,Ikonda duka la dawa binafsi","(Id10434) What was the name and address of any hospital, health center or clinic where care was sought",10434. Andika jina na anwani ambapo huduma ilitafutwa.
+172,Id10435,yes,(Id10435) Did a health care worker tell you the cause of death?,"10435 .Je, mhudumu wa afya aliwambia sababu ya kifo?"
+173,Id10436,Kuwa anasalatani ,(Id10436) What did the health care worker say?,10436. Je? Mhudumu wa afya aliwambia nini?
+174,Id10437,no,(Id10437) Do you have any health records that belonged to the deceased?,"10437. Je, una kumbukumbu zozote za afya za marehemu?"
+175,Id10450,yes,"(Id10450) In the final days before death, did s/he travel to a hospital or health facility?","10450. Je, siku za mwisho kabla ya kifo chake, alipelekwa hospitali au kituo cha huduma za afya?"
+176,Id10451,yes,(Id10451) Did (s)he use motorised transport to get to the hospital or health facility?,"10451. Je, alitumia usafiri wa chombo cha moto kwenda hospital au kituo cha huduma za afya?"
+177,Id10452,no,(Id10452) Were there any problems during admission to the hospital or health facility?,"10452. Je, kulikuwa na matatizo yoyote wakati wa kulazwa hospitalini au kwenye kituo cha huduma za afya?"
+178,Id10453,no,"(Id10453) Were there any problems with the way (s)he was treated (medical treatment, procedures, interpersonal attitudes, respect, dignity) in the hospital or health facility?","10453. Je, kulikuwa na matatizo yoyote kuhusiana na jinsi alivyohudumiwa (kimatibabu na kupokelewa) hospitalini au kwenye kituo cha huduma za afya?"
+179,Id10454,no,(Id10454) Were there any problems getting medications or diagnostic tests in the hospital or health facility?,"10454. Je, kulikuwa na matatizo yoyote ya kupata dawa au vipimo hospitalini au kwenye kituo cha huduma za afya?"
+180,Id10455,no,(Id10455) Does it take more than 2 hours to get to the nearest hospital or health facility from the deceaseds household?,"10455. Je, inachukua zaidi ya saa 2 kufika kwenye hospitali au kituo cha huduma za afya kilicho karibu na makazi ya marehemu? "
+181,Id10456,no,"(Id10456) In the final days before death, were there any doubts about whether medical care was needed?","10456. Je, siku za mwisho kabla ya kifo, kulikuwa na wasiwasi wowote iwapo huduma za matibabu zilihitajika? "
+182,Id10457,no,"(Id10457) In the final days before death, was traditional medicine used?","10457. Je, marehemu alipewa dawa za kienyeji siku za mwisho kabla ya kifo chake?"
+183,Id10458,no,"(Id10458) In the final days before death, did anyone use a telephone or cell phone to call for help?","10458. Siku za mwisho kabla ya kifo cha marehemu, Je, kuna mtu yeyote aliyetumia simu ya mezani au ya mkononi kuomba msaada?"
+184,Id10459,no,"(Id10459) Over the course of illness, did the total costs of care and treatment prohibit other household payments?","10459. Katika kipindi chote cha ugonjwa, Je, gharama za matibabu ziliathiri malipo ya huduma nyingine za nyumbani?"
+185,Health_Ins,,Health Insuarance,Maswali ya bima
+186,TZ001,no,(TZ001) Did the deceased have Health Insuarance?,"TZ001. Je, marehemu alikuwa na bima ya afya?"
+187,deathcert,,Death certificate with cause of death,CHETI CHA KIFO CHENYE SABABU YA KIFO
+188,Id10462,no,(Id10462) Was a medical certificate of cause of death issued?,"10462. Je, cheti cha kifo kilitolewa?"
+189,Id10476,Marehem alifalika kwa ugonjwa wa salatani pia alipoteza nguvu ya kuona,(Id10476) Thank you for your information. Now can you please tell me in your own words about the events that led to the death?,10476. Asante sana kwa taarifa zako. Sasa unaweza kunieleza kwa maneno yako mwenyewe matukio yaliyopelekea kifo cha marehemu?
+190,Id10477,None,(Id10477) Select any of the following words that were mentioned as present in the narrative. ,"10477. Je, kuna maneno yoyote yafuatayo ya msingi katika maelezo yaliyotajwa?"
+191,Id10481,2022-07-09T17:50:24.954+03:00,End time of the interview,Muda wa kumaliza maongezi
+192,comment,Wananchi  ni mhim kuwa bima ya matibabu ,(comment) Comment,Maoni
+193,gps_location,-6.3504308 31.3511706 1233.4000244140625 4.5,Collect the GPS coordinates of this location, Kusanya vipimo vya GPS vya eneo hili
+194,gps_details,home_deceased,The GPS coordinates represents,Vipimo vya GPS vinawakilisha
+195,vaid,2022-07-09-VWGMO,Verbal autopsy ID,Namba ya VA
