@@ -1018,7 +1018,12 @@ table tr td i.bi-x{
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .modal-xl {
+    width: 95%;
+    max-width:1400px;
+}
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}

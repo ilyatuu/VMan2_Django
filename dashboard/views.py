@@ -72,7 +72,7 @@ def dashboardPage(request):
 
         get_only_region_age_df = df[['region','dec_agegroup']]
         get_only_region_age_df_stack = get_only_region_age_df.groupby(['region','dec_agegroup']).size().reset_index(name='counts')
-        print(get_only_region_age_df_stack)
+        # print(get_only_region_age_df_stack)
 
         fig_region_age = px.bar(
             get_only_region_age_df_stack,
@@ -153,7 +153,7 @@ def vaRecordsPage(request):
     df = pd.DataFrame(json_array)
     reg = df['region'].value_counts()
 
-    print(df)
+    # print(df)
 
     # Pagination
     paginator = Paginator(json_array,10)
@@ -174,12 +174,11 @@ def vaRecordsPage(request):
 
 # custom method
 def render_va1(request):
-    print("This function works fine!")
     is_ajax = request.headers.get('X-Requested-With') == 'XMLHttpRequest'
     if is_ajax:
         if request.method == 'POST':
             xml = request.POST['data']
-            print(xml)
+            # print(xml)
             json_va = create_json_va(xml)
             return JsonResponse({'context': json_va})
         return JsonResponse({'status': 'Invalid request'}, status=400)
@@ -251,7 +250,7 @@ def manageAnalysisPage(request):
 
     ### Generate dataframe for analysis
     df = pd.DataFrame(json_array)
-    print(df)
+    # print(df)
 
     template_name = 'dashboard/analysis.html'
     context = {
