@@ -4,8 +4,9 @@
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}{% endblock %} | VMan2</title>
+    <title>{% block title %}{% endblock %} | {{ settings.PROJECT_TITLE }}</title>
     <link rel="stylesheet" href="{% static 'css/bcss.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap-table.min.css' %}"> -->
     <link rel="stylesheet" href="{% static 'css/mbcss.css' %}">
     <link rel="stylesheet" href="{% static 'css/mdlcss.css' %}">
     <link rel="stylesheet" href="{% static 'css/customcss.css' %}">
@@ -25,15 +26,17 @@
     {% url 'dashboard:manageCSMFDataset' as manage_csmf_dataset %}
     {% url 'dashboard:manageAuthorization' as manage_authorization %}
     {% url 'dashboard:vaRecordsPage' as manage_va_records %}
+    {% url 'dashboard:manageAnalysisPage' as manage_analysis %}
 
 
     <div class="w3-sidebar w3-bar-block w3-collapse w3-card" id="mySidebar">
-      <img src="{% static 'images/logo.svg' %}" alt="logo" class="mb-4" width="150px">
+      <!-- <img src="{% static 'images/logo.svg' %}" alt="logo" class="mb-4" width="150px"> -->
       <p><i class="bi bi-speedometer"></i> Dashboard</p>
       <ul>
         <li><a href="{% url 'dashboard:dashboardPage' %}" class="{% if request.path == manage_dashboard %}active{% endif %}"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
         <li><a href="{% url 'dashboard:vaRecordsPage' %}" class="{% if request.path == manage_va_records %}active{% endif %}"><i class="bi bi-list-ul"></i> VA Records</a></li>
         <li><a href="#">Coded VA Data</a></li>
+        <li><a href="{% url 'dashboard:manageAnalysisPage' %}" class="{% if request.path == manage_analysis %}active{% endif %}">Analysis summary</a></li>
       </ul>
       <p><i class="bi bi-graph-down-arrow"></i> Visualization</p>
       <!-- <ul>
@@ -74,6 +77,8 @@
 
   <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/bjs.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/popper-2.11.6.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap-table.min.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/mbjs.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/mdljs.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/messages.js' %}"></script>
@@ -105,6 +110,91 @@
     document.getElementById("openNav").style.display = "block";
   }
   </script>
+
+  <script>
+    $(document).ready(function() {
+        var $vatable = $('#vatable')
+
+        $(".open-va").click(function(){
+            var xml = $(this).parent("tr").find(".xml-rec").text();
+            console.log('clicked')
+            $.ajax({
+                type:"POST",
+                url:"{% url 'dashboard:create_va_object' %}",
+                dataType: "json",
+                data:"data="+xml,
+                credentials: "same-origin",
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest",
+                    "X-CSRFToken": getCookie("csrftoken"),
+                },
+                success:function(data){
+                    // Populate summary
+
+                    // Populate datatable
+                    $vatable.bootstrapTable("destroy").bootstrapTable({
+                        autoRefresh:true,
+                        showToggle:true,
+                        data: data.context,
+                        columns:[{
+                            field:"id",
+                            title:"ID",
+                            halign:"center"
+                        },{
+                            field:"label_en",
+                            title:"Label (EN)",
+                            halign:"center"
+                        },{
+                            field:"label_sw",
+                            title:"Label(SW)",
+                            visible:true,
+                            halign:"center"
+                        },{
+                            field:"value",
+                            title:"Response",
+                            align:"right",
+                            halign:"center"
+                        }]
+                    })
+                },
+                error: function (xhr, status) {
+                    alert(status);
+                }
+            })
+        });
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== "") {
+                const cookies = document.cookie.split(";");
+                for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + "=")) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+                }
+            }
+            return cookieValue;
+        }
+
+        //window.CSRF_TOKEN = "{% csrf_token %}";
+        function getCookie2(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) c_end = document.cookie.length;
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+
+    });
+    </script>
 
   {% block datatable %}{% endblock %}
 

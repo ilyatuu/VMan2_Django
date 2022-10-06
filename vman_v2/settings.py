@@ -79,6 +79,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django_settings_export.settings_export',
                 # 'dashboard.context_processors.get_user_authorization',
             ],
         },
@@ -90,13 +91,26 @@ WSGI_APPLICATION = 'vman_v2.wsgi.application'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 myDate = datetime.now()
-PROJECT_TITLE = 'VMAN_V2'
+PROJECT_TITLE = config('PROJECT_TITLE')
+ADMIN_LEVEL1 = config('ADMIN_LEVEL1')
+ADMIN_LEVEL2 = config('ADMIN_LEVEL2')
+ADMIN_LEVEL3 = config('ADMIN_LEVEL3')
 
 CURRENT_YEAR = myDate
 SETTINGS_EXPORT = [
     'PROJECT_TITLE',
     'CURRENT_YEAR',
+    'ADMIN_LEVEL1',
+    'ADMIN_LEVEL2',
+    'ADMIN_LEVEL3',
 ]
+
+ADMIN_LEVEL1_COL = config('ADMIN_LEVEL1_COL')
+ADMIN_LEVEL2_COL = config('ADMIN_LEVEL2_COL')
+ADMIN_LEVEL3_COL = config('ADMIN_LEVEL3_COL')
+
+
+
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases

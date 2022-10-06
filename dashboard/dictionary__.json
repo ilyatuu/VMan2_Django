@@ -1,0 +1,55 @@
+{
+    "start-time":"start-time",
+    "start-time_lab_en":"Start time",
+    "start-time_lab_sw":"Muda wa kuanza",
+
+    "end":"end",
+    "end_lab_en":"End",
+    "end_lab_sw":"Mwisho",
+
+    "today":"today",
+    "today_lab_en":"Today",
+    "today_lab_sw":"Leo",
+
+    "deviceid":"deviceid",
+    "deviceid_lab_en":"Device ID",
+    "deviceid_lab_sw":"Namba ya kifaa",
+
+    "phonenumber":"phonenumber",
+    "phonenumber_lab_en":"Device phone number",
+    "phonenumber_lab_sw":"Namba ya simu ya kifaa",
+
+    "Id10002":"Id10002",
+    "Id10002_lab_en":"Is this a region of high HIV/AIDS mortality?",
+    "Id10002_lab_sw":"Je, Mkoa huu ni wenye vifo vingi vitokanavyo na VVU / UKIMWI?",
+
+    "Id10003":"Id10003",
+    "Id10003_lab_en":"Is this a region of high malaria mortality??",
+    "Id10003_lab_sw":"Je, Mkoa huu ni wenye vifo vingi vitokanavyo na Malaria?",
+
+    "Id10004":"Id10004",
+    "Id10004_lab_en":"During which season did (s)he die?",
+    "Id10004_lab_sw":"Je, marehemu alifariki dunia msimu gani?",
+
+    "Id10005R":"Id10005R",
+    "Id10005R_lab_en":"Region where this interview is happening",
+    "Id10005R_lab_sw":"Mkoa ambao mahojiano haya yanafanyika",
+
+    "Id10005D":"Id10005D",
+    "Id10005D_lab_en":"District where this interview is happening",
+    "Id10005D_lab_sw":"Halmashauri ambayo mahojiano haya yanafanyika",
+
+    "Id10005Dother":"Id10005Dother",
+    "Id10005Dother_lab_en":"Other District where this interview is happening",
+    "Id10005Dother_lab_sw":"Halmashauri nyingine ambayo mahojiano haya yanafanyika",
+
+    "Id10005V":"Id10005V",
+    "Id10005V_lab_en":"Village where this interview is happening",
+    "Id10005V_lab_sw":"Kijiji ambacho mahojiano haya yanafanyika",
+
+    "Id10007":"Id10007",
+    "Id10007_lab_en":" What is the name of VA respondent?",
+    "Id10007_lab_sw":"Jina la mhojiwa?"
+
+
+}

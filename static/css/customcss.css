@@ -61,7 +61,8 @@
   --justifyCenter: center;
   --grayColor: #eeeeee;
   --buttonLoginColor: #E48561;
-  --borderButtonLoginColor:#E48561
+  --borderButtonLoginColor:#E48561;
+  --pagePaddingTopBottom: 120px 0px 50px 0px;
 }
 
 body{
@@ -69,7 +70,7 @@ body{
 }
 .w3-sidebar{
   width: 250px !important;
-  padding: 100px 20px;
+  padding: 120px 20px;
   border-right: 2px solid var(--mainColor);
 }
 
@@ -125,20 +126,21 @@ body{
   font-size: var(--fontSizeNormal);
 }
 .navbar{
-  background: var(--mainColor);
+  background: var(--whiteColor);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .navbar a.navbar-brand{
-  color: var(--whiteColor);
+  color: var(--mainColor);
   font-weight: bold;
   font-size: var(--fontSizeH2);
 }
 .navbar div ul li a{
-  color: var(--whiteColor) !important;
+  color: var(--mainColor) !important;
   font-weight: bold;
 }
 .navbar button{
   border: none;
+  background: var(--whiteColor);
 }
 /* #closeNav{
   display: none;
@@ -159,7 +161,7 @@ body{
 /* dashbaord_page */
 
 .dashbaord_page{
-  padding: 100px 0px;
+  padding: var(--pagePaddingTopBottom);
 }
 
 /* .content_va_display */
@@ -210,30 +212,25 @@ body{
 /* content_other_va_display*/
 .dashbaord_page .content_other_va_display{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
-.dashbaord_page .content_other_va_display .va_item_data.adult{
-  background: var(--blueColor);
-  color: var(--whiteColor);
-  padding: 20px;
-}
+
 .dashbaord_page .content_other_va_display .va_item_data{
   background: var(--whiteColor);
   color: var(--mainColor);
-  /* padding: 32px 20px; */
-  padding: 20px;
+  padding: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
 }
 .dashbaord_page .content_other_va_display .va_item_data h1{
-  font-size: 20px;
+  font-size: 50px;
   font-weight: var(--fontBold);
   font-family: var(--fontFamily);
 }
 .dashbaord_page .content_other_va_display .va_item_data p{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: var(--fontBold);
   font-family: var(--fontFamily);
 }
@@ -281,6 +278,8 @@ body{
   height: 500px;
   overflow-y: scroll;
   padding: 10px;
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .dashbaord_page .region_list .region_item{
   font-size: 16px;
@@ -305,19 +304,32 @@ body{
 
 /* va_records_page */
 .va_records_page{
-  padding: 100px 0px;
+  padding: var(--pagePaddingTopBottom);
+}
+.va_records_page .content_table{
+  background: var(--whiteColor);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px 20px;
+}
+.va_records_page .content_table span a{
+  /* background: var(--blueColor); */
+  color: var(--blueColor);
+  /* font-weight: var(--fontBold);
+  padding: 10px 10px 20px 10px; */
 }
 .va_records_page .title_section{
   background: var(--whiteColor);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 20px;
+  border-left: 5px solid var(--blueColor);
+  margin-bottom: 10px;
 }
 .va_records_page .title_section h1{
   margin: auto;
   font-size: var(--fontSizeH2);
   font-weight: var(--fontBold);
   font-family: var(--fontFamily);
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .va_records_page .modal-content{
   border: none;
@@ -603,7 +615,7 @@ table tbody tr th{
 
 /* user_role */
 .coding_work_page{
-  padding: 100px 0px;
+  padding: 150px 0px 50px 0px;
 }
 .coding_work_page .title_section h1{
   margin: auto;
@@ -630,7 +642,7 @@ table tbody tr th{
 
 /* user_role */
 .user_role{
-  padding: 100px 0px;
+  padding: var(--pagePaddingTopBottom);
 }
 .user_role .title_section h1{
   margin: auto;
@@ -675,7 +687,7 @@ table tbody tr th{
 
 /* icd_10_category_page */
 .icd_10_category_page{
-  padding: 100px 0px;
+  padding: var(--pagePaddingTopBottom);
 }
 .icd_10_category_page .title_section h1{
   margin: auto;
@@ -719,7 +731,7 @@ table tbody tr th{
 
 /* organization_page */
 .organization_page{
-  padding: 100px 0px;
+  padding: var(--pagePaddingTopBottom);
 }
 .organization_page .title_section h1{
   margin: auto;
@@ -763,7 +775,7 @@ table tbody tr th{
 
 /* icd10_page */
 .icd10_page{
-  padding: 100px 0px;
+  padding: var(--pagePaddingTopBottom);
 }
 .icd10_page .title_section h1{
   margin: auto;
@@ -811,7 +823,7 @@ table tbody tr th{
 
 /* add_user_page */
 .add_user_page{
-  padding: 100px 0px;
+  padding: var(--pagePaddingTopBottom);
 }
 .add_user_page .title_section h1{
   margin: auto;
@@ -887,7 +899,7 @@ table tbody tr th{
 
 /* csmf_dataset_page */
 .csmf_dataset_page{
-  padding: 100px 0px;
+  padding: var(--pagePaddingTopBottom);
 }
 .csmf_dataset_page .title_section h1{
   margin: auto;
@@ -921,10 +933,20 @@ table tbody tr th{
   padding: 10px 30px;
 }
 
+/* analysis_page */
+.analysis_page{
+  padding: var(--pagePaddingTopBottom);
+}
+.analysis_page .content h1{
+  margin: auto;
+  font-size: var(--fontSizeH2);
+  font-weight: var(--fontBold);
+  font-family: var(--fontFamily);
+}
 
 /* authorization_page */
 .authorization_page{
-  padding: 100px 0px;
+  padding: var(--pagePaddingTopBottom);
 }
 .authorization_page .title_section h1{
   margin: auto;
